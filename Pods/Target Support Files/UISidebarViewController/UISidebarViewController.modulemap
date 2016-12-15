@@ -1,0 +1,6 @@
+framework module UISidebarViewController {
+  umbrella header "UISidebarViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

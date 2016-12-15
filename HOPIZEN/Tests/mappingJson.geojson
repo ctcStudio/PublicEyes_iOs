@@ -1,0 +1,173 @@
+{
+    "total": 7,
+    "data": [
+             {
+             "id": "57ee1f8c11d22789caf116b2",
+             "path_id": "/OTT.THIEUNHI.HAYVAMOI",
+             "type": "__program_category",
+             "license_start": "1970-01-01T08:00:00+0800",
+             "license_end": "292278994-08-17T14:12:55+0700",
+             "name": [
+                      {
+                      "lang": "vie",
+                      "text": "Hay và mới"
+                      }
+                      ],
+             "config": [
+                        {
+                        "name": "__category",
+                        "value": "55115b94718c2c44a9e3cefb"
+                        },
+                        {
+                        "name": "__leaf_category",
+                        "value": "true"
+                        }
+                        ],
+             "updated_time": "2016-09-30T15:24:19.318+0700"
+             },
+             {
+             "id": "57ee200311d22789caf116b5",
+             "path_id": "/OTT.THIEUNHI.KHUVUONPHIMBO",
+             "type": "__program_category",
+             "license_start": "1970-01-01T08:00:00+0800",
+             "license_end": "292278994-08-17T14:12:55+0700",
+             "name": [
+                      {
+                      "lang": "vie",
+                      "text": "Khu vườn phim bộ"
+                      }
+                      ],
+             "config": [
+                        {
+                        "name": "__category",
+                        "value": "56b1636f718ce8ed3fb17ffc"
+                        },
+                        {
+                        "name": "__leaf_category",
+                        "value": "false"
+                        }
+                        ],
+             "updated_time": "2016-09-30T15:24:37.681+0700"
+             },
+             {
+             "id": "57ee201811d22789caf116b8",
+             "path_id": "/OTT.THIEUNHI.XINETHICHME",
+             "type": "__program_category",
+             "license_start": "1970-01-01T08:00:00+0800",
+             "license_end": "292278994-08-17T14:12:55+0700",
+             "name": [
+                      {
+                      "lang": "vie",
+                      "text": "Xi-nê thích mê"
+                      }
+                      ],
+             "config": [
+                        {
+                        "name": "__category",
+                        "value": "55115be0718c2c44a9e3d559"
+                        },
+                        {
+                        "name": "__leaf_category",
+                        "value": "true"
+                        }
+                        ],
+             "updated_time": "2016-09-30T15:24:52.004+0700"
+             },
+             {
+             "id": "57ee202f11d22789caf116bb",
+             "path_id": "/OTT.THIEUNHI.NOTNHACVUIVE",
+             "type": "__program_category",
+             "license_start": "1970-01-01T08:00:00+0800",
+             "license_end": "292278994-08-17T14:12:55+0700",
+             "name": [
+                      {
+                      "lang": "vie",
+                      "text": "Nốt nhạc vui vẻ"
+                      }
+                      ],
+             "config": [
+                        {
+                        "name": "__category",
+                        "value": "55115c45718c2c44a9e3dbf6"
+                        },
+                        {
+                        "name": "__leaf_category",
+                        "value": "true"
+                        }
+                        ],
+             "updated_time": "2016-09-30T15:26:10.680+0700"
+             },
+             {
+             "id": "57ee204211d22789caf116be",
+             "path_id": "/OTT.THIEUNHI.VUIHOCTIENGANH",
+             "type": "__program_category",
+             "license_start": "1970-01-01T08:00:00+0800",
+             "license_end": "292278994-08-17T14:12:55+0700",
+             "name": [
+                      {
+                      "lang": "vie",
+                      "text": "Vui học tiếng anh"
+                      }
+                      ],
+             "config": [
+                        {
+                        "name": "__category",
+                        "value": "55115c20718c2c44a9e3da86"
+                        },
+                        {
+                        "name": "__leaf_category",
+                        "value": "true"
+                        }
+                        ],
+             "updated_time": "2016-09-30T15:25:37.212+0700"
+             },
+             {
+             "id": "57ee206211d22789caf116c1",
+             "path_id": "/OTT.THIEUNHI.THEGIOIKYTHU",
+             "type": "__program_category",
+             "license_start": "1970-01-01T08:00:00+0800",
+             "license_end": "292278994-08-17T14:12:55+0700",
+             "name": [
+                      {
+                      "lang": "vie",
+                      "text": "Thế giới kỳ thú"
+                      }
+                      ],
+             "config": [
+                        {
+                        "name": "__category",
+                        "value": "55115b82718c2c44a9e3cccb"
+                        },
+                        {
+                        "name": "__leaf_category",
+                        "value": "true"
+                        }
+                        ],
+             "updated_time": "2016-09-30T15:26:25.467+0700"
+             },
+             {
+             "id": "57ee207411d22789caf116c4",
+             "path_id": "/OTT.THIEUNHI.TRUYENOIMORA",
+             "type": "__program_category",
+             "license_start": "1970-01-01T08:00:00+0800",
+             "license_end": "292278994-08-17T14:12:55+0700",
+             "name": [
+                      {
+                      "lang": "vie",
+                      "text": "Truyện ơi mở ra"
+                      }
+                      ],
+             "config": [
+                        {
+                        "name": "__category",
+                        "value": "55115bdc718c2c44a9e3d4d3"
+                        },
+                        {
+                        "name": "__leaf_category",
+                        "value": "true"
+                        }
+                        ],
+             "updated_time": "2016-09-30T15:26:42.828+0700"
+             }
+             ]
+}
