@@ -32,6 +32,7 @@ PODS:
     - FBSDKCoreKit
   - KeychainItemWrapper (1.2)
   - SVPullToRefresh (0.4.1)
+  - SwiftSocket (2.0.1)
   - TPKeyboardAvoiding (1.3)
   - UIAlertController+Blocks (0.9)
   - UISidebarViewController (1.0.0)
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - FBSDKShareKit
   - KeychainItemWrapper
   - SVPullToRefresh
+  - SwiftSocket
   - TPKeyboardAvoiding
   - UIAlertController+Blocks
   - UISidebarViewController
@@ -61,10 +63,11 @@ SPEC CHECKSUMS:
   FBSDKShareKit: c9438df7573b33780ac8c3451201c5ebb260ffca
   KeychainItemWrapper: 67a240172ed669842bc6bc13ed554dcd50469fa2
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  SwiftSocket: 2d814afdc97c89217982f86fd036c1874134a63f
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
   UIAlertController+Blocks: b48c673ff60726da468b32ab21bbc7683512d45b
   UISidebarViewController: afa8867a2201b95d49ffbb12652bb1d7a30d9683
 
-PODFILE CHECKSUM: b45a1ffad594b24a97972e46848555965a0c8a53
+PODFILE CHECKSUM: 92b7fa14eccb5c42f746ef9c5c572fd7d12478e8
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.1.1

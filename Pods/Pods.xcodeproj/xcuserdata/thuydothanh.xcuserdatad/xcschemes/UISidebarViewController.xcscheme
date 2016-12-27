@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '64E591C11761AD26BD7673A294FACF4B'
+               BlueprintIdentifier = '6684F860925149BC9175587E9AE2ABED'
                BlueprintName = 'UISidebarViewController'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'UISidebarViewController.framework'>

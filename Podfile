@@ -1,7 +1,7 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'HOPIZEN' do
+target 'CameraDemo' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
@@ -25,7 +25,7 @@ target 'HOPIZEN' do
     pod 'FBSDKCoreKit'
     pod 'FBSDKLoginKit'
     pod 'FBSDKShareKit'
-
+    pod 'SwiftSocket'
     #pod 'NVActivityIndicatorView'
 
 #pod 'SwiftyJSON', '3.0.0'

@@ -13,5 +13,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <KeychainItemWrapper/KeychainItemWrapper.h>
+#import "Communicator.h"
+#import "HPZSoketXXXXX.h"
 
 #endif /* Bridging_Header_h */

@@ -17,6 +17,11 @@ let screenWidth                                 = screenSize.width
 let screenHeight                                = screenSize.height
 
 
+func Tlog(logMessage:String, functionName: String = #function, line:Int = #line, lClass:String = #file) {
+    print("FILE-\(lClass):FUCN-\(functionName):LINE-\(line): \(logMessage)")
+}
+
+
 struct GoogleKey {
     static let API_KEY  = "AIzaSyDDLa5Do1zXKOs1YAWFVazh4tbXy4JWv-A"
 }

@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1D6C3E0F1E719767905C7D82 /* Pods_HOPIZEN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2F49335C42C1E7997E9636 /* Pods_HOPIZEN.framework */; };
+		C2058F4B1E0BC8E000593AC1 /* SocketConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2058F4A1E0BC8E000593AC1 /* SocketConstant.swift */; };
+		C2058F4D1E0BD36900593AC1 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2058F4C1E0BD36900593AC1 /* Socket.swift */; };
+		C2058F511E0BE02E00593AC1 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2058F4E1E0BE02E00593AC1 /* SSLSecurity.swift */; };
+		C2058F521E0BE02E00593AC1 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2058F501E0BE02E00593AC1 /* WebSocket.swift */; };
+		C268C5AD1E12415A001597E0 /* Communicator.m in Sources */ = {isa = PBXBuildFile; fileRef = C268C5AC1E12415A001597E0 /* Communicator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C268C5AF1E124DA0001597E0 /* HPZSocketXXX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C268C5AE1E124DA0001597E0 /* HPZSocketXXX.swift */; };
+		C268C5B21E124F69001597E0 /* HPZSoketXXXXX.m in Sources */ = {isa = PBXBuildFile; fileRef = C268C5B11E124F69001597E0 /* HPZSoketXXXXX.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C268C5B81E125DD9001597E0 /* HPZCameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C268C5B71E125DD9001597E0 /* HPZCameraModel.swift */; };
 		C27F24821DFF965E009A81B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F24811DFF965E009A81B6 /* AppDelegate.swift */; };
 		C27F24891DFF965E009A81B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27F24881DFF965E009A81B6 /* Assets.xcassets */; };
 		C27F248C1DFF965E009A81B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27F248A1DFF965E009A81B6 /* LaunchScreen.storyboard */; };
@@ -27,13 +35,27 @@
 		C27F24C31DFFA32F009A81B6 /* HPZHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F24C11DFFA32F009A81B6 /* HPZHomeViewController.swift */; };
 		C27F24C41DFFA32F009A81B6 /* HPZHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C27F24C21DFFA32F009A81B6 /* HPZHomeViewController.xib */; };
 		C2CBAD6C1E0273FF00BA7DA1 /* mappingJson.geojson in Resources */ = {isa = PBXBuildFile; fileRef = C2CBAD6B1E0273FF00BA7DA1 /* mappingJson.geojson */; };
+		DEFBA2CF03F409D8EEFB800E /* Pods_CameraDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1E8A2270F43320F4EBD077 /* Pods_CameraDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F943B1DDFD63169413914B3 /* Pods-CameraDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CameraDemo/Pods-CameraDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2BEFE57156F9333035953B35 /* Pods-CameraDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CameraDemo/Pods-CameraDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2F3A695F3F8F9A9D87DC1780 /* Pods-HOPIZEN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOPIZEN.release.xcconfig"; path = "Pods/Target Support Files/Pods-HOPIZEN/Pods-HOPIZEN.release.xcconfig"; sourceTree = "<group>"; };
 		324D060F74DF4FFAF7A51AAF /* Pods-HOPIZEN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HOPIZEN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HOPIZEN/Pods-HOPIZEN.debug.xcconfig"; sourceTree = "<group>"; };
 		9B2F49335C42C1E7997E9636 /* Pods_HOPIZEN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOPIZEN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C27F247E1DFF965E009A81B6 /* HOPIZEN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOPIZEN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2058F4A1E0BC8E000593AC1 /* SocketConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketConstant.swift; sourceTree = "<group>"; };
+		C2058F4C1E0BD36900593AC1 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		C2058F4E1E0BE02E00593AC1 /* SSLSecurity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLSecurity.swift; sourceTree = "<group>"; };
+		C2058F4F1E0BE02E00593AC1 /* Starscream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Starscream.h; sourceTree = "<group>"; };
+		C2058F501E0BE02E00593AC1 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		C268C5AB1E12415A001597E0 /* Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communicator.h; sourceTree = "<group>"; };
+		C268C5AC1E12415A001597E0 /* Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communicator.m; sourceTree = "<group>"; };
+		C268C5AE1E124DA0001597E0 /* HPZSocketXXX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPZSocketXXX.swift; sourceTree = "<group>"; };
+		C268C5B01E124F69001597E0 /* HPZSoketXXXXX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPZSoketXXXXX.h; sourceTree = "<group>"; };
+		C268C5B11E124F69001597E0 /* HPZSoketXXXXX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPZSoketXXXXX.m; sourceTree = "<group>"; };
+		C268C5B71E125DD9001597E0 /* HPZCameraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPZCameraModel.swift; sourceTree = "<group>"; };
+		C27F247E1DFF965E009A81B6 /* CameraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27F24811DFF965E009A81B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		C27F24881DFF965E009A81B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		C27F248B1DFF965E009A81B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +78,7 @@
 		C27F24C21DFFA32F009A81B6 /* HPZHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPZHomeViewController.xib; sourceTree = "<group>"; };
 		C27F24C51DFFA449009A81B6 /* HOPIZEN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HOPIZEN.entitlements; sourceTree = "<group>"; };
 		C2CBAD6B1E0273FF00BA7DA1 /* mappingJson.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mappingJson.geojson; sourceTree = "<group>"; };
+		FC1E8A2270F43320F4EBD077 /* Pods_CameraDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D6C3E0F1E719767905C7D82 /* Pods_HOPIZEN.framework in Frameworks */,
+				DEFBA2CF03F409D8EEFB800E /* Pods_CameraDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +99,8 @@
 			children = (
 				324D060F74DF4FFAF7A51AAF /* Pods-HOPIZEN.debug.xcconfig */,
 				2F3A695F3F8F9A9D87DC1780 /* Pods-HOPIZEN.release.xcconfig */,
+				0F943B1DDFD63169413914B3 /* Pods-CameraDemo.debug.xcconfig */,
+				2BEFE57156F9333035953B35 /* Pods-CameraDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -83,8 +109,34 @@
 			isa = PBXGroup;
 			children = (
 				9B2F49335C42C1E7997E9636 /* Pods_HOPIZEN.framework */,
+				FC1E8A2270F43320F4EBD077 /* Pods_CameraDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2058F491E0BC8BF00593AC1 /* SocketConstant */ = {
+			isa = PBXGroup;
+			children = (
+				C268C5AB1E12415A001597E0 /* Communicator.h */,
+				C268C5AC1E12415A001597E0 /* Communicator.m */,
+				C2058F4E1E0BE02E00593AC1 /* SSLSecurity.swift */,
+				C2058F4F1E0BE02E00593AC1 /* Starscream.h */,
+				C2058F501E0BE02E00593AC1 /* WebSocket.swift */,
+				C2058F4C1E0BD36900593AC1 /* Socket.swift */,
+				C2058F4A1E0BC8E000593AC1 /* SocketConstant.swift */,
+				C268C5AE1E124DA0001597E0 /* HPZSocketXXX.swift */,
+				C268C5B01E124F69001597E0 /* HPZSoketXXXXX.h */,
+				C268C5B11E124F69001597E0 /* HPZSoketXXXXX.m */,
+			);
+			path = SocketConstant;
+			sourceTree = "<group>";
+		};
+		C268C5B31E125DAA001597E0 /* CameraModel */ = {
+			isa = PBXGroup;
+			children = (
+				C268C5B71E125DD9001597E0 /* HPZCameraModel.swift */,
+			);
+			path = CameraModel;
 			sourceTree = "<group>";
 		};
 		C27F24751DFF965E009A81B6 = {
@@ -100,7 +152,7 @@
 		C27F247F1DFF965E009A81B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C27F247E1DFF965E009A81B6 /* HOPIZEN.app */,
+				C27F247E1DFF965E009A81B6 /* CameraDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +184,7 @@
 		C27F24941DFF96B4009A81B6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C2058F491E0BC8BF00593AC1 /* SocketConstant */,
 				C27F24B51DFFA081009A81B6 /* Extention */,
 				C27F24A01DFF99DF009A81B6 /* WebserviceConstant */,
 				C27F249D1DFF996C009A81B6 /* Constant */,
@@ -202,6 +255,7 @@
 		C27F24AB1DFF9D88009A81B6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C268C5B31E125DAA001597E0 /* CameraModel */,
 				C27F24AD1DFF9EC4009A81B6 /* Base */,
 				C27F24AC1DFF9E76009A81B6 /* LoginModel */,
 			);
@@ -289,9 +343,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C27F247D1DFF965E009A81B6 /* HOPIZEN */ = {
+		C27F247D1DFF965E009A81B6 /* CameraDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C27F24901DFF965E009A81B6 /* Build configuration list for PBXNativeTarget "HOPIZEN" */;
+			buildConfigurationList = C27F24901DFF965E009A81B6 /* Build configuration list for PBXNativeTarget "CameraDemo" */;
 			buildPhases = (
 				1D3E1D0E9D15587124C456CA /* [CP] Check Pods Manifest.lock */,
 				C27F247A1DFF965E009A81B6 /* Sources */,
@@ -304,9 +358,9 @@
 			);
 			dependencies = (
 			);
-			name = HOPIZEN;
+			name = CameraDemo;
 			productName = HOPIZEN;
-			productReference = C27F247E1DFF965E009A81B6 /* HOPIZEN.app */;
+			productReference = C27F247E1DFF965E009A81B6 /* CameraDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -317,7 +371,7 @@
 			attributes = {
 				CLASSPREFIX = HPZ;
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Thuy Do Thanh";
 				TargetAttributes = {
 					C27F247D1DFF965E009A81B6 = {
@@ -332,7 +386,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C27F24791DFF965E009A81B6 /* Build configuration list for PBXProject "HOPIZEN" */;
+			buildConfigurationList = C27F24791DFF965E009A81B6 /* Build configuration list for PBXProject "CameraDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -345,7 +399,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C27F247D1DFF965E009A81B6 /* HOPIZEN */,
+				C27F247D1DFF965E009A81B6 /* CameraDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -394,7 +448,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HOPIZEN/Pods-HOPIZEN-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CameraDemo/Pods-CameraDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E983A36A33492A7B465C0B28 /* [CP] Copy Pods Resources */ = {
@@ -409,7 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HOPIZEN/Pods-HOPIZEN-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CameraDemo/Pods-CameraDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -421,15 +475,23 @@
 			files = (
 				C27F24A91DFF9A8D009A81B6 /* HPZLoginViewController.swift in Sources */,
 				C27F24A21DFF99F7009A81B6 /* HPZWebserviceConstant.swift in Sources */,
+				C2058F4D1E0BD36900593AC1 /* Socket.swift in Sources */,
+				C2058F521E0BE02E00593AC1 /* WebSocket.swift in Sources */,
+				C2058F4B1E0BC8E000593AC1 /* SocketConstant.swift in Sources */,
 				C27F24B11DFF9EFF009A81B6 /* HPZLoginEntity.swift in Sources */,
+				C268C5AD1E12415A001597E0 /* Communicator.m in Sources */,
 				C27F24B71DFFA0E7009A81B6 /* HPZExtention.swift in Sources */,
+				C2058F511E0BE02E00593AC1 /* SSLSecurity.swift in Sources */,
 				C27F24A61DFF9A65009A81B6 /* HPZBaseViewController.swift in Sources */,
+				C268C5B21E124F69001597E0 /* HPZSoketXXXXX.m in Sources */,
 				C27F24C31DFFA32F009A81B6 /* HPZHomeViewController.swift in Sources */,
 				C27F249A1DFF97CD009A81B6 /* HPZMainFrame.swift in Sources */,
 				C27F24821DFF965E009A81B6 /* AppDelegate.swift in Sources */,
 				C27F24C01DFFA2B4009A81B6 /* HPZCutomNavigationController.swift in Sources */,
 				C27F249C1DFF98B5009A81B6 /* HPZWebservice.swift in Sources */,
 				C27F24AF1DFF9EEB009A81B6 /* HPZBaseEntity.swift in Sources */,
+				C268C5AF1E124DA0001597E0 /* HPZSocketXXX.swift in Sources */,
+				C268C5B81E125DD9001597E0 /* HPZCameraModel.swift in Sources */,
 				C27F249F1DFF99DA009A81B6 /* HPZConstant.swift in Sources */,
 				C27F24BB1DFFA1EA009A81B6 /* HPZSlidingMenuViewController.swift in Sources */,
 			);
@@ -468,6 +530,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -518,6 +581,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -545,7 +609,7 @@
 		};
 		C27F24911DFF965E009A81B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 324D060F74DF4FFAF7A51AAF /* Pods-HOPIZEN.debug.xcconfig */;
+			baseConfigurationReference = 0F943B1DDFD63169413914B3 /* Pods-CameraDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HOPIZEN/HOPIZEN.entitlements;
@@ -553,7 +617,7 @@
 				INFOPLIST_FILE = HOPIZEN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HOPIZEN.-HOPIZEN.HOPIZEN";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thuydt.camerademo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HOPIZEN/Application/BridgingHeader/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -562,7 +626,7 @@
 		};
 		C27F24921DFF965E009A81B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F3A695F3F8F9A9D87DC1780 /* Pods-HOPIZEN.release.xcconfig */;
+			baseConfigurationReference = 2BEFE57156F9333035953B35 /* Pods-CameraDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = HOPIZEN/HOPIZEN.entitlements;
@@ -570,7 +634,7 @@
 				INFOPLIST_FILE = HOPIZEN/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HOPIZEN.-HOPIZEN.HOPIZEN";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thuydt.camerademo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "HOPIZEN/Application/BridgingHeader/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -580,7 +644,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C27F24791DFF965E009A81B6 /* Build configuration list for PBXProject "HOPIZEN" */ = {
+		C27F24791DFF965E009A81B6 /* Build configuration list for PBXProject "CameraDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C27F248E1DFF965E009A81B6 /* Debug */,
@@ -589,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C27F24901DFF965E009A81B6 /* Build configuration list for PBXNativeTarget "HOPIZEN" */ = {
+		C27F24901DFF965E009A81B6 /* Build configuration list for PBXNativeTarget "CameraDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C27F24911DFF965E009A81B6 /* Debug */,

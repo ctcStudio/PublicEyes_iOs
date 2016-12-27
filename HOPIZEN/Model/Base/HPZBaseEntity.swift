@@ -15,4 +15,8 @@ class HPZBaseEntity: NSObject {
         
     }
     
+    func paserStringRespon(istring:String) -> Void {
+        
+    }
+    
 }
