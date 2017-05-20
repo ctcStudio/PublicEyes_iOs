@@ -23,6 +23,7 @@
 		B77ABA9E1ED04B3C001BD5F2 /* NewsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77ABA9C1ED04B3C001BD5F2 /* NewsTableViewController.xib */; };
 		B77ABAA21ED04B8C001BD5F2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABAA01ED04B8C001BD5F2 /* FirstViewController.swift */; };
 		B77ABAA31ED04B8C001BD5F2 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77ABAA11ED04B8C001BD5F2 /* FirstViewController.xib */; };
+		B77ABAA41ED05103001BD5F2 /* Pods_PublicEyes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF08C02A27DB2FDEA30C8534 /* Pods_PublicEyes.framework */; };
 		C2058F4B1E0BC8E000593AC1 /* SocketConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2058F4A1E0BC8E000593AC1 /* SocketConstant.swift */; };
 		C2058F4D1E0BD36900593AC1 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2058F4C1E0BD36900593AC1 /* Socket.swift */; };
 		C2058F511E0BE02E00593AC1 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2058F4E1E0BE02E00593AC1 /* SSLSecurity.swift */; };
@@ -54,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		26912AC30DD7BAF1B0D23697 /* Pods-PublicEyes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicEyes.release.xcconfig"; path = "Pods/Target Support Files/Pods-PublicEyes/Pods-PublicEyes.release.xcconfig"; sourceTree = "<group>"; };
-		9B2F49335C42C1E7997E9636 /* Pods_HOPIZEN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HOPIZEN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77ABA7D1ED049A8001BD5F2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = RegisterVC/RegisterViewController.swift; sourceTree = "<group>"; };
 		B77ABA7E1ED049A8001BD5F2 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegisterViewController.xib; path = RegisterVC/RegisterViewController.xib; sourceTree = "<group>"; };
 		B77ABA821ED049E5001BD5F2 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderViewController.swift; path = SliderVC/SliderViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +107,6 @@
 		C2CBAD6B1E0273FF00BA7DA1 /* mappingJson.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mappingJson.geojson; sourceTree = "<group>"; };
 		CF08C02A27DB2FDEA30C8534 /* Pods_PublicEyes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PublicEyes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F71A19FA711364999970FB /* Pods-PublicEyes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicEyes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PublicEyes/Pods-PublicEyes.debug.xcconfig"; sourceTree = "<group>"; };
-		FC1E8A2270F43320F4EBD077 /* Pods_CameraDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77ABAA41ED05103001BD5F2 /* Pods_PublicEyes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,8 +205,6 @@
 		BAE369B0C67A4FF53593091D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B2F49335C42C1E7997E9636 /* Pods_HOPIZEN.framework */,
-				FC1E8A2270F43320F4EBD077 /* Pods_CameraDemo.framework */,
 				CF08C02A27DB2FDEA30C8534 /* Pods_PublicEyes.framework */,
 			);
 			name = Frameworks;

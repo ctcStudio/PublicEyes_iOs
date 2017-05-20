@@ -32,10 +32,10 @@ class HPZMainFrame: NSObject {
     }
     
     static func makeCenterNavi () -> UINavigationController {// 84 86 172
-        let naviRoot = HPZHomeViewController(nibName: "HPZHomeViewController", bundle: nil)
+        let naviRoot = FirstViewController(nibName: "FirstViewController", bundle: nil)
         let navi = HPZCutomNavigationController(rootViewController: naviRoot)
-        navi.addLeftBtnWithBackgroundImage(bgImg: UIImage(named: "menu"), title: "", titleColor: UIColor.black, targer: self, action: #selector(HPZMainFrame.menuBtnTouched(sender:)))
         navi.navigationBar.isTranslucent = false
+        navi.navigationBar.isHidden = true;
         return navi
     }
     
@@ -58,6 +58,9 @@ class HPZMainFrame: NSObject {
     static func showHomeVC() -> Void {
         let vc = HPZHomeViewController(nibName: "HPZHomeViewController", bundle: nil)
         (mainFrame?.centerVC as! UINavigationController).viewControllers = [vc]
+        getNavi().navigationBar.isTranslucent = true;
+        getNavi().navigationBar.isHidden = false;
+        getNavi().addLeftBtnWithBackgroundImage(bgImg: UIImage(named: "menu"), title: "", titleColor: UIColor.black, targer: self, action: #selector(HPZMainFrame.menuBtnTouched(sender:)))
         
     }
     static func getNavi() -> HPZCutomNavigationController{
