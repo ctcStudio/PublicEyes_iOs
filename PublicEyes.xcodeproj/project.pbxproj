@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72AA0901ED12EC30091CDDA /* ComplaintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AA08E1ED12EC30091CDDA /* ComplaintTableViewCell.swift */; };
+		B72AA0911ED12EC30091CDDA /* ComplaintTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72AA08F1ED12EC30091CDDA /* ComplaintTableViewCell.xib */; };
+		B72AA0941ED133A90091CDDA /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AA0921ED133A90091CDDA /* NewsTableViewCell.swift */; };
+		B72AA0951ED133A90091CDDA /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72AA0931ED133A90091CDDA /* NewsTableViewCell.xib */; };
+		B72AA0991ED136210091CDDA /* PostSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AA0981ED136210091CDDA /* PostSuccessView.swift */; };
+		B72AA09B1ED1363B0091CDDA /* PostSuccessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72AA09A1ED1363B0091CDDA /* PostSuccessView.xib */; };
 		B77ABA7F1ED049A8001BD5F2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABA7D1ED049A8001BD5F2 /* RegisterViewController.swift */; };
 		B77ABA801ED049A8001BD5F2 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77ABA7E1ED049A8001BD5F2 /* RegisterViewController.xib */; };
 		B77ABA841ED049E5001BD5F2 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABA821ED049E5001BD5F2 /* SliderViewController.swift */; };
@@ -55,6 +61,12 @@
 
 /* Begin PBXFileReference section */
 		26912AC30DD7BAF1B0D23697 /* Pods-PublicEyes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublicEyes.release.xcconfig"; path = "Pods/Target Support Files/Pods-PublicEyes/Pods-PublicEyes.release.xcconfig"; sourceTree = "<group>"; };
+		B72AA08E1ED12EC30091CDDA /* ComplaintTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComplaintTableViewCell.swift; path = ComplaintVC/ComplaintTableViewCell.swift; sourceTree = "<group>"; };
+		B72AA08F1ED12EC30091CDDA /* ComplaintTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ComplaintTableViewCell.xib; path = ComplaintVC/ComplaintTableViewCell.xib; sourceTree = "<group>"; };
+		B72AA0921ED133A90091CDDA /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = NewsVC/NewsTableViewCell.swift; sourceTree = "<group>"; };
+		B72AA0931ED133A90091CDDA /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsTableViewCell.xib; path = NewsVC/NewsTableViewCell.xib; sourceTree = "<group>"; };
+		B72AA0981ED136210091CDDA /* PostSuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostSuccessView.swift; path = LocationVC/PostSuccessView.swift; sourceTree = "<group>"; };
+		B72AA09A1ED1363B0091CDDA /* PostSuccessView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PostSuccessView.xib; path = LocationVC/PostSuccessView.xib; sourceTree = "<group>"; };
 		B77ABA7D1ED049A8001BD5F2 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = RegisterVC/RegisterViewController.swift; sourceTree = "<group>"; };
 		B77ABA7E1ED049A8001BD5F2 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegisterViewController.xib; path = RegisterVC/RegisterViewController.xib; sourceTree = "<group>"; };
 		B77ABA821ED049E5001BD5F2 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderViewController.swift; path = SliderVC/SliderViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +183,8 @@
 			children = (
 				B77ABA911ED04AB7001BD5F2 /* LocationViewController.swift */,
 				B77ABA921ED04AB7001BD5F2 /* LocationViewController.xib */,
+				B72AA0981ED136210091CDDA /* PostSuccessView.swift */,
+				B72AA09A1ED1363B0091CDDA /* PostSuccessView.xib */,
 			);
 			name = LocationVC;
 			sourceTree = "<group>";
@@ -180,6 +194,8 @@
 			children = (
 				B77ABA961ED04AFE001BD5F2 /* ComplaintTableViewController.swift */,
 				B77ABA971ED04AFE001BD5F2 /* ComplaintTableViewController.xib */,
+				B72AA08E1ED12EC30091CDDA /* ComplaintTableViewCell.swift */,
+				B72AA08F1ED12EC30091CDDA /* ComplaintTableViewCell.xib */,
 			);
 			name = ComplaintVC;
 			sourceTree = "<group>";
@@ -189,6 +205,8 @@
 			children = (
 				B77ABA9B1ED04B3C001BD5F2 /* NewsTableViewController.swift */,
 				B77ABA9C1ED04B3C001BD5F2 /* NewsTableViewController.xib */,
+				B72AA0921ED133A90091CDDA /* NewsTableViewCell.swift */,
+				B72AA0931ED133A90091CDDA /* NewsTableViewCell.xib */,
 			);
 			name = NewsVC;
 			sourceTree = "<group>";
@@ -514,17 +532,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27F248C1DFF965E009A81B6 /* LaunchScreen.storyboard in Resources */,
+				B72AA09B1ED1363B0091CDDA /* PostSuccessView.xib in Resources */,
 				B77ABA8A1ED04A45001BD5F2 /* ReportPhotoViewController.xib in Resources */,
 				C27F24AA1DFF9A8D009A81B6 /* HPZLoginViewController.xib in Resources */,
 				B77ABA801ED049A8001BD5F2 /* RegisterViewController.xib in Resources */,
 				B77ABA8F1ED04A7B001BD5F2 /* ReportVideoViewController.xib in Resources */,
 				B77ABAA31ED04B8C001BD5F2 /* FirstViewController.xib in Resources */,
+				B72AA0951ED133A90091CDDA /* NewsTableViewCell.xib in Resources */,
 				B77ABA851ED049E5001BD5F2 /* SliderViewController.xib in Resources */,
 				B77ABA991ED04AFE001BD5F2 /* ComplaintTableViewController.xib in Resources */,
 				B77ABA941ED04AB7001BD5F2 /* LocationViewController.xib in Resources */,
 				C2CBAD6C1E0273FF00BA7DA1 /* mappingJson.geojson in Resources */,
 				B77ABA9E1ED04B3C001BD5F2 /* NewsTableViewController.xib in Resources */,
 				C27F24BC1DFFA1EA009A81B6 /* HPZSlidingMenuViewController.xib in Resources */,
+				B72AA0911ED12EC30091CDDA /* ComplaintTableViewCell.xib in Resources */,
 				C27F24891DFF965E009A81B6 /* Assets.xcassets in Resources */,
 				C27F24C41DFFA32F009A81B6 /* HPZHomeViewController.xib in Resources */,
 			);
@@ -589,13 +610,16 @@
 				B77ABA7F1ED049A8001BD5F2 /* RegisterViewController.swift in Sources */,
 				C27F24A21DFF99F7009A81B6 /* HPZWebserviceConstant.swift in Sources */,
 				C2058F4D1E0BD36900593AC1 /* Socket.swift in Sources */,
+				B72AA0941ED133A90091CDDA /* NewsTableViewCell.swift in Sources */,
 				C2058F521E0BE02E00593AC1 /* WebSocket.swift in Sources */,
 				C2058F4B1E0BC8E000593AC1 /* SocketConstant.swift in Sources */,
 				C27F24B11DFF9EFF009A81B6 /* HPZLoginEntity.swift in Sources */,
 				B77ABA931ED04AB7001BD5F2 /* LocationViewController.swift in Sources */,
 				B77ABA8E1ED04A7B001BD5F2 /* ReportVideoViewController.swift in Sources */,
+				B72AA0991ED136210091CDDA /* PostSuccessView.swift in Sources */,
 				B77ABA891ED04A45001BD5F2 /* ReportPhotoViewController.swift in Sources */,
 				B77ABAA21ED04B8C001BD5F2 /* FirstViewController.swift in Sources */,
+				B72AA0901ED12EC30091CDDA /* ComplaintTableViewCell.swift in Sources */,
 				C268C5AD1E12415A001597E0 /* Communicator.m in Sources */,
 				B77ABA981ED04AFE001BD5F2 /* ComplaintTableViewController.swift in Sources */,
 				B77ABA9D1ED04B3C001BD5F2 /* NewsTableViewController.swift in Sources */,
