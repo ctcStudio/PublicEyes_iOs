@@ -77,7 +77,7 @@ class HPZWebservice: NSObject {
         self.requestManager!.post(self.makeFullAPIMethodWithAction(acction: path!, isAuthen: isAuthen), parameters:params //self.convertParamsToJson(params: params!)
             , progress: nil, success: {(task, responseObject) -> Void in
                 
-                print("responseObject ->> \(responseObject)")
+                print("responseObject ->> \(String(describing: responseObject))")
                 
                 responseObjectClass.parserResponse(dic:(responseObject as? NSDictionary)!)
                 responseHandler(true, responseObjectClass);
@@ -119,6 +119,10 @@ class HPZWebservice: NSObject {
 extension HPZWebservice {
     
     func loginWithFacebook(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity, isAthen:Bool) -> Void {
+        self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: isAthen, responseHandler: handler)
+    }
+    
+    func loginWithEmail(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity, isAthen:Bool) -> Void {
         self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: isAthen, responseHandler: handler)
     }
     

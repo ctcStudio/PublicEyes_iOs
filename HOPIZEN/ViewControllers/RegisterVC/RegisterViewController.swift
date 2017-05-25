@@ -13,8 +13,15 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
+        
         // Do any additional setup after loading the view.
     }
+    
+    func clickBack(_ sender:UIButton!){
+        HPZMainFrame.showFirstVC()
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,5 +38,12 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func showPassword(_ sender: UIButton) {
+    }
 
+    @IBAction func registerAcc(_ sender: UIButton) {
+        HPZMainFrame.showHomeVC()
+    }
+    
 }

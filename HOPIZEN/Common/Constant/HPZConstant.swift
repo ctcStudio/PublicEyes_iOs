@@ -10,11 +10,22 @@ import UIKit
 
 let APP_DELEGATE = UIApplication.shared.delegate as! AppDelegate
 
+let naviColor                                   = 0x5456AC
+
 let screenBounds                                = UIScreen.main.bounds
 let screenSize                                  = screenBounds.size
 
 let screenWidth                                 = screenSize.width
 let screenHeight                                = screenSize.height
+let UserDefault_email                           = "user.default.email"
+let UserDefault_password                           = "user.default.password"
+
+func isActive() -> Bool {
+    let userDefauts = UserDefaults.standard
+    let email = userDefauts.string(forKey: UserDefault_email)
+    let password = userDefauts.string(forKey: UserDefault_password);
+    return (email?.isEmpty == false && password?.isEmpty == false)
+}
 
 
 func Tlog(logMessage:String, functionName: String = #function, line:Int = #line, lClass:String = #file) {

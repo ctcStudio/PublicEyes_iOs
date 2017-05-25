@@ -19,7 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
         // Facebook SDK
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        self.showMainScreen()
+        let naviRoot = UIViewController.init()
+        let navi = HPZCutomNavigationController(rootViewController: naviRoot)
+        navi.navigationBar.isTranslucent = false
+
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window!.rootViewController = navi
+        self.window!.makeKeyAndVisible()
+        // call api
+        if(isActive()) {
+            self.window!.rootViewController = HPZMainFrame.makeNewMainFrame(isLogin: true)
+        } else {
+            self.window!.rootViewController = HPZMainFrame.makeNewMainFrame(isLogin: false)
+        }
+        
         return true
     }
 
@@ -70,10 +83,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //
     //MARK - show main screen
     func showMainScreen() -> Void {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window!.rootViewController = HPZMainFrame.makeNewMainFrame()
-        self.window!.makeKeyAndVisible()
+        //self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window!.rootViewController = HPZMainFrame.makeNewMainFrame(isLogin: false)
+        //self.window!.makeKeyAndVisible()
     }
+    
     
     
 //    // MARK test

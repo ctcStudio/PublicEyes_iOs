@@ -31,7 +31,7 @@ class HPZCutomNavigationController: UINavigationController {
     func setupNaviController()-> Void {
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.systemFont(ofSize: 15)]
         self.navigationBar.tintColor = UIColor.white
-        self.navigationBar.barTintColor = UIColor(netHex: 0x5456AC)
+        self.navigationBar.barTintColor = UIColor(netHex: naviColor)
     }
     func reversedArray(inputArr:NSArray?) ->NSArray? {
         let array:NSMutableArray? = NSMutableArray(capacity: (inputArr?.count)!)
@@ -61,6 +61,20 @@ class HPZCutomNavigationController: UINavigationController {
             barBtn = UIBarButtonItem(title: title, style: .plain, target: targer, action:action)
             barBtn.setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.black], for: UIControlState.normal) // Tuyen add for edit color in barbuttonitem
         }
+        
+        self.topViewController?.navigationItem.leftBarButtonItem = barBtn
+    }
+    
+    func addRightBtnWithTitle(title:String?, titleColor:UIColor?, target:AnyObject?, action:Selector) -> Void {
+        let barBtn = UIBarButtonItem(title: title, style: .plain, target: target, action:action)
+        barBtn.setTitleTextAttributes([NSForegroundColorAttributeName : titleColor!], for: UIControlState.normal)
+        
+        self.topViewController?.navigationItem.rightBarButtonItem = barBtn
+    }
+    
+    func addLeftBtnWithTitle(title:String?, titleColor:UIColor?, target:AnyObject?, action:Selector) -> Void {
+        let barBtn = UIBarButtonItem(title: title, style: .plain, target: target, action:action)
+        barBtn.setTitleTextAttributes([NSForegroundColorAttributeName : titleColor!], for: UIControlState.normal)
         
         self.topViewController?.navigationItem.leftBarButtonItem = barBtn
     }

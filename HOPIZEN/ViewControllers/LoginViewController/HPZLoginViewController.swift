@@ -24,6 +24,15 @@ class HPZLoginViewController: UIViewController {
     }
     
 
+    @IBAction func showPassword(_ sender: Any) {
+    }
+    
+    @IBAction func loginByEmail(_ sender: Any) {
+    }
+    
+    @IBAction func loginByFacebook(_ sender: Any) {
+        self.pLoginWithFacebook()
+    }
     
 }
 
@@ -32,7 +41,7 @@ extension HPZLoginViewController {
     
     // MARK: Facebook
     
-    private func pLoginWithFacebook() -> Void {
+    func pLoginWithFacebook() -> Void {
         
         let fbLoginManager = FBSDKLoginManager()
         fbLoginManager.logOut()
@@ -49,17 +58,16 @@ extension HPZLoginViewController {
                 FBSDKLoginManager().logOut()
             } else {
                 self.fetchFacebookUserInfo()
-                let currentToken:String = FBSDKAccessToken.current().tokenString
                             
             }
         }
     }
     
-    private func fetchFacebookUserInfo ()-> Void
+    func fetchFacebookUserInfo ()-> Void
     {
         if (FBSDKAccessToken.current() != nil)
         {
-            let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, link, first_name, last_name, picture.type(large), email, birthday, bio ,location ,friends ,hometown , friendlists"])
+            let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, link, first_name, last_name, email, birthday, location ,friends ,hometown"])
             graphRequest.start(completionHandler: { (connection, result, error) -> Void in
                 
                 if let error = error {
@@ -67,6 +75,7 @@ extension HPZLoginViewController {
                 } else {
                     let userName = (result as! NSDictionary).value(forKey: "name")
                     let userID = (result as! NSDictionary).value(forKey: "id")
+                    print("facebook acc: %s id: %s", userName ?? "", userID ?? "")
                 }
             })
         }
