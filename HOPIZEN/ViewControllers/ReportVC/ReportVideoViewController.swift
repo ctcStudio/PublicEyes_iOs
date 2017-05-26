@@ -9,11 +9,17 @@
 import UIKit
 
 class ReportVideoViewController: UIViewController {
+    var videoUrl:NSURL!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
+    }
+    
+    func clickBack(_ sender:UIButton!){
+        HPZMainFrame.showHomeVC()
     }
 
     override func didReceiveMemoryWarning() {

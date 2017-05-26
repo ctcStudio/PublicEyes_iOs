@@ -20,15 +20,16 @@ class HPZMainFrame: NSObject {
             mainFrame = UISidebarViewController(center: navigationView, andSidebarViewController: left)
             mainFrame!.sidebarWidth = screenWidth * 0.85
             // update layout
-            
             mainFrame?.sidebarVC.view.frame = CGRect(x: CGFloat(left.view.frame.origin.x), y: CGFloat(left.view.frame.origin.y), width: CGFloat(screenWidth), height: CGFloat(screenHeight))
-            
+
             left.view.layoutIfNeeded()
+            return mainFrame;
 
         } else {
             navigationView = self.makeNoSliderNavi()
+            return navigationView;
+
         }
-        return navigationView;
     }
     
     
@@ -42,6 +43,8 @@ class HPZMainFrame: NSObject {
         let navi = HPZCutomNavigationController(rootViewController: naviRoot)
         navi.navigationBar.isHidden = false;
         navi.navigationBar.isTranslucent = true
+        navi.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navi.navigationBar.shadowImage = UIImage()
         
         return navi
     }
@@ -76,14 +79,61 @@ class HPZMainFrame: NSObject {
         (navigationView!).viewControllers = [vc]
     }
     
+    static func showSliderVC() -> Void {
+        let vc = SliderViewController(nibName: "SliderViewController", bundle: nil)
+        (navigationView!).viewControllers = [vc]
+    }
     
     static func showHomeVC() -> Void {
-        let vc = HPZHomeViewController(nibName: "HPZHomeViewController", bundle: nil)
-        (mainFrame?.centerVC as! UINavigationController).viewControllers = [vc]
+        navigationView = self.makeSliderNavi()
+        let left = self.makeSideMenu()
+        mainFrame = UISidebarViewController(center: navigationView, andSidebarViewController: left)
+        mainFrame!.sidebarWidth = screenWidth * 0.85
+        // update layout
+        mainFrame?.sidebarVC.view.frame = CGRect(x: CGFloat(left.view.frame.origin.x), y: CGFloat(left.view.frame.origin.y), width: CGFloat(screenWidth), height: CGFloat(screenHeight))
+        
+        left.view.layoutIfNeeded()
+        
+        UIApplication.shared.keyWindow!.rootViewController = mainFrame
+        navigationView = nil;
+    }
+    
+    static func showReportPhoto(image:UIImage) -> Void {
+        let vc = ReportPhotoViewController(nibName: "ReportPhotoViewController", bundle: nil)
+        vc.image = image;
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            navigationView?.navigationBar.isHidden = false;
+            navigationView?.navigationBar.isTranslucent = true
+            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationView?.navigationBar.shadowImage = UIImage()
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        mainFrame = nil;
+    }
+    
+    static func showReportVideo(videoUrl:NSURL) -> Void {
+        let vc = ReportVideoViewController(nibName: "ReportVideoViewController", bundle: nil)
+        vc.videoUrl = videoUrl;
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            navigationView?.navigationBar.isHidden = false;
+            navigationView?.navigationBar.isTranslucent = true
+            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationView?.navigationBar.shadowImage = UIImage()
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        mainFrame = nil;
+    }
+    
+    static func showMenuIcon() -> Void {
         getNavi().navigationBar.isTranslucent = true;
         getNavi().navigationBar.isHidden = false;
         getNavi().addLeftBtnWithBackgroundImage(bgImg: UIImage(named: "menu"), title: "", titleColor: UIColor.black, targer: self, action: #selector(HPZMainFrame.menuBtnTouched(sender:)))
-        
     }
     
     static func showRegisterVC() -> Void {
@@ -98,8 +148,11 @@ class HPZMainFrame: NSObject {
 
     
     static func getNavi() -> HPZCutomNavigationController{
-        let navi = mainFrame?.centerVC as! HPZCutomNavigationController
-        return navi
+        if(mainFrame != nil) {
+            return mainFrame?.centerVC as! HPZCutomNavigationController
+        } else {
+            return navigationView!
+        }
     }
     
     static func addMenuLeft(title:String, titleColor: UIColor?, target:AnyObject?, action: Selector) {

@@ -28,6 +28,8 @@ class HPZLoginViewController: UIViewController {
     }
     
     @IBAction func loginByEmail(_ sender: Any) {
+        //HPZMainFrame.showHomeVC()
+        HPZMainFrame.showSliderVC()
     }
     
     @IBAction func loginByFacebook(_ sender: Any) {

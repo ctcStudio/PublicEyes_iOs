@@ -9,11 +9,17 @@
 import UIKit
 
 class ReportPhotoViewController: UIViewController {
+    var image:UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
+    }
+    
+    func clickBack(_ sender:UIButton!){
+        HPZMainFrame.showHomeVC()
     }
 
     override func didReceiveMemoryWarning() {
