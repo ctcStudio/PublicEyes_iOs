@@ -21,14 +21,14 @@ class HPZMainFrame: NSObject {
             mainFrame!.sidebarWidth = screenWidth * 0.85
             // update layout
             mainFrame?.sidebarVC.view.frame = CGRect(x: CGFloat(left.view.frame.origin.x), y: CGFloat(left.view.frame.origin.y), width: CGFloat(screenWidth), height: CGFloat(screenHeight))
-
+            
             left.view.layoutIfNeeded()
             return mainFrame;
-
+            
         } else {
             navigationView = self.makeNoSliderNavi()
             return navigationView;
-
+            
         }
     }
     
@@ -76,18 +76,32 @@ class HPZMainFrame: NSObject {
     
     static func showFirstVC() -> Void {
         let vc = FirstViewController(nibName: "FirstViewController", bundle: nil)
-        (navigationView!).viewControllers = [vc]
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            navigationView?.navigationBar.isHidden = false;
+            navigationView?.navigationBar.isTranslucent = true
+            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationView?.navigationBar.shadowImage = UIImage()
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        mainFrame = nil
     }
     
     static func showSliderVC() -> Void {
-        let vc = SliderViewController(nibName: "SliderViewController", bundle: nil)
-        (navigationView!).viewControllers = [vc]
+//        if(userDefault.bool(forKey: UserDefault_fist_login) == true) {
+            let vc = SliderViewController(nibName: "SliderViewController", bundle: nil)
+            (navigationView!).viewControllers = [vc]
+//        } else {
+//            showHomeVC()
+//        }
     }
     
     static func showHomeVC() -> Void {
-        navigationView = self.makeSliderNavi()
+        let navi = self.makeSliderNavi()
         let left = self.makeSideMenu()
-        mainFrame = UISidebarViewController(center: navigationView, andSidebarViewController: left)
+        mainFrame = UISidebarViewController(center: navi, andSidebarViewController: left)
         mainFrame!.sidebarWidth = screenWidth * 0.85
         // update layout
         mainFrame?.sidebarVC.view.frame = CGRect(x: CGFloat(left.view.frame.origin.x), y: CGFloat(left.view.frame.origin.y), width: CGFloat(screenWidth), height: CGFloat(screenHeight))
@@ -145,7 +159,7 @@ class HPZMainFrame: NSObject {
         let vc = HPZLoginViewController(nibName: "HPZLoginViewController", bundle: nil)
         (navigationView!).viewControllers = [vc]
     }
-
+    
     
     static func getNavi() -> HPZCutomNavigationController{
         if(mainFrame != nil) {

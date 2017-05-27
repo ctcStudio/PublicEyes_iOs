@@ -17,14 +17,25 @@ let screenSize                                  = screenBounds.size
 
 let screenWidth                                 = screenSize.width
 let screenHeight                                = screenSize.height
-let UserDefault_email                           = "user.default.email"
-let UserDefault_password                           = "user.default.password"
 
+let API_URL                                     = "http://acquyxenangdien.net/api"
+let API_LOGIN                                   = API_URL + "/login"
+let API_RESGISTER                               = API_URL + "/user"
+
+let UserDefault_email                           = "user.default.email"
+let UserDefault_password                        = "user.default.password"
+let UserDefault_fist_login                      = "user.default.first.login"
+
+let userDefault                                 = UserDefaults.standard
 func isActive() -> Bool {
-    let userDefauts = UserDefaults.standard
-    let email = userDefauts.string(forKey: UserDefault_email)
-    let password = userDefauts.string(forKey: UserDefault_password);
+    let email = userDefault.string(forKey: UserDefault_email)
+    let password = userDefault.string(forKey: UserDefault_password);
     return (email?.isEmpty == false && password?.isEmpty == false)
+}
+func clearUserData() -> Void {
+    userDefault.set("", forKey: UserDefault_email)
+    userDefault.set("", forKey: UserDefault_password)
+    userDefault.set(true, forKey: UserDefault_fist_login)
 }
 
 

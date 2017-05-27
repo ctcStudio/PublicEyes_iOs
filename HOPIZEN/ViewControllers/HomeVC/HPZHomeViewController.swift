@@ -18,7 +18,7 @@ class HPZHomeViewController: UIViewController, UINavigationControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        userDefault.set(false, forKey: UserDefault_fist_login)
         // Do any additional setup after loading the view.
         HPZMainFrame.showMenuIcon()
     }
@@ -41,6 +41,9 @@ class HPZHomeViewController: UIViewController, UINavigationControllerDelegate, U
     }
     
     @IBAction func takeVideo(_ sender: UIButton) {
+        if(UIImagePickerController.isSourceTypeAvailable(.camera) == false){
+            return
+        }
         imagePicker = UIImagePickerController.init()
         imagePicker.delegate = self
         imagePicker.sourceType = .camera

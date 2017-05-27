@@ -13,6 +13,7 @@ class SliderViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var doneSlider: UIButton!
+    @IBOutlet weak var skipSlider: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +22,22 @@ class SliderViewController: UIViewController, UIScrollViewDelegate {
         doneSlider.layer.cornerRadius = 0.5 * doneSlider.bounds.size.width
         doneSlider.clipsToBounds = true
         
-        let scrollViewWidth:CGFloat = self.scrollView.frame.width
-        let scrollViewHeight:CGFloat = self.scrollView.frame.height
+        let scrollViewWidth:CGFloat = screenWidth
+        let scrollViewHeight:CGFloat = screenHeight
+        self.scrollView.frame = CGRect(x:0, y:0,width:scrollViewWidth, height:scrollViewHeight)
         
         let imgOne = UIImageView(frame: CGRect(x:0, y:0,width:scrollViewWidth, height:scrollViewHeight))
         imgOne.image = UIImage(named: "bg_slider_1")
+        imgOne.contentMode = .scaleAspectFit
         let imgTwo = UIImageView(frame: CGRect(x:scrollViewWidth, y:0,width:scrollViewWidth, height:scrollViewHeight))
         imgTwo.image = UIImage(named: "bg_slider_2")
+        imgTwo.contentMode = .scaleAspectFit
         let imgThree = UIImageView(frame: CGRect(x:scrollViewWidth*2, y:0,width:scrollViewWidth, height:scrollViewHeight))
         imgThree.image = UIImage(named: "bg_slider_3")
+        imgThree.contentMode = .scaleAspectFit
         let imgFour = UIImageView(frame: CGRect(x:scrollViewWidth*3, y:0,width:scrollViewWidth, height:scrollViewHeight))
         imgFour.image = UIImage(named: "bg_slider_4")
+        imgFour.contentMode = .scaleAspectFit
         
         self.scrollView.addSubview(imgOne)
         self.scrollView.addSubview(imgTwo)
@@ -42,6 +48,8 @@ class SliderViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.delegate = self
         
         self.pageControl.currentPage = 0
+        self.skipSlider.isHidden = false
+        self.doneSlider.isHidden = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -55,5 +63,18 @@ class SliderViewController: UIViewController, UIScrollViewDelegate {
         let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
         // Change the indicator
         self.pageControl.currentPage = Int(currentPage);
+        if(pageControl.currentPage == 3) {
+            self.skipSlider.isHidden = true
+            self.doneSlider.isHidden = false
+        } else {
+            self.skipSlider.isHidden = false
+            self.doneSlider.isHidden = true
+        }
+    }
+    @IBAction func skip(_ sender: Any) {
+        HPZMainFrame.showHomeVC()
+    }
+    @IBAction func done(_ sender: Any) {
+        HPZMainFrame.showHomeVC()
     }
 }

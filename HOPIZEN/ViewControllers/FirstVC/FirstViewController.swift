@@ -83,9 +83,53 @@ extension FirstViewController {
                     let userName = (result as! NSDictionary).value(forKey: "name")
                     let userID = (result as! NSDictionary).value(forKey: "id")
                     print("facebook acc:", userName ?? "", userID ?? "")
+                    self.login(email: userName as! String, password: userID as! String)
                 }
             })
         }
+    }
+    
+    func login(email:String, password:String) {
+        if(email.isEmpty || password.isEmpty) {
+            let alert = UIAlertController(title: "Alert", message: "Xin lỗi, chúng tôi không thể kết nối tới facebook của bạn, hãy đăng ký bằng email", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    HPZMainFrame.showHomeVC()
+                    break
+                case .cancel:
+                    print("cancel")
+                    HPZMainFrame.showHomeVC()
+                    break
+                case .destructive:
+                    print("destructive")
+                    HPZMainFrame.showHomeVC()
+                    break
+                }
+            }))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        let params = NSMutableDictionary.init();
+        params.setObject(email, forKey: "email" as NSCopying)
+        params.setObject(password,forKey: "password" as NSCopying)
+        HPZWebservice.shareInstance.loginWithEmail(path:API_LOGIN,params:params,handler:{success , response in
+            if(success) {
+                if(response?.isKind(of: HPZLoginEntity.self))!{
+                    let loginEntity:HPZLoginEntity = response as! HPZLoginEntity
+                    if(loginEntity.code == 0) {
+                        HPZMainFrame.showSliderVC()
+                        userDefault.setValue(email, forKey: UserDefault_email)
+                        userDefault.setValue(password, forKey: UserDefault_password)
+                        return
+                    }
+                }
+            }
+            HPZMainFrame.showRegisterVC()
+            
+        }, entity:HPZLoginEntity(), isAthen:false)
+        
     }
 }
 

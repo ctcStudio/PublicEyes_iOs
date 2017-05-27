@@ -22,14 +22,16 @@ class HPZSlidingMenuViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func gotoComplaint(_ sender: Any) {
     }
-    */
+    
+    @IBAction func gotoCampaign(_ sender: Any) {
+    }
 
+    @IBAction func logout(_ sender: Any) {
+        HPZMainFrame.hidenMenu()
+        clearUserData()
+        HPZMainFrame.showFirstVC()
+    }
+    
 }

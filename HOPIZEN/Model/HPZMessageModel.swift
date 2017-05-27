@@ -1,14 +1,13 @@
 //
-//  HPZLoginEntity.swift
-//  HOPIZEN
+//  HPZMessageModel.swift
+//  PublicEyes
 //
-//  Created by Thuy Do Thanh on 12/13/16.
-//  Copyright © 2016 Thuy Do Thanh. All rights reserved.
+//  Created by Hung Hoang on 5/26/17.
+//  Copyright © 2017 Hoang Ngoc Hung. All rights reserved.
 //
 
-import UIKit
-
-class HPZLoginEntity: HPZBaseEntity {
+import Foundation
+class HPZMessageModel: HPZBaseEntity {
     var code:NSInteger?
     var message:String?
     
@@ -17,5 +16,5 @@ class HPZLoginEntity: HPZBaseEntity {
         let data:NSDictionary = dic.value(forKey: "Data") as! NSDictionary
         message = data.value(forKey: "Message") as? String
     }
-
+    
 }
