@@ -19,13 +19,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Facebook SDK
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        let naviRoot = UIViewController.init()
-        let navi = HPZCutomNavigationController(rootViewController: naviRoot)
-        navi.navigationBar.isTranslucent = false
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        let naviRoot = UIViewController.init()
+        naviRoot.view.frame = (self.window?.bounds)!
+        let img =  UIImageView(frame:(self.window?.bounds)!)
+        img.image = UIImage.init(named: "bg_splash")
+        naviRoot.view.addSubview(img)
+
+        let navi = HPZCutomNavigationController(rootViewController: naviRoot)
+        navi.navigationBar.isTranslucent = false
+        navi.navigationBar.isHidden = true
         self.window!.rootViewController = navi
         self.window!.makeKeyAndVisible()
+        
         UserDefaults.standard.register(defaults: [UserDefault_fist_login : true])
         // call api
         if(isActive()) {

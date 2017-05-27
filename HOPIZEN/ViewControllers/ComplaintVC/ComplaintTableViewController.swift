@@ -12,18 +12,46 @@ class ComplaintTableViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.getListComplaint()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    func clickBack(_ sender:UIButton!){
+        HPZMainFrame.showHomeVC()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func getListComplaint() {
+        HPZWebservice.shareInstance.getUserInfo(path:API_GET_COMPLAINT,params:NSDictionary(),handler:{success , response in
+            if(success) {
+                if(response?.isKind(of: ListComplaintModel.self))!{
+                    let listComplaint:ListComplaintModel = response as! ListComplaintModel
+                    if(listComplaint.code == 0) {
+                        return
+                    } else {
+                        let alert = UIAlertController(title: "Alert", message: listComplaint.message, preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+            let alert = UIAlertController(title: "Alert", message: "Kết nối server thất bại", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }, entity:ListComplaintModel())
+        
+    }
+
 
     // MARK: - Table view data source
 

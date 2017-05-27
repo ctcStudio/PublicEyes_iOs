@@ -23,6 +23,10 @@ class HPZHomeViewController: UIViewController, UINavigationControllerDelegate, U
         HPZMainFrame.showMenuIcon()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.getUserInfo()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -70,6 +74,34 @@ class HPZHomeViewController: UIViewController, UINavigationControllerDelegate, U
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
+    func getUserInfo() {
+        HPZWebservice.shareInstance.getUserInfo(path:API_GET_USER,params:NSDictionary(),handler:{success , response in
+            if(success) {
+                if(response?.isKind(of: HPZUserModel.self))!{
+                    let userInfo:HPZUserModel = response as! HPZUserModel
+                    if(userInfo.code == 0) {
+                        userDefault.set(userInfo.name, forKey: UserDefault_name)
+                        userDefault.set(userInfo.mobileNumber, forKey: UserDefault_mobile_number)
+                        userDefault.set(userInfo.address, forKey: UserDefault_address)
+                        userDefault.set(userInfo.idNumber, forKey: UserDefault_id_number)
+                        userDefault.set(userInfo.point, forKey: UserDefault_point)
+                        HPZMainFrame.updateLeftMenu(userInfo: userInfo)
+                        return
+                    } else {
+                        let alert = UIAlertController(title: "Alert", message: userInfo.message, preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+            let alert = UIAlertController(title: "Alert", message: "Kết nối server thất bại", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }, entity:HPZUserModel())
+        
+    }
+
 }
 
 

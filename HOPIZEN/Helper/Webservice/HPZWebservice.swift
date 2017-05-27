@@ -46,7 +46,11 @@ class HPZWebservice: NSObject {
                         isAuthen:Bool,
                         responseHandler:@escaping ServerResponseHandler) -> Void {
         print("\(self.makeFullAPIMethodWithAction(acction: path!, isAuthen: isAuthen)) params - > \(params!)")
-        
+        if(isAuthen) {
+            let email = userDefault.string(forKey: UserDefault_email) ?? ""
+            let password = userDefault.string(forKey: UserDefault_password) ?? ""
+            self.requestManager!.requestSerializer.setAuthorizationHeaderFieldWithUsername(email, password: password)
+        }
         self.requestManager!.requestSerializer.timeoutInterval = TimeInterval(HPZRequestConstant.HPZTimeout)
         self.requestManager!.get(self.makeFullAPIMethodWithAction(acction: path!, isAuthen: isAuthen), parameters: params, progress: nil, success: {(task, responseObject) -> Void in
             print("responseObject ->> \(responseObject)")
@@ -73,6 +77,11 @@ class HPZWebservice: NSObject {
                           isAuthen:Bool,
                           responseHandler:@escaping ServerResponseHandler) -> Void {
         print("\(self.makeFullAPIMethodWithAction(acction: path!, isAuthen: isAuthen)) -> params ->>\(params!)")
+        if(isAuthen) {
+            let email = userDefault.string(forKey: UserDefault_email) ?? ""
+            let password = userDefault.string(forKey: UserDefault_password) ?? ""
+            self.requestManager!.requestSerializer.setAuthorizationHeaderFieldWithUsername(email, password: password)
+        }
         
         self.requestManager!.post(self.makeFullAPIMethodWithAction(acction: path!, isAuthen: isAuthen), parameters:params //self.convertParamsToJson(params: params!)
             , progress: nil, success: {(task, responseObject) -> Void in
@@ -134,5 +143,20 @@ extension HPZWebservice {
         self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: isAthen, responseHandler: handler)
     }
     
+    func getComplaintList(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendGETRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
+    }
+    
+    func getCategoryList(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendGETRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
+    }
+    
+    func getCampaignList(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendGETRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
+    }
+
+    func getUserInfo(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendGETRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
+    }
     
 }

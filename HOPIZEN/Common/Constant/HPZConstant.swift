@@ -21,10 +21,21 @@ let screenHeight                                = screenSize.height
 let API_URL                                     = "http://acquyxenangdien.net/api"
 let API_LOGIN                                   = API_URL + "/login"
 let API_RESGISTER                               = API_URL + "/user"
+let API_GET_USER                                = API_URL + "/user/getbyuser"
+let API_GET_CATEGORY                            = API_URL + "/category/getallcategory"
+let API_GET_COMPLAINT                           = API_URL + "/violation/getbyuser"
+let API_GET_CAMPAIGN                            = API_URL + "/operation"
+let API_UPLOAD_FILE                             = API_URL + "/violation/file"
+let API_UPDATE_COMPLAINT                        = API_URL + "/violation"
 
 let UserDefault_email                           = "user.default.email"
 let UserDefault_password                        = "user.default.password"
 let UserDefault_fist_login                      = "user.default.first.login"
+let UserDefault_name                            = "user.default.name"
+let UserDefault_mobile_number                   = "user.default.mobile_number"
+let UserDefault_id_number                       = "user.default.id.number"
+let UserDefault_address                         = "user.default.address"
+let UserDefault_point                           = "user.default.point"
 
 let userDefault                                 = UserDefaults.standard
 func isActive() -> Bool {

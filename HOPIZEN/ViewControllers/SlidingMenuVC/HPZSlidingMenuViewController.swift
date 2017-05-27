@@ -10,6 +10,8 @@ import UIKit
 
 class HPZSlidingMenuViewController: UIViewController {
 
+    @IBOutlet weak var tvName: UILabel!
+    @IBOutlet weak var tvPoint: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,11 +23,20 @@ class HPZSlidingMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func updateInfo(userInfo: HPZUserModel) -> Void {
+        tvName.text = userInfo.name
+        tvPoint.text = String.init(userInfo.point)
+    }
+    
 
     @IBAction func gotoComplaint(_ sender: Any) {
+        HPZMainFrame.hidenMenu()
+        HPZMainFrame.showMyComplaintVC()
     }
     
     @IBAction func gotoCampaign(_ sender: Any) {
+        HPZMainFrame.hidenMenu()
+        HPZMainFrame.showCampaignVC()
     }
 
     @IBAction func logout(_ sender: Any) {
@@ -34,4 +45,6 @@ class HPZSlidingMenuViewController: UIViewController {
         HPZMainFrame.showFirstVC()
     }
     
+    @IBAction func changeToMoney(_ sender: Any) {
+    }
 }

@@ -90,12 +90,12 @@ class HPZMainFrame: NSObject {
     }
     
     static func showSliderVC() -> Void {
-//        if(userDefault.bool(forKey: UserDefault_fist_login) == true) {
+        if(userDefault.bool(forKey: UserDefault_fist_login) == true) {
             let vc = SliderViewController(nibName: "SliderViewController", bundle: nil)
             (navigationView!).viewControllers = [vc]
-//        } else {
-//            showHomeVC()
-//        }
+        } else {
+            showHomeVC()
+        }
     }
     
     static func showHomeVC() -> Void {
@@ -158,6 +158,36 @@ class HPZMainFrame: NSObject {
     static func showLoginVC() -> Void {
         let vc = HPZLoginViewController(nibName: "HPZLoginViewController", bundle: nil)
         (navigationView!).viewControllers = [vc]
+    }
+    
+    /*
+    static func showMyComplaintVC() -> Void {
+        let vc = ComplaintTableViewController(nibName: "ComplaintTableViewController", bundle: nil)
+        (mainFrame?.centerVC as! HPZCutomNavigationController).viewControllers = [vc]
+    }
+     */
+    static func showMyComplaintVC() -> Void {
+        let vc = ComplaintTableViewController(nibName: "ComplaintTableViewController", bundle: nil)
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            navigationView?.navigationBar.isHidden = false;
+            navigationView?.navigationBar.isTranslucent = false
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        mainFrame = nil;
+    }
+    
+    static func showCampaignVC() -> Void {
+        let vc = NewsTableViewController(nibName: "NewsTableViewController", bundle: nil)
+        (mainFrame?.centerVC as! HPZCutomNavigationController).viewControllers = [vc]
+    }
+    
+    static func updateLeftMenu(userInfo: HPZUserModel) -> Void {
+        if(mainFrame != nil) {
+            (mainFrame?.sidebarVC as! HPZSlidingMenuViewController).updateInfo(userInfo: userInfo)
+        }
     }
     
     
