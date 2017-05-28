@@ -15,7 +15,7 @@ class ComplaintTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Vi Phạm"
         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

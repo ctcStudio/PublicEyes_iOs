@@ -23,7 +23,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Vị trí của bạn"
         // Do any additional setup after loading the view.
     }
     

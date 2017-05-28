@@ -15,13 +15,18 @@ class NewsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Chiến dịch"
+         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
         self.getListCampaign()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         self.tableView.register(UINib.init(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIndentifier)
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 250
+    }
+    
+    func clickBack(_ sender:UIButton!){
+        HPZMainFrame.showHomeVC()
     }
     
     override func didReceiveMemoryWarning() {

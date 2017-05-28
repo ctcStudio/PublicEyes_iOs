@@ -225,7 +225,9 @@ class HPZMainFrame: NSObject {
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
             navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = false
+            navigationView?.navigationBar.isTranslucent = true
+            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationView?.navigationBar.shadowImage = UIImage()
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
@@ -235,7 +237,20 @@ class HPZMainFrame: NSObject {
     
     static func showCampaignVC() -> Void {
         let vc = NewsTableViewController(nibName: "NewsTableViewController", bundle: nil)
-        (mainFrame?.centerVC as! HPZCutomNavigationController).viewControllers = [vc]
+//        (mainFrame?.centerVC as! HPZCutomNavigationController).viewControllers = [vc]
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            navigationView?.navigationBar.isHidden = false;
+            navigationView?.navigationBar.isTranslucent = true
+            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationView?.navigationBar.shadowImage = UIImage()
+        
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        mainFrame = nil;
+
     }
     
     static func updateLeftMenu(userInfo: HPZUserModel) -> Void {
