@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationViewController" customModule="PublicEyes" customModuleProvider="target">
             <connections>
+                <outlet property="tvLocation" destination="Tb8-s0-nuw" id="oVR-p6-GqQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_public_eyes" translatesAutoresizingMaskIntoConstraints="NO" id="V6o-r3-WL7">
-                    <rect key="frame" x="81.5" y="40" width="212" height="70"/>
+                    <rect key="frame" x="82" y="40" width="212" height="70"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="V6o-r3-WL7" secondAttribute="height" multiplier="106:35" id="2mH-MU-WJV"/>
                         <constraint firstAttribute="height" constant="70" id="Deu-Cf-SzB"/>
@@ -56,7 +57,7 @@
                             <color key="backgroundColor" red="1" green="0.7740655541" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPb-zz-Yu1">
-                            <rect key="frame" x="308" y="13.5" width="25" height="25"/>
+                            <rect key="frame" x="308" y="14" width="25" height="25"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="25" id="BXF-ug-Fe2"/>
                                 <constraint firstAttribute="height" constant="25" id="mZ1-L7-bXj"/>
