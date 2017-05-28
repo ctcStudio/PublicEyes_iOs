@@ -18,6 +18,7 @@
 		6C80B3CE1EDA6A470044CB16 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C80B3CC1EDA6A470044CB16 /* CategoryTableViewCell.swift */; };
 		6C80B3CF1EDA6A470044CB16 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C80B3CD1EDA6A470044CB16 /* CategoryTableViewCell.xib */; };
 		6C80B3D11EDA6DF50044CB16 /* ListCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C80B3D01EDA6DF50044CB16 /* ListCategoryModel.swift */; };
+		6C80B3D31EDA8ABC0044CB16 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C80B3D21EDA8ABC0044CB16 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		B72AA0901ED12EC30091CDDA /* ComplaintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AA08E1ED12EC30091CDDA /* ComplaintTableViewCell.swift */; };
 		B72AA0911ED12EC30091CDDA /* ComplaintTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72AA08F1ED12EC30091CDDA /* ComplaintTableViewCell.xib */; };
 		B72AA0941ED133A90091CDDA /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AA0921ED133A90091CDDA /* NewsTableViewCell.swift */; };
@@ -84,6 +85,7 @@
 		6C80B3CC1EDA6A470044CB16 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = CategoryVC/CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		6C80B3CD1EDA6A470044CB16 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewCell.xib; path = CategoryVC/CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		6C80B3D01EDA6DF50044CB16 /* ListCategoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCategoryModel.swift; sourceTree = "<group>"; };
+		6C80B3D21EDA8ABC0044CB16 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B72AA08E1ED12EC30091CDDA /* ComplaintTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComplaintTableViewCell.swift; path = ComplaintVC/ComplaintTableViewCell.swift; sourceTree = "<group>"; };
 		B72AA08F1ED12EC30091CDDA /* ComplaintTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ComplaintTableViewCell.xib; path = ComplaintVC/ComplaintTableViewCell.xib; sourceTree = "<group>"; };
 		B72AA0921ED133A90091CDDA /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = NewsVC/NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C80B3D31EDA8ABC0044CB16 /* CoreLocation.framework in Frameworks */,
 				B77ABAA41ED05103001BD5F2 /* Pods_PublicEyes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +287,7 @@
 		BAE369B0C67A4FF53593091D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6C80B3D21EDA8ABC0044CB16 /* CoreLocation.framework */,
 				CF08C02A27DB2FDEA30C8534 /* Pods_PublicEyes.framework */,
 			);
 			name = Frameworks;

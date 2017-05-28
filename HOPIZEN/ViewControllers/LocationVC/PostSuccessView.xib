@@ -1,20 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostSuccessView" customModule="PublicEyes"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostSuccessView" customModule="PublicEyes">
+            <connections>
+                <outlet property="btnViewComplaint" destination="eM5-LP-sne" id="0we-1b-jWz"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view alpha="0.5" contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVj-uG-ITp">
+                    <rect key="frame" x="27" y="153.5" width="320" height="360"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_thank" translatesAutoresizingMaskIntoConstraints="NO" id="P9u-VL-OnX">
+                            <rect key="frame" x="120" y="30" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="7xD-ow-sWL"/>
+                                <constraint firstAttribute="height" constant="100" id="PMu-53-aIU"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xin cảm ơn! Phản hồi của bạn đã được ghi nhận thành công" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgk-y8-IPo">
+                            <rect key="frame" x="35" y="145" width="250" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Pen-Yn-70y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-LP-sne">
+                            <rect key="frame" x="30" y="230" width="260" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="77r-Ij-AEs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="Xem phản hồi trong thành phố">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="gotoCampaint:" destination="-1" eventType="touchUpInside" id="501-iR-g3j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-dY-dEh">
+                            <rect key="frame" x="30" y="295" width="260" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="XpV-z4-nbZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <state key="normal" title="Viết một phản hồi khác" backgroundImage="bg_post"/>
+                            <connections>
+                                <action selector="gotoHome:" destination="-1" eventType="touchUpInside" id="HC2-Ac-968"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Rgk-y8-IPo" firstAttribute="leading" secondItem="QVj-uG-ITp" secondAttribute="leading" constant="35" id="026-U4-BDG"/>
+                        <constraint firstItem="Rgk-y8-IPo" firstAttribute="top" secondItem="P9u-VL-OnX" secondAttribute="bottom" constant="15" id="0hR-0I-m0w"/>
+                        <constraint firstItem="dqZ-dY-dEh" firstAttribute="top" secondItem="eM5-LP-sne" secondAttribute="bottom" constant="25" id="2hI-t6-OkQ"/>
+                        <constraint firstAttribute="width" constant="320" id="7y1-HN-01T"/>
+                        <constraint firstItem="P9u-VL-OnX" firstAttribute="leading" secondItem="QVj-uG-ITp" secondAttribute="leading" constant="120" id="ABu-ky-RyW"/>
+                        <constraint firstItem="eM5-LP-sne" firstAttribute="leading" secondItem="QVj-uG-ITp" secondAttribute="leading" constant="30" id="Eqg-Zz-f79"/>
+                        <constraint firstItem="Rgk-y8-IPo" firstAttribute="top" secondItem="P9u-VL-OnX" secondAttribute="bottom" constant="15" id="I52-dd-BWq"/>
+                        <constraint firstAttribute="trailing" secondItem="Rgk-y8-IPo" secondAttribute="trailing" constant="35" id="JKR-yr-PZQ"/>
+                        <constraint firstAttribute="trailing" secondItem="P9u-VL-OnX" secondAttribute="trailing" constant="100" id="Jqp-nr-wIQ"/>
+                        <constraint firstAttribute="trailing" secondItem="dqZ-dY-dEh" secondAttribute="trailing" constant="30" id="dwQ-eX-PWe"/>
+                        <constraint firstItem="eM5-LP-sne" firstAttribute="top" secondItem="Rgk-y8-IPo" secondAttribute="bottom" constant="35" id="i49-Cy-ClV"/>
+                        <constraint firstAttribute="trailing" secondItem="eM5-LP-sne" secondAttribute="trailing" constant="30" id="jdq-LR-nd1"/>
+                        <constraint firstItem="dqZ-dY-dEh" firstAttribute="leading" secondItem="QVj-uG-ITp" secondAttribute="leading" constant="30" id="kCU-Gw-W4F"/>
+                        <constraint firstItem="P9u-VL-OnX" firstAttribute="top" secondItem="QVj-uG-ITp" secondAttribute="top" constant="30" id="viE-Nh-vAc"/>
+                        <constraint firstAttribute="height" constant="360" id="zqX-VH-juH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QVj-uG-ITp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KBn-HI-dEb"/>
+                <constraint firstItem="QVj-uG-ITp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wVp-X4-WbS"/>
+            </constraints>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="bg_post" width="150" height="27"/>
+        <image name="ic_thank" width="64" height="64"/>
+    </resources>
 </document>

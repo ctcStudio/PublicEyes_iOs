@@ -10,6 +10,7 @@ import UIKit
 
 class PostSuccessView: UIView {
 
+    @IBOutlet weak var btnViewComplaint: UIButton!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -18,4 +19,10 @@ class PostSuccessView: UIView {
     }
     */
 
+    @IBAction func gotoCampaint(_ sender: Any) {
+        HPZMainFrame.showMyComplaintVC()
+    }
+    @IBAction func gotoHome(_ sender: Any) {
+        HPZMainFrame.showHomeVC()
+    }
 }
