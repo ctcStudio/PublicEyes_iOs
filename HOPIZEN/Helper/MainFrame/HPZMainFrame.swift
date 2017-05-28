@@ -144,6 +144,60 @@ class HPZMainFrame: NSObject {
         mainFrame = nil;
     }
     
+    static func showCategoryPhoto(image:UIImage, path:String!, des:String) -> Void {
+        let vc = CategoryTableViewController(nibName: "CategoryTableViewController", bundle: nil)
+        vc.image = image
+        vc.path = path
+        vc.des = des
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            navigationView?.navigationBar.isHidden = false;
+            navigationView?.navigationBar.isTranslucent = true
+            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationView?.navigationBar.shadowImage = UIImage()
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        mainFrame = nil;
+    }
+    
+    static func showCategoryVideo(videoUrl:NSURL, path:String!, des:String) -> Void {
+        let vc = CategoryTableViewController(nibName: "CategoryTableViewController", bundle: nil)
+        vc.videoUrl = videoUrl
+        vc.path = path
+        vc.des = des
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            navigationView?.navigationBar.isHidden = false;
+            navigationView?.navigationBar.isTranslucent = true
+            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationView?.navigationBar.shadowImage = UIImage()
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        mainFrame = nil;
+    }
+    
+    static func showLocation(category:CategoryModel!, path:String!, des:String) -> Void {
+        let vc = LocationViewController(nibName: "LocationViewController", bundle: nil)
+        vc.category = category
+        vc.path = path
+        vc.des = des
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            navigationView?.navigationBar.isHidden = false;
+            navigationView?.navigationBar.isTranslucent = true
+            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            navigationView?.navigationBar.shadowImage = UIImage()
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        mainFrame = nil;
+    }
+    
     static func showMenuIcon() -> Void {
         getNavi().navigationBar.isTranslucent = true;
         getNavi().navigationBar.isHidden = false;

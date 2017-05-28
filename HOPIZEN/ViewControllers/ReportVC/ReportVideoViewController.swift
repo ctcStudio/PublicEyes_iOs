@@ -11,6 +11,8 @@ import UIKit
 class ReportVideoViewController: UIViewController {
     var videoUrl:NSURL!
 
+    @IBOutlet weak var tvDescription: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,11 +24,40 @@ class ReportVideoViewController: UIViewController {
         HPZMainFrame.showHomeVC()
     }
 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func continues(_ sender: Any) {
+        do {
+            let videoData = try Data.init(contentsOf: videoUrl as URL, options: .mappedIfSafe)
+            
+            HPZWebservice.shareInstance.uploadFile(path: API_UPLOAD_FILE, fileData: videoData, handler:{success , response in
+                if(success) {
+                    if(response?.isKind(of: HPZMessageModel.self))!{
+                        let message:HPZMessageModel = response as! HPZMessageModel
+                        if(message.code == 0) {
+                            HPZMainFrame.showCategoryVideo(videoUrl: self.videoUrl, path: message.path, des: self.tvDescription.text)
+                            return
+                        } else {
+                            let alert = UIAlertController(title: "Alert", message: message.message, preferredStyle: UIAlertControllerStyle.alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                            self.present(alert, animated: true, completion: nil)
+                        }
+                    }
+                }
+                let alert = UIAlertController(title: "Alert", message: "Kết nối server thất bại", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                
+            }, entity:HPZMessageModel())
+        } catch {
+            print(error)
+            return
+        }
+    }
 
     /*
     // MARK: - Navigation

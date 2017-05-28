@@ -101,6 +101,22 @@ class HPZWebservice: NSObject {
         
     }
     
+    func sendMultiPartFile(path: String,params:NSDictionary?, fileData: Data!, responseObjectClass:HPZBaseEntity!,
+                           responseHandler:@escaping ServerResponseHandler) -> Void {
+        self.requestManager!.post(path, parameters: params, constructingBodyWith: { (data: AFMultipartFormData!) in
+            data.appendPart(withForm: fileData, name: "")
+        }, progress: nil,success: {(task, responseObject) -> Void in
+             print("responseObject ->> \(String(describing: responseObject))")
+              responseObjectClass.parserResponse(dic:(responseObject as? NSDictionary)!)
+            responseHandler(true, responseObjectClass);
+                                    
+        }, failure: { (task, responseOBJ) -> Void in
+            print(task?.error ?? "error  null")
+            responseHandler(false, nil);
+            
+        })
+    }
+    
     
     private func convertParamsToJson(params:NSDictionary) -> String {
         
@@ -157,6 +173,13 @@ extension HPZWebservice {
 
     func getUserInfo(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
         self.sendGETRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
+    }
+    
+    func updateComplaint(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
+    }
+    func uploadFile(path:String,fileData: Data!,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendMultiPartFile(path: path,params: NSDictionary(), fileData: fileData, responseObjectClass: entity, responseHandler: handler)
     }
     
 }

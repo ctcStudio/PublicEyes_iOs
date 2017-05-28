@@ -1,34 +1,43 @@
 //
-//  ComplaintTableViewController.swift
+//  CategoryTableViewController.swift
 //  PublicEyes
 //
-//  Created by Hung Hoang on 5/20/17.
+//  Created by HungHN on 5/28/17.
 //  Copyright © 2017 Hoang Ngoc Hung. All rights reserved.
 //
 
 import UIKit
 
-class ComplaintTableViewController: UITableViewController {
+class CategoryTableViewController: UITableViewController {
+    var image:UIImage?
+    var videoUrl:NSURL?
+    var path:String!
+    var des: String!
     
-    let cellReuseIdentifier = "complaintCell"
-    var complaintModels: NSMutableArray = []
+    let reuseIdentifier = "categoryCell"
+    
+    var categoryList:NSMutableArray = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-        self.getListComplaint()
-        
-        // Do any additional setup after loading the view.
-        self.tableView.register(UINib.init(nibName: "ComplaintTableViewCell", bundle: nil), forCellReuseIdentifier: cellReuseIdentifier)
+        self.tableView.register(UINib.init(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIdentifier)
         self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 200
+        self.tableView.estimatedRowHeight = 50
+        
+        HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
     }
     
     func clickBack(_ sender:UIButton!){
-        HPZMainFrame.showHomeVC()
+        if(image != nil) {
+            HPZMainFrame.showReportPhoto(image: image!)
+        } else if(videoUrl != nil) {
+            HPZMainFrame.showReportVideo(videoUrl: videoUrl!)
+        } else{
+            HPZMainFrame.showHomeVC()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,19 +45,19 @@ class ComplaintTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getListComplaint() {
-        HPZWebservice.shareInstance.getUserInfo(path:API_GET_COMPLAINT,params:NSDictionary(),handler:{success , response in
+    func getListCampaign() {
+        HPZWebservice.shareInstance.getUserInfo(path:API_GET_CATEGORY,params:NSDictionary(),handler:{success , response in
             if(success) {
-                if(response?.isKind(of: ListComplaintModel.self))!{
-                    let listComplaint:ListComplaintModel = response as! ListComplaintModel
-                    if(listComplaint.code == 0) {
-                        if(listComplaint.complaintList.count != 0) {
-                            self.complaintModels = listComplaint.complaintList
+                if(response?.isKind(of: ListCategoryModel.self))!{
+                    let list:ListCategoryModel = response as! ListCategoryModel
+                    if(list.code == 0) {
+                        if(list.categoryList.count != 0) {
+                            self.categoryList = list.categoryList
                             self.tableView.reloadData()
                         }
                         return
                     } else {
-                        let alert = UIAlertController(title: "Alert", message: listComplaint.message, preferredStyle: UIAlertControllerStyle.alert)
+                        let alert = UIAlertController(title: "Alert", message: list.message, preferredStyle: UIAlertControllerStyle.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
                     }
@@ -58,7 +67,7 @@ class ComplaintTableViewController: UITableViewController {
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
-        }, entity:ListComplaintModel())
+        }, entity:ListCategoryModel())
         
     }
     
@@ -72,19 +81,24 @@ class ComplaintTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return complaintModels.count
+        return categoryList.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! CategoryTableViewCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! ComplaintTableViewCell
+        // Configure the cell...
+        let category = categoryList.object(at: indexPath.row) as!CategoryModel
+        cell.updateView(category: category)
         
-        let complaint = complaintModels.object(at: indexPath.row) as! ComplaintModel
-        cell.updateView(complaint: complaint)
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = categoryList.object(at: indexPath.row) as!CategoryModel
+        HPZMainFrame.showLocation(category: category, path: path, des: des)
+    }
     
     /*
      // Override to support conditional editing of the table view.

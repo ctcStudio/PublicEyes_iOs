@@ -9,6 +9,10 @@
 import UIKit
 
 class LocationViewController: UIViewController {
+    
+    var path:String!
+    var des: String!
+    var category:CategoryModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,11 @@ class LocationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func getCurrentAddress(_ sender: Any) {
+    }
 
+    @IBAction func continues(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

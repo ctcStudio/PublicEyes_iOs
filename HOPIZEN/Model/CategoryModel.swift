@@ -29,4 +29,9 @@ class CategoryModel: HPZBaseEntity {
         name = data.value(forKey: "name") as? String
     }
     
+    func parserDataResponse(data:NSDictionary) -> Void {
+        id = data.value(forKey: "category_id") as? Int
+        image = data.value(forKey: "path") as? String
+        name = data.value(forKey: "name") as? String
+    }
 }

@@ -9,16 +9,32 @@
 import UIKit
 
 class ComplaintTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var txtContent: UILabel!
+    @IBOutlet weak var tvDate: UILabel!
+    @IBOutlet weak var tvAddress: UILabel!
+    @IBOutlet weak var imgComplaint: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
+    }
+    
+    func updateView(complaint:ComplaintModel) -> Void {
+        self.txtContent.text = complaint.categoryName
+        self.tvDate.text = complaint.time
+        self.tvAddress.text = complaint.address
+        if(complaint.image != nil && complaint.image?.isEmpty == false) {
+            let url = URL.init(string: getImageUrl(path: complaint.image!))
+            self.imgComplaint.setImageWith(url!)
+            self.imgComplaint.contentMode = .scaleAspectFit
+        }
     }
     
 }

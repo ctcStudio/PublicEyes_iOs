@@ -9,43 +9,76 @@
 import UIKit
 
 class NewsTableViewController: UITableViewController {
-        
+    
+    let reuseIndentifier = "newsCell"
+    var campaignList:NSMutableArray = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.getListCampaign()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.register(UINib.init(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: reuseIndentifier)
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 250
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func getListCampaign() {
+        HPZWebservice.shareInstance.getUserInfo(path:API_GET_CAMPAIGN,params:NSDictionary(),handler:{success , response in
+            if(success) {
+                if(response?.isKind(of: ListCampaignModel.self))!{
+                    let listCampaign:ListCampaignModel = response as! ListCampaignModel
+                    if(listCampaign.code == 0) {
+                        if(listCampaign.campaignList.count != 0) {
+                            self.campaignList = listCampaign.campaignList
+                            self.tableView.reloadData()
+                        }
+                        return
+                    } else {
+                        let alert = UIAlertController(title: "Alert", message: listCampaign.message, preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+            }
+            let alert = UIAlertController(title: "Alert", message: "Kết nối server thất bại", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }, entity:ListCampaignModel())
+        
+    }
+
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return campaignList.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIndentifier, for: indexPath) as! NewsTableViewCell
 
         // Configure the cell...
+        let campaign = campaignList.object(at: indexPath.row) as!CampaignModel
+        cell.updateView(campaign: campaign)
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

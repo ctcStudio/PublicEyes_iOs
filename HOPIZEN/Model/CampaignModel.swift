@@ -38,4 +38,14 @@ class CampaignModel: HPZBaseEntity {
         point = (data.value(forKey: "bonusPoint") as? Int) ?? 0
     }
     
+    func parserDataResponse(data:NSDictionary) -> Void {
+        id = data.value(forKey: "operation_id") as? Int
+        image = data.value(forKey: "image") as? String
+        tile = data.value(forKey: "name") as? String
+        fromDate = data.value(forKey: "date_from") as? String
+        toDate = data.value(forKey: "date_to") as? String
+        content = data.value(forKey: "description") as? String
+        point = (data.value(forKey: "bonusPoint") as? Int) ?? 0
+    }
+    
 }

@@ -18,6 +18,7 @@ let screenSize                                  = screenBounds.size
 let screenWidth                                 = screenSize.width
 let screenHeight                                = screenSize.height
 
+let IMAGE_URL                                   = "http://acquyxenangdien.net"
 let API_URL                                     = "http://acquyxenangdien.net/api"
 let API_LOGIN                                   = API_URL + "/login"
 let API_RESGISTER                               = API_URL + "/user"
@@ -47,6 +48,10 @@ func clearUserData() -> Void {
     userDefault.set("", forKey: UserDefault_email)
     userDefault.set("", forKey: UserDefault_password)
     userDefault.set(true, forKey: UserDefault_fist_login)
+}
+
+func getImageUrl(path:String) -> String {
+    return (IMAGE_URL + path)
 }
 
 

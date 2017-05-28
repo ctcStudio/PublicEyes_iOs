@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="66" id="KGk-i7-Jjw" customClass="CategoryTableViewCell" customModule="PublicEyes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tvP-Ma-6Kh">
+                        <rect key="frame" x="10" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="1iE-gm-Zdn"/>
+                            <constraint firstAttribute="width" constant="40" id="xTh-Zx-aXX"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkS-C1-kjN">
+                        <rect key="frame" x="60" y="5" width="250" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="mHW-3R-zDn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tkS-C1-kjN" secondAttribute="trailing" constant="10" id="KVd-Sj-uqc"/>
+                    <constraint firstItem="tkS-C1-kjN" firstAttribute="leading" secondItem="tvP-Ma-6Kh" secondAttribute="trailing" constant="10" id="PEW-GJ-OPK"/>
+                    <constraint firstItem="tkS-C1-kjN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VNu-9U-Eld"/>
+                    <constraint firstItem="tvP-Ma-6Kh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZYa-PV-c29"/>
+                    <constraint firstItem="tvP-Ma-6Kh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vor-o1-0lN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgCategory" destination="tvP-Ma-6Kh" id="LBw-Az-AQ4"/>
+                <outlet property="tvCategogy" destination="tkS-C1-kjN" id="php-98-Rpl"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="63"/>
+        </tableViewCell>
+    </objects>
+</document>
