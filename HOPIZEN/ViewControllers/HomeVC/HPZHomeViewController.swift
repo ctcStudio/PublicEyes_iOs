@@ -9,6 +9,7 @@
 import UIKit
 import SwiftSocket
 import Foundation
+import MobileCoreServices
 
 class HPZHomeViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
@@ -51,8 +52,9 @@ class HPZHomeViewController: UIViewController, UINavigationControllerDelegate, U
         imagePicker = UIImagePickerController.init()
         imagePicker.delegate = self
         imagePicker.sourceType = .camera
+        imagePicker.mediaTypes = [kUTTypeMovie as String]
         imagePicker.cameraCaptureMode = .video
-        imagePicker.videoMaximumDuration = 1.0
+        imagePicker.videoMaximumDuration = 10.0
         imagePicker.showsCameraControls = true
         present(imagePicker, animated: true, completion: nil)
         isTakePhoto = false

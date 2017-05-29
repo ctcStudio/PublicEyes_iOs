@@ -15,5 +15,8 @@
 #import <KeychainItemWrapper/KeychainItemWrapper.h>
 #import "Communicator.h"
 #import "HPZSoketXXXXX.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+@import SVProgressHUD;
+@import IQKeyboardManagerSwift;
 
 #endif /* Bridging_Header_h */

@@ -93,6 +93,7 @@ class HPZMainFrame: NSObject {
         if(userDefault.bool(forKey: UserDefault_fist_login) == true) {
             let vc = SliderViewController(nibName: "SliderViewController", bundle: nil)
             (navigationView!).viewControllers = [vc]
+             navigationView?.navigationBar.isHidden = true;
         } else {
             showHomeVC()
         }
@@ -117,14 +118,14 @@ class HPZMainFrame: NSObject {
         vc.image = image;
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
-            navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = true
-            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationView?.navigationBar.shadowImage = UIImage()
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
         }
+        
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
         mainFrame = nil;
     }
     
@@ -133,14 +134,14 @@ class HPZMainFrame: NSObject {
         vc.videoUrl = videoUrl;
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
-            navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = true
-            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationView?.navigationBar.shadowImage = UIImage()
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
         }
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+
         mainFrame = nil;
     }
     
@@ -151,14 +152,14 @@ class HPZMainFrame: NSObject {
         vc.des = des
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
-            navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = true
-            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationView?.navigationBar.shadowImage = UIImage()
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
         }
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+
         mainFrame = nil;
     }
     
@@ -169,14 +170,14 @@ class HPZMainFrame: NSObject {
         vc.des = des
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
-            navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = true
-            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationView?.navigationBar.shadowImage = UIImage()
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
         }
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+
         mainFrame = nil;
     }
     
@@ -187,14 +188,14 @@ class HPZMainFrame: NSObject {
         vc.des = des
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
-            navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = true
-            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationView?.navigationBar.shadowImage = UIImage()
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
         }
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+
         mainFrame = nil;
     }
     
@@ -224,14 +225,14 @@ class HPZMainFrame: NSObject {
         let vc = ComplaintTableViewController(nibName: "ComplaintTableViewController", bundle: nil)
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
-            navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = true
-            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationView?.navigationBar.shadowImage = UIImage()
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
         }
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+
         mainFrame = nil;
     }
     
@@ -240,15 +241,16 @@ class HPZMainFrame: NSObject {
 //        (mainFrame?.centerVC as! HPZCutomNavigationController).viewControllers = [vc]
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
-            navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = true
-            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationView?.navigationBar.shadowImage = UIImage()
+            //navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+            //navigationView?.navigationBar.shadowImage = UIImage()
         
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
         }
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
         mainFrame = nil;
 
     }

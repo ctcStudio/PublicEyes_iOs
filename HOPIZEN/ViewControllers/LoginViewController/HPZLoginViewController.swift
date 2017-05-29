@@ -19,8 +19,9 @@ class HPZLoginViewController: UIViewController {
 
         
         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
-        
+        hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
+        
     }
     
     func clickBack(_ sender:UIButton!){

@@ -23,8 +23,7 @@ class SliderViewController: UIViewController, UIScrollViewDelegate {
         doneSlider.clipsToBounds = true
         
         let scrollViewWidth:CGFloat = screenWidth
-        let scrollViewHeight:CGFloat = screenHeight
-        self.scrollView.frame = CGRect(x:0, y:0,width:scrollViewWidth, height:scrollViewHeight)
+        let scrollViewHeight:CGFloat = screenHeight - statusBarHeight
         
         let imgOne = UIImageView(frame: CGRect(x:0, y:0,width:scrollViewWidth, height:scrollViewHeight))
         imgOne.image = UIImage(named: "bg_slider_1")
@@ -45,6 +44,7 @@ class SliderViewController: UIViewController, UIScrollViewDelegate {
         self.scrollView.addSubview(imgFour)
         
         self.scrollView.contentSize = CGSize(width:scrollViewWidth * 4, height:scrollViewHeight)
+        self.scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.scrollView.delegate = self
         
         self.pageControl.currentPage = 0

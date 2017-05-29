@@ -10,13 +10,13 @@ import UIKit
 
 let APP_DELEGATE = UIApplication.shared.delegate as! AppDelegate
 
-let naviColor                                   = 0x5456AC
+let naviColor                                   = 0x101010
 
 let screenBounds                                = UIScreen.main.bounds
 let screenSize                                  = screenBounds.size
-
 let screenWidth                                 = screenSize.width
 let screenHeight                                = screenSize.height
+let statusBarHeight                             = UIApplication.shared.statusBarFrame.height
 
 let IMAGE_URL                                   = "http://acquyxenangdien.net"
 let API_URL                                     = "http://acquyxenangdien.net/api"

@@ -28,7 +28,7 @@ class CategoryTableViewCell: UITableViewCell {
         tvCategogy.text = category.name
         if(category.image != nil && (category.image?.isEmpty)!) {
             let url = URL.init(string: getImageUrl(path: category.image!))
-            imgCategory.setImageWith(url!)
+            imgCategory.setImageWith(url!, placeholderImage: UIImage.init(named: "ic_photo"))
         }
     }
     

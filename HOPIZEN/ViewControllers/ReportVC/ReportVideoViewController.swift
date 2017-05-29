@@ -15,9 +15,10 @@ class ReportVideoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Vi Phạm"
         // Do any additional setup after loading the view.
         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
+        hideKeyboardWhenTappedAround()
     }
     
     func clickBack(_ sender:UIButton!){

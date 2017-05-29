@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g00-yl-oYN">
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g00-yl-oYN">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                 </scrollView>
@@ -61,17 +61,18 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="g00-yl-oYN" secondAttribute="bottom" id="1Er-MG-1sS"/>
                 <constraint firstAttribute="bottom" secondItem="7xO-my-82Z" secondAttribute="bottom" constant="30" id="5MN-Lj-Q8B"/>
-                <constraint firstItem="g00-yl-oYN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bet-E1-aZK"/>
+                <constraint firstItem="g00-yl-oYN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6cU-Nd-GS8"/>
                 <constraint firstAttribute="trailing" secondItem="ljG-HY-irt" secondAttribute="trailing" constant="20" id="JJF-2V-P32"/>
                 <constraint firstItem="7xO-my-82Z" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YAB-Zi-BrA"/>
+                <constraint firstAttribute="trailing" secondItem="g00-yl-oYN" secondAttribute="trailing" id="bbG-ZN-jvN"/>
                 <constraint firstItem="9LX-4S-Ge7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="mVs-sb-Ocx"/>
+                <constraint firstAttribute="bottom" secondItem="g00-yl-oYN" secondAttribute="bottom" id="t7o-C4-wCG"/>
                 <constraint firstAttribute="bottom" secondItem="9LX-4S-Ge7" secondAttribute="bottom" constant="30" id="u9Z-2m-2vl"/>
+                <constraint firstItem="g00-yl-oYN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uMa-YB-Cts"/>
                 <constraint firstAttribute="bottom" secondItem="ljG-HY-irt" secondAttribute="bottom" constant="20" id="yH2-YA-3fU"/>
-                <constraint firstItem="g00-yl-oYN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zGG-Sb-d5I"/>
-                <constraint firstAttribute="trailing" secondItem="g00-yl-oYN" secondAttribute="trailing" id="zZc-Mk-3ie"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <point key="canvasLocation" x="26" y="51"/>
         </view>
     </objects>

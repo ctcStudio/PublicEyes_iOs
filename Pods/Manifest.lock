@@ -30,7 +30,9 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.13.1):
     - FBSDKCoreKit
+  - IQKeyboardManagerSwift (4.0.8)
   - KeychainItemWrapper (1.2)
+  - SVProgressHUD (2.1.2)
   - SVPullToRefresh (0.4.1)
   - SwiftSocket (2.0.1)
   - TPKeyboardAvoiding (1.3)
@@ -45,7 +47,9 @@ DEPENDENCIES:
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
+  - IQKeyboardManagerSwift
   - KeychainItemWrapper
+  - SVProgressHUD
   - SVPullToRefresh
   - SwiftSocket
   - TPKeyboardAvoiding
@@ -61,13 +65,15 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 2807fe0da2ddb49a1469da6d6ff597f99912980f
   FBSDKLoginKit: 6d350cb6a22d6956e9d078885de6ee8a0ebc51b4
   FBSDKShareKit: c9438df7573b33780ac8c3451201c5ebb260ffca
+  IQKeyboardManagerSwift: c04bc9f68473823f825eb44d958fce98d921bead
   KeychainItemWrapper: 67a240172ed669842bc6bc13ed554dcd50469fa2
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
   SwiftSocket: 2d814afdc97c89217982f86fd036c1874134a63f
   TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
   UIAlertController+Blocks: b48c673ff60726da468b32ab21bbc7683512d45b
   UISidebarViewController: afa8867a2201b95d49ffbb12652bb1d7a30d9683
 
-PODFILE CHECKSUM: fe3d3c59787200d72197d4c6a9d01858b53f6ac3
+PODFILE CHECKSUM: 8eb4c751bae4f35e5e9cc5205caed69013252862
 
 COCOAPODS: 1.1.1

@@ -31,7 +31,7 @@ class HPZCutomNavigationController: UINavigationController {
     func setupNaviController()-> Void {
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white,NSFontAttributeName:UIFont.systemFont(ofSize: 15)]
         self.navigationBar.tintColor = UIColor.white
-        self.navigationBar.barTintColor = UIColor(netHex: naviColor)
+        self.navigationBar.barTintColor = UIColor(netHex: 0x3c3f41)
     }
     func reversedArray(inputArr:NSArray?) ->NSArray? {
         let array:NSMutableArray? = NSMutableArray(capacity: (inputArr?.count)!)

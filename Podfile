@@ -22,10 +22,12 @@ target 'PublicEyes' do
     #pod 'GoogleMaps'
     #pod 'GooglePlaces'
     #Facebook - sdk
-    pod 'FBSDKCoreKit','4.22.1'
-    pod 'FBSDKLoginKit' ,'4.22.1'
-    pod 'FBSDKShareKit' ,'4.22.1'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+    pod 'FBSDKShareKit'
     pod 'SwiftSocket'
+    pod 'SVProgressHUD'
+    pod 'IQKeyboardManagerSwift'
     #pod 'NVActivityIndicatorView'
 
 #pod 'SwiftyJSON', '3.0.0'

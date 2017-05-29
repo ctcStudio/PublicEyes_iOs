@@ -28,7 +28,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
-        
+        hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     

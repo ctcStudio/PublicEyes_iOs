@@ -21,10 +21,19 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var tvLocation: UITextField!
     let locationManager = CLLocationManager()
     
+    @IBOutlet weak var viewPopupSuccess: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Vị trí của bạn"
+        hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
+        HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
+        self.getAddress()
+        self.viewPopupSuccess.isHidden = true
+    }
+    
+    func clickBack(_ sender:UIButton!){
+        HPZMainFrame.showCategoryPhoto(image: UIImage(), path: path, des: des)
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,7 +41,18 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func gotoCampaint(_ sender: Any) {
+        HPZMainFrame.showMyComplaintVC()
+    }
+    @IBAction func gotoHome(_ sender: Any) {
+        HPZMainFrame.showHomeVC()
+    }
+    
     @IBAction func getCurrentAddress(_ sender: Any) {
+        self.getAddress()
+    }
+    
+    func getAddress() -> Void {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -57,6 +77,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                 if(response?.isKind(of: HPZMessageModel.self))!{
                     let message:HPZMessageModel = response as! HPZMessageModel
                     if(message.code == 0) {
+                        self.viewPopupSuccess.isHidden = false
                         return
                     } else {
                         let alert = UIAlertController(title: "Alert", message: message.message, preferredStyle: UIAlertControllerStyle.alert)

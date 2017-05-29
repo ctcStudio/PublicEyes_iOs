@@ -16,10 +16,12 @@ class ReportPhotoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Vi Phạm"
         // Do any additional setup after loading the view.
         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
         HPZMainFrame.addMenuRight(title: "Upload", titleColor: UIColor.yellow, target: self, action: #selector(clickUpload(_:)))
+        hideKeyboardWhenTappedAround()
+        imageComplaint.image = image
     }
     
     func clickBack(_ sender:UIButton!){

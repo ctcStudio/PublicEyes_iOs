@@ -32,7 +32,7 @@ class ComplaintTableViewCell: UITableViewCell {
         self.tvAddress.text = complaint.address
         if(complaint.image != nil && complaint.image?.isEmpty == false) {
             let url = URL.init(string: getImageUrl(path: complaint.image!))
-            self.imgComplaint.setImageWith(url!)
+            imgComplaint.setImageWith(url!, placeholderImage: UIImage.init(named: "ic_complaint_dummy"))
             self.imgComplaint.contentMode = .scaleAspectFit
         }
     }
