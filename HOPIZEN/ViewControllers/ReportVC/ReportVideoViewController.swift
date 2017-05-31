@@ -33,9 +33,11 @@ class ReportVideoViewController: UIViewController {
     
     @IBAction func continues(_ sender: Any) {
         do {
+            SVProgressHUD.show()
             let videoData = try Data.init(contentsOf: videoUrl as URL, options: .mappedIfSafe)
             
             HPZWebservice.shareInstance.uploadFile(path: API_UPLOAD_FILE, fileData: videoData, handler:{success , response in
+                SVProgressHUD.dismiss()
                 if(success) {
                     if(response?.isKind(of: HPZMessageModel.self))!{
                         let message:HPZMessageModel = response as! HPZMessageModel

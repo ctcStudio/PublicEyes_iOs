@@ -28,8 +28,10 @@ class ReportPhotoViewController: UIViewController {
         HPZMainFrame.showHomeVC()
     }
     func clickUpload(_ sender:Any!){
+        SVProgressHUD.show()
         let imageData = UIImageJPEGRepresentation(image, 0.5)
         HPZWebservice.shareInstance.uploadFile(path: API_UPLOAD_FILE, fileData: imageData, handler:{success , response in
+            SVProgressHUD.dismiss()
             if(success) {
                 if(response?.isKind(of: HPZMessageModel.self))!{
                     let message:HPZMessageModel = response as! HPZMessageModel

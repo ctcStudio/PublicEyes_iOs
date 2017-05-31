@@ -10,7 +10,7 @@ import UIKit
 
 let APP_DELEGATE = UIApplication.shared.delegate as! AppDelegate
 
-let naviColor                                   = 0x101010
+let naviColor                                   = 0x3c3f41
 
 let screenBounds                                = UIScreen.main.bounds
 let screenSize                                  = screenBounds.size

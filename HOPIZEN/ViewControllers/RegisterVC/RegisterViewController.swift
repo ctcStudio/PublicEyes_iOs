@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Đăng ký tài khoản"
         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
         hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
@@ -73,6 +73,7 @@ class RegisterViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             return
         }
+        SVProgressHUD.show()
         let params = NSMutableDictionary.init();
         params.setObject(email ?? "", forKey: "email" as NSCopying)
         params.setObject(password ?? "",forKey: "password" as NSCopying)
@@ -81,6 +82,7 @@ class RegisterViewController: UIViewController {
         params.setObject(idNumber ?? "", forKey: "id_card" as NSCopying)
         params.setObject(address ?? "",forKey: "address" as NSCopying)
         HPZWebservice.shareInstance.registerUser(path:API_RESGISTER,params:params,handler:{success , response in
+            SVProgressHUD.dismiss()
             if(success) {
                 if(response?.isKind(of: HPZMessageModel.self))!{
                     let message:HPZMessageModel = response as! HPZMessageModel

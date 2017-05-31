@@ -44,10 +44,13 @@ class CategoryTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        SVProgressHUD.dismiss()
     }
     
     func getListCampaign() {
+        SVProgressHUD.show()
         HPZWebservice.shareInstance.getUserInfo(path:API_GET_CATEGORY,params:NSDictionary(),handler:{success , response in
+            SVProgressHUD.dismiss()
             if(success) {
                 if(response?.isKind(of: ListCategoryModel.self))!{
                     let list:ListCategoryModel = response as! ListCategoryModel

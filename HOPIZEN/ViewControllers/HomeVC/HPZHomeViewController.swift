@@ -54,7 +54,7 @@ class HPZHomeViewController: UIViewController, UINavigationControllerDelegate, U
         imagePicker.sourceType = .camera
         imagePicker.mediaTypes = [kUTTypeMovie as String]
         imagePicker.cameraCaptureMode = .video
-        imagePicker.videoMaximumDuration = 10.0
+        imagePicker.videoMaximumDuration = 60.0
         imagePicker.showsCameraControls = true
         present(imagePicker, animated: true, completion: nil)
         isTakePhoto = false

@@ -37,7 +37,9 @@ class ComplaintTableViewController: UITableViewController {
     }
     
     func getListComplaint() {
+        SVProgressHUD.show()
         HPZWebservice.shareInstance.getUserInfo(path:API_GET_COMPLAINT,params:NSDictionary(),handler:{success , response in
+            SVProgressHUD.dismiss()
             if(success) {
                 if(response?.isKind(of: ListComplaintModel.self))!{
                     let listComplaint:ListComplaintModel = response as! ListComplaintModel

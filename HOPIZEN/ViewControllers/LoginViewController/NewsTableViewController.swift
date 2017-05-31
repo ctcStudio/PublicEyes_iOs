@@ -35,7 +35,9 @@ class NewsTableViewController: UITableViewController {
     }
     
     func getListCampaign() {
+        SVProgressHUD.show()
         HPZWebservice.shareInstance.getUserInfo(path:API_GET_CAMPAIGN,params:NSDictionary(),handler:{success , response in
+            SVProgressHUD.dismiss()
             if(success) {
                 if(response?.isKind(of: ListCampaignModel.self))!{
                     let listCampaign:ListCampaignModel = response as! ListCampaignModel

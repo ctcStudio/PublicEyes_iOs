@@ -42,11 +42,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HOPIZEN/ViewControllers/LocationVC/LocationViewController.swift"
-            timestampString = "517750752.995175"
+            timestampString = "517904026.668165"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "displayLocationInfo(placemark:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HOPIZEN/ViewControllers/LocationVC/LocationViewController.swift"
+            timestampString = "517904026.668165"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "locationManager(manager:didUpdateLocations:)"
             landmarkType = "7">
             <Locations>
@@ -58,11 +74,11 @@
                   moduleName = "PublicEyes"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hungnh/Documents/HungHN/HungProject/publicEyes_IOS/HOPIZEN/ViewControllers/LocationVC/LocationViewController.swift"
-                  timestampString = "517750753.110479"
+                  timestampString = "517904090.893377"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "97"
-                  endingLineNumber = "97"
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
                   offsetFromSymbolStart = "24">
                </Location>
                <Location
@@ -73,62 +89,14 @@
                   moduleName = "PublicEyes"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hungnh/Documents/HungHN/HungProject/publicEyes_IOS/HOPIZEN/ViewControllers/LocationVC/LocationViewController.swift"
-                  timestampString = "517750753.112218"
+                  timestampString = "517904090.897034"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "98"
-                  endingLineNumber = "98"
+                  startingLineNumber = "99"
+                  endingLineNumber = "99"
                   offsetFromSymbolStart = "44">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HOPIZEN/ViewControllers/LocationVC/LocationViewController.swift"
-            timestampString = "517750762.099526"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "getAddress()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HOPIZEN/ViewControllers/LocationVC/LocationViewController.swift"
-            timestampString = "517750798.533352"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "getCurrentAddress(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HOPIZEN/ViewControllers/LocationVC/LocationViewController.swift"
-            timestampString = "517750817.222144"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
-            landmarkName = "displayLocationInfo(placemark:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

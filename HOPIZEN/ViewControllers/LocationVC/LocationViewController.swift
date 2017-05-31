@@ -53,16 +53,18 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func getAddress() -> Void {
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.startUpdatingLocation()
+        }
     }
     
     @IBAction func continues(_ sender: Any) {
         let params = NSMutableDictionary.init();
-        params.setObject(category.name ?? "", forKey: "category_id" as NSCopying)
-        params.setObject(category.id ?? 0,forKey: "category_name" as NSCopying)
+        params.setObject(category.name ?? "", forKey: "category_name" as NSCopying)
+        params.setObject(category.id ?? 0,forKey: "category_id" as NSCopying)
         params.setObject(path ?? "", forKey: "path" as NSCopying)
         params.setObject(locationStr ?? "",forKey: "location" as NSCopying)
         params.setObject(district ?? "", forKey: "district" as NSCopying)
@@ -71,8 +73,9 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         params.setObject(userDefault.string(forKey: UserDefault_email) ?? "",forKey: "email" as NSCopying)
         params.setObject(des ?? "",forKey: "desciption" as NSCopying)
         //params.setObject(time) ?? "",forKey: "create_date" as NSCopying)
-        
+        SVProgressHUD.show()
         HPZWebservice.shareInstance.updateComplaint(path: API_UPDATE_COMPLAINT, params: params, handler:{success , response in
+            SVProgressHUD.dismiss()
             if(success) {
                 if(response?.isKind(of: HPZMessageModel.self))!{
                     let message:HPZMessageModel = response as! HPZMessageModel
@@ -108,6 +111,10 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                 print("Problem with the data received from geocoder")
             }
         })
+    }
+    
+    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
+        
     }
     
     func getAddress(latitude:CLLocationDegrees, longitude: CLLocationDegrees) {

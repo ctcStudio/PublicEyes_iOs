@@ -11,6 +11,9 @@ import FBSDKLoginKit
 
 class FirstViewController: UIViewController {
     
+    var name:String?
+    var email:String?
+    var fbId:String?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,6 +23,7 @@ class FirstViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        SVProgressHUD.dismiss()
     }
     
     
@@ -81,16 +85,17 @@ extension FirstViewController {
                 if let error = error {
                     print("Error: \(error)")
                 } else {
-                    let userName = (result as! NSDictionary).value(forKey: "name")
-                    let userID = (result as! NSDictionary).value(forKey: "id")
-                    print("facebook acc:", userName ?? "", userID ?? "")
-                    self.login(email: userName as! String, password: userID as! String)
+                    self.name = (result as! NSDictionary).value(forKey: "name") as? String
+                    self.email = (result as! NSDictionary).value(forKey: "email") as? String
+                    self.fbId = (result as! NSDictionary).value(forKey: "id") as? String
+                    self.login(email: self.email! , password: self.fbId! )
                 }
             })
         }
     }
     
     func login(email:String, password:String) {
+        SVProgressHUD.show()
         if(email.isEmpty || password.isEmpty) {
             let alert = UIAlertController(title: "Alert", message: "Xin lỗi, chúng tôi không thể kết nối tới facebook của bạn, hãy đăng ký bằng email", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { action in
@@ -116,6 +121,7 @@ extension FirstViewController {
         params.setObject(email, forKey: "email" as NSCopying)
         params.setObject(password,forKey: "password" as NSCopying)
         HPZWebservice.shareInstance.loginWithEmail(path:API_LOGIN,params:params,handler:{success , response in
+            SVProgressHUD.dismiss()
             if(success) {
                 if(response?.isKind(of: HPZLoginEntity.self))!{
                     let loginEntity:HPZLoginEntity = response as! HPZLoginEntity
@@ -127,7 +133,7 @@ extension FirstViewController {
                     }
                 }
             }
-            HPZMainFrame.showRegisterVC()
+            HPZMainFrame.showRegisterVC(name: self.name!, fbId: self.fbId!, email: self.email!)
             
         }, entity:HPZLoginEntity(), isAthen:false)
         

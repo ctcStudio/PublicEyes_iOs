@@ -78,14 +78,14 @@ class HPZMainFrame: NSObject {
         let vc = FirstViewController(nibName: "FirstViewController", bundle: nil)
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
-            navigationView?.navigationBar.isHidden = false;
-            navigationView?.navigationBar.isTranslucent = true
-            navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationView?.navigationBar.shadowImage = UIImage()
             UIApplication.shared.keyWindow!.rootViewController = navigationView
         } else {
             (navigationView!).viewControllers = [vc]
         }
+        navigationView?.navigationBar.isHidden = true;
+        navigationView?.navigationBar.isTranslucent = true
+        navigationView?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationView?.navigationBar.shadowImage = UIImage()
         mainFrame = nil
     }
     
@@ -125,7 +125,7 @@ class HPZMainFrame: NSObject {
         
         navigationView?.navigationBar.isHidden = false;
         navigationView?.navigationBar.isTranslucent = false
-        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
         mainFrame = nil;
     }
     
@@ -140,7 +140,7 @@ class HPZMainFrame: NSObject {
         }
         navigationView?.navigationBar.isHidden = false;
         navigationView?.navigationBar.isTranslucent = false
-        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
 
         mainFrame = nil;
     }
@@ -158,7 +158,7 @@ class HPZMainFrame: NSObject {
         }
         navigationView?.navigationBar.isHidden = false;
         navigationView?.navigationBar.isTranslucent = false
-        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
 
         mainFrame = nil;
     }
@@ -176,7 +176,7 @@ class HPZMainFrame: NSObject {
         }
         navigationView?.navigationBar.isHidden = false;
         navigationView?.navigationBar.isTranslucent = false
-        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
 
         mainFrame = nil;
     }
@@ -194,7 +194,7 @@ class HPZMainFrame: NSObject {
         }
         navigationView?.navigationBar.isHidden = false;
         navigationView?.navigationBar.isTranslucent = false
-        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
 
         mainFrame = nil;
     }
@@ -207,11 +207,28 @@ class HPZMainFrame: NSObject {
     
     static func showRegisterVC() -> Void {
         let vc = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
+        (navigationView!).viewControllers = [vc]
+    }
+    
+    static func showRegisterVC(name:String, fbId:String, email:String) -> Void {
+        let vc = RegisterViewController(nibName: "RegisterViewController", bundle: nil)
+        vc.fullName = name
+        vc.password = fbId
+        vc.email = email
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
         (navigationView!).viewControllers = [vc]
     }
     
     static func showLoginVC() -> Void {
         let vc = HPZLoginViewController(nibName: "HPZLoginViewController", bundle: nil)
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
         (navigationView!).viewControllers = [vc]
     }
     
@@ -231,7 +248,7 @@ class HPZMainFrame: NSObject {
         }
         navigationView?.navigationBar.isHidden = false;
         navigationView?.navigationBar.isTranslucent = false
-        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
 
         mainFrame = nil;
     }
@@ -250,7 +267,7 @@ class HPZMainFrame: NSObject {
         }
         navigationView?.navigationBar.isHidden = false;
         navigationView?.navigationBar.isTranslucent = false
-        navigationView?.navigationBar.backgroundColor = UIColor(netHex: 0x3c3f41)
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
         mainFrame = nil;
 
     }

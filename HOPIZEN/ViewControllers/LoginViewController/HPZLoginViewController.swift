@@ -17,7 +17,7 @@ class HPZLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.title = "Đăng nhập"
         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
         hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
@@ -55,7 +55,9 @@ class HPZLoginViewController: UIViewController {
         let params = NSMutableDictionary.init();
         params.setObject(email, forKey: "email" as NSCopying)
         params.setObject(password,forKey: "password" as NSCopying)
+        SVProgressHUD.show()
         HPZWebservice.shareInstance.loginWithEmail(path:API_LOGIN,params:params,handler:{success , response in
+            SVProgressHUD.dismiss()
             if(success) {
                 if(response?.isKind(of: HPZLoginEntity.self))!{
                     let loginEntity:HPZLoginEntity = response as! HPZLoginEntity
@@ -122,7 +124,7 @@ extension HPZLoginViewController {
                 if let error = error {
                     print("Error: \(error)")
                 } else {
-                    let userName = (result as! NSDictionary).value(forKey: "name")
+                    let userName = (result as! NSDictionary).value(forKey: "email")
                     let userID = (result as! NSDictionary).value(forKey: "id")
                     print("facebook acc: %s id: %s", userName ?? "", userID ?? "")
                     self.login(email: userName as! String, password: userID as! String)
