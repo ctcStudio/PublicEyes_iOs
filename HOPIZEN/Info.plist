@@ -51,8 +51,6 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string></string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string></string>
 	<key>NSLocationUsageDescription</key>
 	<string></string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -61,8 +59,6 @@
 	<string></string>
 	<key>Privacy - Camera Usage Description</key>
 	<string>$(PRODUCT_NAME) camera use</string>
-	<key>Privacy - Location Always Usage Description</key>
-	<string>$(PRODUCT_NAME) location use</string>
 	<key>Privacy - Location When In Use Usage Description</key>
 	<string>$(PRODUCT_NAME) location use</string>
 	<key>UILaunchStoryboardName</key>
@@ -74,8 +70,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

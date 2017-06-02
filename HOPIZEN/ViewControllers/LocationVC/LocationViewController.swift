@@ -19,7 +19,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     var province:String?
     
     @IBOutlet weak var tvLocation: UITextField!
-    let locationManager = CLLocationManager()
+    var locationManager = CLLocationManager()
     
     @IBOutlet weak var viewPopupSuccess: UIView!
     override func viewDidLoad() {
@@ -28,8 +28,13 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
         HPZMainFrame.addBackBtn(target: self, action: #selector(clickBack(_:)))
-        self.getAddress()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+
         self.viewPopupSuccess.isHidden = true
+        
+        self.getAddress()
     }
     
     func clickBack(_ sender:UIButton!){
@@ -54,9 +59,6 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     
     func getAddress() -> Void {
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.requestWhenInUseAuthorization()
             locationManager.startUpdatingLocation()
         }
     }
@@ -95,9 +97,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         }, entity: HPZMessageModel())
     }
     
-    
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error) -> Void in
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        CLGeocoder().reverseGeocodeLocation(locations[0], completionHandler: {(placemarks, error) -> Void in
             if (error != nil) {
                 print("Reverse geocoder failed with error" + (error?.localizedDescription)!)
                 return
@@ -113,8 +114,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         })
     }
     
-    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-        
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error \(error)")
     }
     
     func getAddress(latitude:CLLocationDegrees, longitude: CLLocationDegrees) {
@@ -136,9 +137,6 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
                 let state = addressDic?["State"] as? String ?? ""
                 if(subAdministrativeArea.isEmpty == false) {
                     address.append(subAdministrativeArea)
-                }
-                if(name.isEmpty == false) {
-                    address.append(name)
                 }
                 if(street.isEmpty == false) {
                     address.append(street)
@@ -180,9 +178,5 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
             address.append(state)
         }
         self.tvLocation.text = address.joined(separator: ", ")
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Error while updating location " + error.localizedDescription)
     }
 }
