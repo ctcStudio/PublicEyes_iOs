@@ -14,6 +14,8 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     var path:String!
     var des: String!
     var category:CategoryModel!
+    var type:Int!
+    
     var locationStr:String?
     var district:String?
     var province:String?
@@ -38,7 +40,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func clickBack(_ sender:UIButton!){
-        HPZMainFrame.showCategoryPhoto(image: UIImage(), path: path, des: des)
+        HPZMainFrame.showCategoryPhoto(type:type, image: UIImage(), path: path, des: des)
     }
     
     override func didReceiveMemoryWarning() {

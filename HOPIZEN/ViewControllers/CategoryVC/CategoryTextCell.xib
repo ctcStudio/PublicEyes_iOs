@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryTextCell" id="KGk-i7-Jjw" customClass="CategoryTextCell" customModule="PublicEyes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image_giao_thong" translatesAutoresizingMaskIntoConstraints="NO" id="gx2-0f-diZ">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="BXi-tn-Buv"/>
+                            <constraint firstAttribute="width" constant="50" id="YVu-IO-BNJ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZ2-Jg-7FI">
+                        <rect key="frame" x="60" y="5" width="255" height="79.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbp-qn-sxW">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="62.5"/>
+                                <string key="text">Không sử dụng đủ đèn chiếu sáng từ 19 giờ ngày hôm trước đến 06 giờ sáng ngày hôm sau hoặc khi sương mù, thời tiết xấu hạn chế tầm nhìn; sử dụng đèn chiếu xa khi tránh xe đi ngược chiều</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16.000.000 - 18.000.000, Tước 10-12 tháng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeY-2V-Vb2">
+                                <rect key="frame" x="0.0" y="64.5" width="255" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="pkb-PJ-g3I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.030772170051932335" green="0.059052012860774994" blue="0.033304095268249512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zeY-2V-Vb2" secondAttribute="bottom" id="HYM-z0-gnt"/>
+                            <constraint firstItem="zeY-2V-Vb2" firstAttribute="top" secondItem="lbp-qn-sxW" secondAttribute="bottom" constant="2" id="PPt-Sj-ZSW"/>
+                            <constraint firstItem="lbp-qn-sxW" firstAttribute="leading" secondItem="pZ2-Jg-7FI" secondAttribute="leading" id="UJQ-03-Ltt"/>
+                            <constraint firstAttribute="trailing" secondItem="lbp-qn-sxW" secondAttribute="trailing" id="c1p-2Z-pxI"/>
+                            <constraint firstItem="zeY-2V-Vb2" firstAttribute="leading" secondItem="pZ2-Jg-7FI" secondAttribute="leading" id="dEt-XC-Fbc"/>
+                            <constraint firstAttribute="trailing" secondItem="zeY-2V-Vb2" secondAttribute="trailing" id="qNm-kZ-tlG"/>
+                            <constraint firstItem="lbp-qn-sxW" firstAttribute="top" secondItem="pZ2-Jg-7FI" secondAttribute="top" id="yDj-0d-xRg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="pZ2-Jg-7FI" secondAttribute="trailing" constant="5" id="2Uc-gp-0JZ"/>
+                    <constraint firstAttribute="bottom" secondItem="pZ2-Jg-7FI" secondAttribute="bottom" constant="5" id="8gQ-CA-I7y"/>
+                    <constraint firstItem="gx2-0f-diZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="CKA-dj-xtP"/>
+                    <constraint firstItem="pZ2-Jg-7FI" firstAttribute="leading" secondItem="gx2-0f-diZ" secondAttribute="trailing" constant="5" id="MJk-8B-Yi1"/>
+                    <constraint firstItem="pZ2-Jg-7FI" firstAttribute="leading" secondItem="gx2-0f-diZ" secondAttribute="trailing" constant="5" id="Ow1-hE-mJ6"/>
+                    <constraint firstItem="gx2-0f-diZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Xcq-mV-CGj"/>
+                    <constraint firstItem="pZ2-Jg-7FI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="oXg-0J-4c9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tvCategogy" destination="lbp-qn-sxW" id="hQY-Mf-Ei6"/>
+                <outlet property="tvDescription" destination="zeY-2V-Vb2" id="3z9-Qm-NiN"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Image_giao_thong" width="112" height="112"/>
+    </resources>
+</document>

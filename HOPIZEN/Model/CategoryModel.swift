@@ -13,6 +13,7 @@ class CategoryModel: HPZBaseEntity {
     var id:Int?
     var image:String?
     var name:String?
+    var cateDescription: String?
     
     var message:String?
     

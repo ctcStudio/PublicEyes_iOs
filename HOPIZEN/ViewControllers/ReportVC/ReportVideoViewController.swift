@@ -42,7 +42,7 @@ class ReportVideoViewController: UIViewController {
                     if(response?.isKind(of: HPZMessageModel.self))!{
                         let message:HPZMessageModel = response as! HPZMessageModel
                         if(message.code == 0) {
-                            HPZMainFrame.showCategoryVideo(videoUrl: self.videoUrl, path: message.path, des: self.tvDescription.text)
+                            HPZMainFrame.showSelectCategoryVideo(videoUrl: self.videoUrl, path: message.path, des: self.tvDescription.text)
                             return
                         } else {
                             let alert = UIAlertController(title: "Alert", message: message.message, preferredStyle: UIAlertControllerStyle.alert)

@@ -36,7 +36,7 @@ class ReportPhotoViewController: UIViewController {
                 if(response?.isKind(of: HPZMessageModel.self))!{
                     let message:HPZMessageModel = response as! HPZMessageModel
                     if(message.code == 0) {
-                        HPZMainFrame.showCategoryPhoto(image: self.image, path: message.path, des: self.tvDecription.text)
+                        HPZMainFrame.showSelectCategoryPhoto(image: self.image, path: message.path, des: self.tvDecription.text)
                         return
                     } else {
                         let alert = UIAlertController(title: "Alert", message: message.message, preferredStyle: UIAlertControllerStyle.alert)

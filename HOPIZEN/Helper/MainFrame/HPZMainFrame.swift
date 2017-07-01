@@ -145,8 +145,28 @@ class HPZMainFrame: NSObject {
         mainFrame = nil;
     }
     
-    static func showCategoryPhoto(image:UIImage, path:String!, des:String) -> Void {
+    static func showSelectCategoryPhoto(image:UIImage, path:String!, des:String) -> Void {
+        let vc = SelectCategoryViewController(nibName: "SelectCategoryViewController", bundle: nil)
+        vc.image = image
+        vc.path = path
+        vc.des = des
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
+        
+        mainFrame = nil;
+    }
+
+    
+    static func showCategoryPhoto(type:Int!, image:UIImage, path:String!, des:String) -> Void {
         let vc = CategoryTableViewController(nibName: "CategoryTableViewController", bundle: nil)
+        vc.type = type
         vc.image = image
         vc.path = path
         vc.des = des
@@ -163,8 +183,28 @@ class HPZMainFrame: NSObject {
         mainFrame = nil;
     }
     
-    static func showCategoryVideo(videoUrl:NSURL, path:String!, des:String) -> Void {
+    static func showSelectCategoryVideo(videoUrl:NSURL, path:String!, des:String) -> Void {
+        let vc = SelectCategoryViewController(nibName: "SelectCategoryViewController", bundle: nil)
+        vc.videoUrl = videoUrl
+        vc.path = path
+        vc.des = des
+        if(navigationView == nil){
+            navigationView = HPZCutomNavigationController(rootViewController: vc)
+            UIApplication.shared.keyWindow!.rootViewController = navigationView
+        } else {
+            (navigationView!).viewControllers = [vc]
+        }
+        navigationView?.navigationBar.isHidden = false;
+        navigationView?.navigationBar.isTranslucent = false
+        navigationView?.navigationBar.backgroundColor = UIColor(netHex: naviColor)
+        
+        mainFrame = nil;
+    }
+
+    
+    static func showCategoryVideo(type:Int!, videoUrl:NSURL, path:String!, des:String) -> Void {
         let vc = CategoryTableViewController(nibName: "CategoryTableViewController", bundle: nil)
+        vc.type = type
         vc.videoUrl = videoUrl
         vc.path = path
         vc.des = des
@@ -181,8 +221,9 @@ class HPZMainFrame: NSObject {
         mainFrame = nil;
     }
     
-    static func showLocation(category:CategoryModel!, path:String!, des:String) -> Void {
+    static func showLocation(type:Int!, category:CategoryModel!, path:String!, des:String) -> Void {
         let vc = LocationViewController(nibName: "LocationViewController", bundle: nil)
+        vc.type = type
         vc.category = category
         vc.path = path
         vc.des = des
