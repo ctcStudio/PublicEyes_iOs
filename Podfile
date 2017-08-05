@@ -28,6 +28,7 @@ target 'PublicEyes' do
     pod 'SwiftSocket'
     pod 'SVProgressHUD'
     pod 'IQKeyboardManagerSwift'
+    pod 'PopupDialog', '~> 0.5'
     #pod 'NVActivityIndicatorView'
 
 #pod 'SwiftyJSON', '3.0.0'

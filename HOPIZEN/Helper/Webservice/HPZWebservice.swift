@@ -20,6 +20,7 @@ class HPZWebservice: NSObject {
     override init() {
         let securityPolicy:AFSecurityPolicy = AFSecurityPolicy();
         securityPolicy.allowInvalidCertificates = true
+        securityPolicy.validatesDomainName = false;
         self.requestManager = AFHTTPSessionManager();
         let set = NSMutableSet(set: (self.requestManager!.responseSerializer.acceptableContentTypes)!)
         set.add("application/json")
@@ -27,7 +28,7 @@ class HPZWebservice: NSObject {
         let setobj  = NSSet(set: set)
         self.requestManager.securityPolicy = securityPolicy;
         self.requestManager!.responseSerializer.acceptableContentTypes = setobj as? Set<String>
-        //        let requestSerializer:AFHTTPRequestSerializer = AFHTTPRequestSerializer()
+//        let requestSerializer:AFHTTPRequestSerializer = AFHTTPRequestSerializer()
         let requestSerializer:AFJSONRequestSerializer = AFJSONRequestSerializer()
         requestSerializer.stringEncoding = String.Encoding.utf8.rawValue
         self.requestManager!.requestSerializer = requestSerializer
@@ -69,6 +70,40 @@ class HPZWebservice: NSObject {
             
         )
     }
+    
+    func sendOrderCoinRequest(path:String!,
+                        params:NSDictionary?,
+                        responseObjectClass:HPZBaseEntity!,
+                        responseHandler:@escaping ServerResponseHandler) -> Void {
+        print("\(self.makeFullAPIMethodWithAction(acction: path!, isAuthen: true)) params - > \(params!)")
+        let authen = getCoinAuth()
+        self.requestManager!.requestSerializer.setValue(authen, forHTTPHeaderField: "Authorization")
+        let nonce = getUnixtime();
+        self.requestManager!.requestSerializer.setValue(nonce, forHTTPHeaderField: "X-Nonce")
+        let hasNonce = sha256(data: nonce.data(using: String.Encoding.utf8)!)
+        let urlRequest = path + (params?.queryParameters)!.replace(target: "+", withString: "%2B")
+        let urlHash = urlRequest.replace(target: COIN_URL, withString: "");
+        let signature = DigestHmacSha512(input: urlHash + hasNonce)
+        self.requestManager!.requestSerializer.setValue(signature, forHTTPHeaderField: "X-Signature")
+        
+        self.requestManager!.requestSerializer.timeoutInterval = TimeInterval(HPZRequestConstant.HPZTimeout)
+        self.requestManager!.get(self.makeFullAPIMethodWithAction(acction: urlRequest, isAuthen: true), parameters: NSDictionary(), progress: nil, success: {(task, responseObject) -> Void in
+            print("responseObject ->> \(String(describing: responseObject))")
+            if responseObject is NSDictionary {
+                responseObjectClass.parserResponse(dic:(responseObject as? NSDictionary)!)
+            } else {
+                responseObjectClass.parserResponse(dic: responseObject as! NSDictionary)
+            }
+            responseHandler(true, responseObjectClass);
+            
+        }, failure: { (task, responseOBJ) -> Void in
+            print("responseObject ->> \(String(describing: responseOBJ))")
+            responseHandler(false, nil);
+            
+        })
+        
+    }
+
     
     
     func sendPOSTRequest (path:String!,
@@ -174,6 +209,10 @@ extension HPZWebservice {
     func getUserInfo(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
         self.sendGETRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
     }
+    
+    func getSendOrder(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendOrderCoinRequest(path: path, params: params, responseObjectClass: entity, responseHandler: handler);    }
+    
     
     func updateComplaint(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
         self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)

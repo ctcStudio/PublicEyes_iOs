@@ -18,5 +18,6 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 @import SVProgressHUD;
 @import IQKeyboardManagerSwift;
+#import <CommonCrypto/CommonHMAC.h>
 
 #endif /* Bridging_Header_h */

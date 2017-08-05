@@ -29,6 +29,44 @@ let API_GET_CAMPAIGN                            = API_URL + "/operation"
 let API_UPLOAD_FILE                             = API_URL + "/violation/file"
 let API_UPDATE_COMPLAINT                        = API_URL + "/violation"
 
+let COIN_REG_LINK = "https://wallet.vngcoin.com"
+let COIN_URL = "https://tmapi.vngcoin.com"
+let COIN_API_URL = COIN_URL + "/gateway"
+let API_COIN_SEND = COIN_API_URL + "/send_order"
+
+let NUMBER_COIN_CHANGE = 10
+let NO_PHONE = "+84984921226"
+let API_NUMBER = "1f52d883-20ba-4bfe-b584-9213ab7040a0"
+let SECRET = "a13a927b-c9ea-46d5-98d9-1ffdcaa14b60"
+let COIN_SUCCESS = 1
+
+func getCoinAuth() -> String {
+    let str = NO_PHONE + ":" + API_NUMBER
+    let utf8str = str.data(using: String.Encoding.utf8)
+    let base64Encoded = utf8str?.base64EncodedString()
+    return base64Encoded!
+}
+
+func getUnixtime() -> String {
+    let time = Int64.init(Date().timeIntervalSince1970);
+    return String.init(time)
+}
+
+func sha256(data : Data) -> String {
+    var hash = [UInt8](repeating: 0,  count: Int(CC_SHA256_DIGEST_LENGTH))
+    data.withUnsafeBytes {
+        _ = CC_SHA256($0, CC_LONG(data.count), &hash)
+    }
+    let data:NSData =  Data(bytes: hash) as NSData
+    return data.base64EncodedString()
+}
+
+// hmacSHA-512 to string hex
+func DigestHmacSha512(input : String) -> String {
+    return input.hmac(algorithm: CryptoAlgorithm.SHA512, key: SECRET)
+}
+
+
 let UserDefault_email                           = "user.default.email"
 let UserDefault_password                        = "user.default.password"
 let UserDefault_fist_login                      = "user.default.first.login"
@@ -37,6 +75,7 @@ let UserDefault_mobile_number                   = "user.default.mobile_number"
 let UserDefault_id_number                       = "user.default.id.number"
 let UserDefault_address                         = "user.default.address"
 let UserDefault_point                           = "user.default.point"
+let UserDefault_TRANS_ID                        = "user.default.trans.id"
 
 let userDefault                                 = UserDefaults.standard
 func isActive() -> Bool {
@@ -70,3 +109,34 @@ struct PDevice {
     static let os_version       = UIDevice.current.systemVersion
     
 }
+
+enum CryptoAlgorithm {
+    case MD5, SHA1, SHA224, SHA256, SHA384, SHA512
+    
+    var HMACAlgorithm: CCHmacAlgorithm {
+        var result: Int = 0
+        switch self {
+        case .MD5:      result = kCCHmacAlgMD5
+        case .SHA1:     result = kCCHmacAlgSHA1
+        case .SHA224:   result = kCCHmacAlgSHA224
+        case .SHA256:   result = kCCHmacAlgSHA256
+        case .SHA384:   result = kCCHmacAlgSHA384
+        case .SHA512:   result = kCCHmacAlgSHA512
+        }
+        return CCHmacAlgorithm(result)
+    }
+    
+    var digestLength: Int {
+        var result: Int32 = 0
+        switch self {
+        case .MD5:      result = CC_MD5_DIGEST_LENGTH
+        case .SHA1:     result = CC_SHA1_DIGEST_LENGTH
+        case .SHA224:   result = CC_SHA224_DIGEST_LENGTH
+        case .SHA256:   result = CC_SHA256_DIGEST_LENGTH
+        case .SHA384:   result = CC_SHA384_DIGEST_LENGTH
+        case .SHA512:   result = CC_SHA512_DIGEST_LENGTH
+        }
+        return Int(result)
+    }
+}
+

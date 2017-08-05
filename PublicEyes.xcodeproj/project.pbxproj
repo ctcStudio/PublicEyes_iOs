@@ -23,6 +23,9 @@
 		6CEEE6921F076A07000F2CF0 /* SelectCategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEEE6901F076A07000F2CF0 /* SelectCategoryViewController.xib */; };
 		6CEEE6961F076E94000F2CF0 /* CategoryTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEE6941F076E94000F2CF0 /* CategoryTextCell.swift */; };
 		6CEEE6971F076E94000F2CF0 /* CategoryTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEEE6951F076E94000F2CF0 /* CategoryTextCell.xib */; };
+		B0177F881F3578A7008F0281 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0177F871F3578A7008F0281 /* OrderModel.swift */; };
+		B0991D411F35464A008D5787 /* PopupChangePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0991D3F1F35464A008D5787 /* PopupChangePoint.swift */; };
+		B0991D421F35464A008D5787 /* PopupChangePoint.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0991D401F35464A008D5787 /* PopupChangePoint.xib */; };
 		B72AA0901ED12EC30091CDDA /* ComplaintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AA08E1ED12EC30091CDDA /* ComplaintTableViewCell.swift */; };
 		B72AA0911ED12EC30091CDDA /* ComplaintTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72AA08F1ED12EC30091CDDA /* ComplaintTableViewCell.xib */; };
 		B72AA0941ED133A90091CDDA /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72AA0921ED133A90091CDDA /* NewsTableViewCell.swift */; };
@@ -94,6 +97,9 @@
 		6CEEE6901F076A07000F2CF0 /* SelectCategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectCategoryViewController.xib; sourceTree = "<group>"; };
 		6CEEE6941F076E94000F2CF0 /* CategoryTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTextCell.swift; path = CategoryVC/CategoryTextCell.swift; sourceTree = "<group>"; };
 		6CEEE6951F076E94000F2CF0 /* CategoryTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTextCell.xib; path = CategoryVC/CategoryTextCell.xib; sourceTree = "<group>"; };
+		B0177F871F3578A7008F0281 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		B0991D3F1F35464A008D5787 /* PopupChangePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupChangePoint.swift; sourceTree = "<group>"; };
+		B0991D401F35464A008D5787 /* PopupChangePoint.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupChangePoint.xib; sourceTree = "<group>"; };
 		B72AA08E1ED12EC30091CDDA /* ComplaintTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComplaintTableViewCell.swift; path = ComplaintVC/ComplaintTableViewCell.swift; sourceTree = "<group>"; };
 		B72AA08F1ED12EC30091CDDA /* ComplaintTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ComplaintTableViewCell.xib; path = ComplaintVC/ComplaintTableViewCell.xib; sourceTree = "<group>"; };
 		B72AA0921ED133A90091CDDA /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewCell.swift; path = NewsVC/NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -215,6 +221,15 @@
 				6CEEE6901F076A07000F2CF0 /* SelectCategoryViewController.xib */,
 			);
 			name = SelectCategoryVC;
+			sourceTree = "<group>";
+		};
+		B0991D3A1F34BBC3008D5787 /* popup */ = {
+			isa = PBXGroup;
+			children = (
+				B0991D3F1F35464A008D5787 /* PopupChangePoint.swift */,
+				B0991D401F35464A008D5787 /* PopupChangePoint.xib */,
+			);
+			path = popup;
 			sourceTree = "<group>";
 		};
 		B77ABA7A1ED0492B001BD5F2 /* RegisterVC */ = {
@@ -372,6 +387,7 @@
 		C27F24931DFF9687009A81B6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B0991D3A1F34BBC3008D5787 /* popup */,
 				6CEEE6931F076A1C000F2CF0 /* SelectCategoryVC */,
 				6C80B3C71EDA69F20044CB16 /* CategoryVC */,
 				B77ABA9F1ED04B57001BD5F2 /* FirstVC */,
@@ -472,6 +488,7 @@
 				6C80B3C31ED985BD0044CB16 /* ListComplaintModel.swift */,
 				6C80B3C51EDA644A0044CB16 /* ListCampaignModel.swift */,
 				6C80B3D01EDA6DF50044CB16 /* ListCategoryModel.swift */,
+				B0177F871F3578A7008F0281 /* OrderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -644,6 +661,7 @@
 				B72AA0911ED12EC30091CDDA /* ComplaintTableViewCell.xib in Resources */,
 				C27F24891DFF965E009A81B6 /* Assets.xcassets in Resources */,
 				C27F24C41DFFA32F009A81B6 /* HPZHomeViewController.xib in Resources */,
+				B0991D421F35464A008D5787 /* PopupChangePoint.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,13 +674,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PublicEyes-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7304CCF34B6EC769E5249A08 /* [CP] Embed Pods Frameworks */ = {
@@ -671,9 +692,40 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PublicEyes/Pods-PublicEyes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainItemWrapper/KeychainItemWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SVPullToRefresh/SVPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/UIAlertController+Blocks/UIAlertController_Blocks.framework",
+				"${BUILT_PRODUCTS_DIR}/UISidebarViewController/UISidebarViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainItemWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIAlertController_Blocks.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UISidebarViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -723,6 +775,7 @@
 				6C80B3C61EDA644A0044CB16 /* ListCampaignModel.swift in Sources */,
 				B77ABA981ED04AFE001BD5F2 /* ComplaintTableViewController.swift in Sources */,
 				6C80B3BA1ED96F6E0044CB16 /* HPZUserModel.swift in Sources */,
+				B0991D411F35464A008D5787 /* PopupChangePoint.swift in Sources */,
 				6C80B3BD1ED972400044CB16 /* CategoryModel.swift in Sources */,
 				6C80B3C11ED972C90044CB16 /* CampaignModel.swift in Sources */,
 				6C80B3BF1ED9728A0044CB16 /* ComplaintModel.swift in Sources */,
@@ -735,6 +788,7 @@
 				C268C5B21E124F69001597E0 /* HPZSoketXXXXX.m in Sources */,
 				C27F24C31DFFA32F009A81B6 /* HPZHomeViewController.swift in Sources */,
 				C27F249A1DFF97CD009A81B6 /* HPZMainFrame.swift in Sources */,
+				B0177F881F3578A7008F0281 /* OrderModel.swift in Sources */,
 				C27F24821DFF965E009A81B6 /* AppDelegate.swift in Sources */,
 				C27F24C01DFFA2B4009A81B6 /* HPZCutomNavigationController.swift in Sources */,
 				C27F249C1DFF98B5009A81B6 /* HPZWebservice.swift in Sources */,
