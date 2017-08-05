@@ -12,7 +12,7 @@ class OrderModel: HPZBaseEntity {
     var transRef:String?;
     var sendOrderId:String!;
     var userNoPhone:String!;
-    var amount:String?;
+    var amount:Int?;
     var address:String?;
     var createdOn:String?;
     var time:String?;
@@ -32,7 +32,7 @@ class OrderModel: HPZBaseEntity {
             userNoPhone = val;
         }
         
-        if let val = dic.value(forKey: "amount") as?String {
+        if let val = dic.value(forKey: "amount") as?Int {
             amount = val;
         }
         

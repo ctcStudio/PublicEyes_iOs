@@ -28,6 +28,7 @@ let API_GET_COMPLAINT                           = API_URL + "/violation/getbyuse
 let API_GET_CAMPAIGN                            = API_URL + "/operation"
 let API_UPLOAD_FILE                             = API_URL + "/violation/file"
 let API_UPDATE_COMPLAINT                        = API_URL + "/violation"
+let API_UPDATE_POINT                            = API_URL + "/payorder"
 
 let COIN_REG_LINK = "https://wallet.vngcoin.com"
 let COIN_URL = "https://tmapi.vngcoin.com"
@@ -76,6 +77,7 @@ let UserDefault_id_number                       = "user.default.id.number"
 let UserDefault_address                         = "user.default.address"
 let UserDefault_point                           = "user.default.point"
 let UserDefault_TRANS_ID                        = "user.default.trans.id"
+let UserDefault_TRANS_POINT                     = "user.default.trans.point"
 
 let userDefault                                 = UserDefaults.standard
 func isActive() -> Bool {

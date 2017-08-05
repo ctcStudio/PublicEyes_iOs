@@ -17,6 +17,7 @@ class HPZSlidingMenuViewController: UIViewController, PopupDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        requestUpdatePoint()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +48,10 @@ class HPZSlidingMenuViewController: UIViewController, PopupDelegate {
     }
     
     @IBAction func changeToMoney(_ sender: Any) {
+        let point = userDefault.value(forKey: UserDefault_point) as! Int
+        if(point < NUMBER_COIN_CHANGE) {
+            return
+        }
         let popup = PopupChangePoint.init(nibName: "PopupChangePoint", bundle: nil);
         popup.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         popup.delegate = self
@@ -73,7 +78,9 @@ class HPZSlidingMenuViewController: UIViewController, PopupDelegate {
                     let order:OrderModel = response as! OrderModel
                     if(order.status == COIN_SUCCESS) {
                         userDefault.set(order.sendOrderId, forKey: UserDefault_TRANS_ID)
+                        userDefault.set(order.amount, forKey: UserDefault_TRANS_POINT)
                         
+                        self.requestUpdatePoint()
                         return
                     }
                 }
@@ -84,6 +91,33 @@ class HPZSlidingMenuViewController: UIViewController, PopupDelegate {
             
         }, entity:OrderModel())
         
+    }
+    
+    func requestUpdatePoint() -> Void {
+        let transactionId = userDefault.value(forKey: UserDefault_TRANS_ID) as? String
+        if((transactionId == nil) || (transactionId?.isEmpty)!) {
+            return
+        }
+        let point = userDefault.value(forKey: UserDefault_TRANS_POINT) as! Int
+        let param = [
+            "transcation_id":(transactionId) ?? "",
+            "point": (point)
+            
+        ] as [String : Any]
+        HPZWebservice.shareInstance.updatePoint(path:API_UPDATE_POINT,params: param as NSDictionary,handler:{success , response in
+            if(success) {
+                userDefault.set("",forKey: UserDefault_TRANS_ID)
+                userDefault.set(0,forKey: UserDefault_TRANS_POINT)
+                self.tvPoint.text = "0"
+                userDefault.set(0, forKey: UserDefault_point)
+                return
+            }
+            let msg = response as! HPZMessageModel
+            let alert = UIAlertController(title: "Alert", message: msg.message, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }, entity:HPZMessageModel())
     }
     
 }

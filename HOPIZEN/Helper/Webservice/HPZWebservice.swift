@@ -211,8 +211,12 @@ extension HPZWebservice {
     }
     
     func getSendOrder(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
-        self.sendOrderCoinRequest(path: path, params: params, responseObjectClass: entity, responseHandler: handler);    }
+        self.sendOrderCoinRequest(path: path, params: params, responseObjectClass: entity, responseHandler: handler);
+    }
     
+    func updatePoint(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
+    }
     
     func updateComplaint(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
         self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
