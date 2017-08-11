@@ -35,7 +35,8 @@ let COIN_URL = "https://tmapi.vngcoin.com"
 let COIN_API_URL = COIN_URL + "/gateway"
 let API_COIN_SEND = COIN_API_URL + "/send_order"
 
-let NUMBER_COIN_CHANGE = 10
+let NUMBER_COIN_CHANGE = 50
+let PAY_SUCCESS = 7
 let NO_PHONE = "+84984921226"
 let API_NUMBER = "1f52d883-20ba-4bfe-b584-9213ab7040a0"
 let SECRET = "a13a927b-c9ea-46d5-98d9-1ffdcaa14b60"

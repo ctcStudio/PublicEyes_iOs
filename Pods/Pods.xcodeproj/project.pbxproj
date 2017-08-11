@@ -28,10 +28,10 @@
 		06A79840D231ADED38D8CE37FF4F2C1F /* FBSDKGraphRequest+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 71DE11222179962D7AD408AD80C43E02 /* FBSDKGraphRequest+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		075474E3DC38C236D328BDF5BF758884 /* FBSDKLiking.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D3914D04B69F359E97FC5B62086039 /* FBSDKLiking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0790B89F7D927E8EA37EE8333C3E8F2D /* FBSDKLikeDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = AC51E11556224DEDFC74802FF06ACCD6 /* FBSDKLikeDialog.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		08F70BDD45F0B73F1AD27507808FEC3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		0927BE525BC719986E1E3C4CA5AD5C0B /* FBSDKAccessTokenCacheV3_21.h in Headers */ = {isa = PBXBuildFile; fileRef = 9548979FB4DE6A6108F39087DAFA84A6 /* FBSDKAccessTokenCacheV3_21.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0928BA036BA53560549F5D01125205BD /* FBSDKGameRequestContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2341585CB3DFAE16261AB80512B47BA7 /* FBSDKGameRequestContent.m */; };
 		0944C3EF6E4E5935423947B9D0CFF1B0 /* FBSDKShareOpenGraphValueContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 783973DBA092B68C9806EC6050A638B3 /* FBSDKShareOpenGraphValueContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0955943D54E5C5E7CA7358F003CC02B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		0A0E468BAEA3F6CB77CC37C6C618B5B8 /* FBSDKSharingButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A020CB6F6785D195C1ACC71372D12328 /* FBSDKSharingButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B5A20CFF219A8971C700691E59D2ED7 /* FBSDKLoginCompletion+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D6D1317A10957E1AF44E213D2E7A9087 /* FBSDKLoginCompletion+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0B9FAA59E53F8381BAD75316E70145BE /* IQUIView+IQKeyboardToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F645D4DEFCA0B2A4A5243DCBF4F3F6F3 /* IQUIView+IQKeyboardToolbar.swift */; };
@@ -42,7 +42,6 @@
 		0D1FFD30267C0776FD3E88EFF51E312F /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F1E01D9711F5BA7B75CF0F3F31663F /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D3E9BEF69460DD18D55803960537D9B /* FBSDKGraphErrorRecoveryProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 641DCA7F5A2AFC21533E222310388557 /* FBSDKGraphErrorRecoveryProcessor.m */; };
 		0D7CF91C8CD924F7C0535FEAB93C9DC2 /* FBSDKLikeActionControllerCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 326905CAC05E22B073EEC7D0CDC33359 /* FBSDKLikeActionControllerCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0DC9F81DFCEBF879842EEA432682BD62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E344A9622E07C63426096BE0F05F8DFA /* QuartzCore.framework */; };
 		0E3BFC96C6A7CCADAF3DA6C3C80F35EC /* SWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 840E135AD2057523F57230B9587D11A7 /* SWActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0E45AECC35806594966364FE28B3ABA3 /* FBSDKMath.m in Sources */ = {isa = PBXBuildFile; fileRef = C09032C306E1768E24F0584DB5DFBC93 /* FBSDKMath.m */; };
 		0EE37B4F65396E9B7E3FE2D7ACAF4EA6 /* FBSDKLoginTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F70561DF0C7A68DFFFF1EEB86175C /* FBSDKLoginTooltipView.m */; };
@@ -51,9 +50,10 @@
 		0F3B365E0664AA9E9F54E15DB733FA26 /* FBSDKBridgeAPIProtocolWebV1.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDCF59D294B2363937E7B041BFF1E4 /* FBSDKBridgeAPIProtocolWebV1.m */; };
 		0F5318BF086F20C5F927B5FF99280A16 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A023729E9D08EC4FE19474C0BDA6E30 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0F80466DCA26561A8A3646CC9E61809C /* FBSDKSharePhotoContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 573316E43527131C74C8EFE612C33DE8 /* FBSDKSharePhotoContent.m */; };
+		0F911518B639EDDB31521A96456C50CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		1042E542369DEB3A983A5E5E5B5995C9 /* FBSDKErrorRecoveryConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D4040C815EBE05C92D775C18821CD2 /* FBSDKErrorRecoveryConfiguration.m */; };
 		113F07D8BB95421687E5F86A1E6DF99E /* Bolts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4C9A498AB3AE8177BECA779EB4F48B /* Bolts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1223A4BF77312A1BC1D7B369A27E43C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3AD355D28C0F9DED4563AA965A81CB /* UIKit.framework */; };
+		11EF2B0BF88086F9BDC6A947A0566FCD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1104FFE6E5915DA75C08E213C93A1A /* Security.framework */; };
 		123D28717B28730D7DDD56E56B646294 /* IQUITextFieldView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF6DAA812A777EAE51B51B99C02D2AF /* IQUITextFieldView+Additions.swift */; };
 		125227362C0FFB5F6F19E36A4932CE4C /* FBSDKShareLinkContent.h in Headers */ = {isa = PBXBuildFile; fileRef = E3C83D94A50B4E6E1A00F1182A1E63BD /* FBSDKShareLinkContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1271771DBA7D24BB75422855AB071578 /* FBSDKShareOpenGraphValueContainer+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 28DF0E13E926D654CA22ED42B1C72027 /* FBSDKShareOpenGraphValueContainer+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -63,7 +63,6 @@
 		140F458AB7312414FC423FEED70A3733 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1C67D78CB7CDD66F14BB65DB0520AA /* UIActivityIndicatorView+AFNetworking.m */; };
 		14BF023BDEFCE0174FD27A343DAB3D03 /* FBSDKLikeActionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8535BABA3CD90035A7D923B3E7E4DEB9 /* FBSDKLikeActionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		14FADC4D15743F9C948D562318BB26C8 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411317E813B49227E5FC336DDFB6B1A6 /* PopupDialog.swift */; };
-		15608627A6EC221B0D671E4DF3250CEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		1576AFA40C1BE3C8560BD08F5B38B16F /* FBSDKGraphRequestBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 39442F38B0A8A10E4CF526F4F3011722 /* FBSDKGraphRequestBody.m */; };
 		15B03CD3D28B4055104A94137E6FF361 /* FBSDKCheckmarkIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 067B6E79C1C2BACA59EEA55C768282A3 /* FBSDKCheckmarkIcon.m */; };
 		1648AB9E52071D70CD79280AB21C94D1 /* ActionSheetDistancePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 853B84FAF86575B056FDA172BA89C9ED /* ActionSheetDistancePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -74,6 +73,7 @@
 		1841C3E838E579A3C1936D9D5E24BF8E /* FBSDKGraphRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 236F8653A2F3F2895F3C5F219D50CE62 /* FBSDKGraphRequest.m */; };
 		18880C777B7A5B7836CD0DF142207E5A /* SVPullToRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AA429633A22AD04C3EC6EC1FEB5422 /* SVPullToRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A0130E51AF422F68818416677EE6595 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC49710A5A208EDFBB3542334F97D8A /* ActionSheetDatePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1C8F85A1033B5AE0FE8126CE2E937E9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64243D5C958B78E61A9ED450F7EB0D1 /* CoreGraphics.framework */; };
 		1C9448B0A2E3A1A444D2C764197DA2C6 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F6795198EB1B765A2EECAFCCC8162 /* SVIndefiniteAnimatedView.m */; };
 		1CA1F2DE756FB459C07558B62637829D /* FBSDKAppEventsUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = C8058C9F94949744B68DC90569F33DE5 /* FBSDKAppEventsUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1CA932E2814B9AD791A0ABA5FAB3D97D /* FBSDKWebDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C8455503E0283D1E72A829983C55C2 /* FBSDKWebDialog.m */; };
@@ -84,6 +84,7 @@
 		22293B4C162DC356833FED595243C9A3 /* BFURL.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A8DC6834A58C6B34C91ABD30A1CE2D /* BFURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22BF5066806248FBD63CD64193B95AB6 /* IQUIScrollView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8655ABFA3C6247DEAA3772A23663E61F /* IQUIScrollView+Additions.swift */; };
 		23AC7D9FB9BAD94292F60A1EE0D1DA6E /* FBSDKCoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C43CF83F65468E7A9D07BFCA115B3248 /* FBSDKCoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23EFB184AD12FB1014FFC765CE0D710A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1104FFE6E5915DA75C08E213C93A1A /* Security.framework */; };
 		2414F7CC54A9CD6DEAE3D816D2A3BE72 /* FBSDKLikeObjectType.m in Sources */ = {isa = PBXBuildFile; fileRef = F22CDDA7CCFDDF14EA2DD5221DF0BE96 /* FBSDKLikeObjectType.m */; };
 		246DD685C951FFF04D55232211F076CD /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E72A4B27CF626BF5C69928F8F1932E /* ActionSheetDistancePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		24D8AB0174F5882E3F0A8D544610F2B9 /* FBSDKGraphRequestMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 8093952A4FCDF4D4A939B9A7478B00CB /* FBSDKGraphRequestMetadata.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -91,7 +92,6 @@
 		269C9556C63C0ED82CE7D3E92EDD07CB /* BFAppLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC83F674D2B6776B835B3F711E2713E /* BFAppLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26CBCE2364E27AB05F05FDD19210C473 /* BFTaskCompletionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 868F3C89FE94A2ABE4EE11CB72E30C8F /* BFTaskCompletionSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		271F9EC21A58E01D1891B63DF41E65DC /* FBSDKAppEventsDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A57C2CDC8261F78ECA6590A1E7D92610 /* FBSDKAppEventsDeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2744AF87C405F98E9C658AF0BB4517BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		275902A684DF1DE52FBA7A833E4FCA41 /* FBSDKServerConfigurationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A8556D1FAD6AB972EE36CA731EBF7334 /* FBSDKServerConfigurationManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		279BAFBD6332CEA060B8FCF53B57DF04 /* FBSDKShareDialogMode.m in Sources */ = {isa = PBXBuildFile; fileRef = CF770177D3962C64A997EC4390A87678 /* FBSDKShareDialogMode.m */; };
 		29476636EA86BEFC4CB833D3BB7A52D7 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FA85CF36C0D5B7230846490EB6D4EE12 /* AFURLRequestSerialization.m */; };
@@ -103,11 +103,12 @@
 		2E5312BDAD2B2C50E0FEE3301FFDE45D /* FBSDKURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC17F6A4D93D47AD41B66C62695CA6E /* FBSDKURLConnection.m */; };
 		2EBD7B6D6EEBAD72870AECB44D1E3AE2 /* IQBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434980A9A566A95AD2B448DA3AECB4E7 /* IQBarButtonItem.swift */; };
 		2EDA60A1A83B62279E2F2E720580A846 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAF6C72A4B118408B0D743F005178B7 /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F5CB6FE1BDD44842548D741F24D32F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		2F8D9AB451E6E0E261A532F34AB7163B /* UIAlertController+Blocks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EBB64661FB19120A4A8C2204FE6F911 /* UIAlertController+Blocks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		301E39662BF29696488C3195863CDE66 /* FBSDKBoltsMeasurementEventListener.m in Sources */ = {isa = PBXBuildFile; fileRef = A02854DA8DB916441CC5F434AAB89D43 /* FBSDKBoltsMeasurementEventListener.m */; };
 		30968BEDEB0175FD8463DDCE0317CFF3 /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = F062C14D03214116A119F77225A5C2FB /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30F0BAE1DBB79BBB6CBD957EA8B89E4B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B36C10235FE4A9E7B8945746F4E6A659 /* MobileCoreServices.framework */; };
 		31011DC1DA412EF5B5A9F2C136C2A207 /* FBSDKLikeBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89389DC3158A54AB0BFA08CF9CC1D266 /* FBSDKLikeBoxView.m */; };
+		312C3BBB85975D2CF9E815FDB595A359 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		31922DA7FDBC24E70DD803C5FBC02D1D /* UISidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B613BAFA496BE9A43EB0A6A89E00C523 /* UISidebarViewController.m */; };
 		31FF3CC50EAEB0832F5455C337CD225C /* FBSDKProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 368D16DFDBB8807F5C4783656B12B880 /* FBSDKProfile.m */; };
 		31FFA1B27211E9F71C441BCA5E8CE57D /* FBSDKGraphRequestConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 30D88635D5CCB45EF6CA221CDAC908CA /* FBSDKGraphRequestConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -128,7 +129,8 @@
 		399DD3C48D02BD458083DF8F481D6B64 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD77F6FA59E0B278796020B44A42361 /* UIView+Animations.swift */; };
 		3A6F261E821274129FCB8A6606690048 /* FBSDKAccessTokenCacheV3.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C80283330B36F0A08F2F66AEE59DDE /* FBSDKAccessTokenCacheV3.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3B1F7A526A5C5000A723B02E5625AC5D /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AD7C93490F7041C9E0C3DE39A85A99 /* PopupDialogDefaultButtons.swift */; };
-		3B9E07BEFC162983331B5F8C9AE41E44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
+		3B41754212C34819A299F3B4D5978099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
+		3C113D8ED57CA7407537B7322E890310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		3C8D2470783809376BA929A9603C21D9 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 331E7FE3FE4DD7B33B57049AE05E3073 /* DistancePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		3D6F2C28486F5B85C53E943AEBCCE494 /* FBSDKShareError.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8F10E6D0052CE5A99954207F0310B1 /* FBSDKShareError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3D8E95D6CB23606F0D9682097B057278 /* FBSDKErrorConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4462AA0A5E116B1B379BE3AB02BE21 /* FBSDKErrorConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -140,7 +142,6 @@
 		4133DB9FF0DE24F4390257DC51BEBCD5 /* FBSDKMaleSilhouetteIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D23E9F85F1BAFF866D81B42589A1015 /* FBSDKMaleSilhouetteIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4161FB4DDC61D2D94EF4F43020CF76B3 /* FBSDKBridgeAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B4459EC59135C519B0040BFDC2B2A8 /* FBSDKBridgeAPIRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		42A28BA4760C936859C25687297E5815 /* FBSDKShareLinkContent+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 59FA11D3411ECDDB7B799AAF9160D450 /* FBSDKShareLinkContent+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		42AF1BB1ED090CC9E588A463441D09E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B065E6A4A97098C0493C91DA680C7C90 /* SystemConfiguration.framework */; };
 		42D57849ED68259122E6AE3FEB73FD7F /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A3F6D6D47F6079F2E3CB3FCBA4C707 /* TCPClient.swift */; };
 		430E0A46B42F47FF79AE16168D1613E9 /* ActionSheetLocalePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AF7FA67410DF0DA9499293FB8C6360 /* ActionSheetLocalePicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		435054A8A352F1E58C55C82530166B9A /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1779110D5D276ED01E16BEB9EBD80A24 /* PopupDialogButton.swift */; };
@@ -154,7 +155,6 @@
 		46433C26107AB802A344968A4CD4CE99 /* FBSDKSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 10679AADB50BCD74BD2071CAA0A42DFD /* FBSDKSettings.m */; };
 		467760A5E599FF4EEFA03868B984F335 /* FBSDKShareVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9FFF9E84343ED1EA7555B4FC099042 /* FBSDKShareVideo.m */; };
 		469519D5739872F46416F41D0E338B08 /* FBSDKButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0BC449EEC6B81EF2BC74EE106C383A /* FBSDKButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46BA6D332BAE95C29553C582A2E0ECE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		46C2A0BCE830EF64E95EBEE1B34498FC /* FBSDKErrorRecoveryConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 09ABE9EE90938486D4FAA43C1C5DFD27 /* FBSDKErrorRecoveryConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4720952A7EDD398D073BB51C81E1E136 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 47C08DCB952CCD92197AE9BFF1AB78B2 /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47F04CBDF6C54B220F6AEECEF15264D5 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B963FCF8EACF46403F5D6DD54A8663FE /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -162,6 +162,7 @@
 		48480611E426E736F2BD1C58E417D899 /* FBSDKMonotonicTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BAC0E8ADFE83CEDE14CD0015E1B269 /* FBSDKMonotonicTime.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4AE3588EE4DC42B00E5C6E3061D0F000 /* FBSDKLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AAC8B62F9FF5232717AD4C2E4465D1 /* FBSDKLikeButton.m */; };
 		4B5B1630E7C17F0B3122A086FD9E7BB9 /* FBSDKShareKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8122B11BAA90114EE99D435F61D67E51 /* FBSDKShareKit-dummy.m */; };
+		4B62CAACADD1BBE725161B21E875D980 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB3CC9FC888C96CD2F3336C64361737 /* QuartzCore.framework */; };
 		4BEFFF49455DC728FAD362BDD6774D23 /* FBSDKGraphRequestMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C60173CD224206F57CAAA9D429E8965 /* FBSDKGraphRequestMetadata.m */; };
 		4C2CBBA196AD9A299DAA5083869917BF /* FBSDKSystemAccountStoreAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C4C344AA1260B9CEFB858810CE6192 /* FBSDKSystemAccountStoreAdapter.m */; };
 		4D1492DD64D75E658629F10799E93531 /* UIAlertController+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = F75B4E58446B9B6CA3B357596C9B03EA /* UIAlertController+Blocks.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -189,10 +190,10 @@
 		5811E31673A7B70017D68DAC70B7071D /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ACFBA3E766DE59C9BD9E523EB7B38D /* UIScrollView+SVInfiniteScrolling.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5890149031D7BE39D8F5721F6505E482 /* _FBSDKLoginRecoveryAttempter.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F3CF18D2251DD31C2A55BAEE5164B4 /* _FBSDKLoginRecoveryAttempter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		58A2990D23BD6668A56FE68EF0CAFE0C /* FBSDKServerConfiguration+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BD309D6598A66E7B0A40D8E3D22FB05 /* FBSDKServerConfiguration+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5918386BE1F6F9D1674149A4DA2FD229 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		593113E7E05123AF253768CEC98C5926 /* FBSDKBridgeAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FEC6479498251DC950B3F9A9A1276FC /* FBSDKBridgeAPIResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5A1D34D104D42B1EE399E23BCD7935A0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 127D86C542E6776989D17A423F63D072 /* AFURLResponseSerialization.m */; };
 		5A737722018C25C7AC9F74A926AFAD38 /* SVPullToRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81845835D9D0951A78FDAA6E24D68239 /* SVPullToRefresh-dummy.m */; };
+		5A79F43BF3D900FD1E8186E93841D280 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054629BC3F00F6A9376EA68A4A1C3284 /* UIKit.framework */; };
 		5B0B08F9FC619C4DD2FE1135772CD217 /* FBSDKError.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AC7DA1BC0B35C39180B38C11555FB3 /* FBSDKError.m */; };
 		5B981698211292E1F92A21CC9F182675 /* IQKeyboardManagerSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EF373676E7B4C9B398EAC446D0D7E4 /* IQKeyboardManagerSwift-dummy.m */; };
 		5BF825C7DC7E5001FA21DF40C38736FE /* FBSDKAppInviteContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E91CB68BD7F2CB65DA52C0775C7D074 /* FBSDKAppInviteContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -201,7 +202,6 @@
 		5D16F1617B1D94D9C92D1737D01DC3BC /* FBSDKKeychainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A06BACE0102E1FE0A6CB24A40D9080 /* FBSDKKeychainStore.m */; };
 		5E2D97F124DD952AC454855ACBE8837F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE991F9A1D5548A782BF87EE24D0451A /* FBSDKCoreKit.framework */; };
 		5EEDA891528B2D1C5BAC35B5783F5881 /* FBSDKGraphRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 75B9038A5F3AF7986560006E7237E8B9 /* FBSDKGraphRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F691AB7408CBD611CB286CF5803D810 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		5FD07EFC60BAEB575F50DCE48AA28C12 /* FBSDKAppLinkResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = F0826C28BE65C11624E38EC85FC2AF05 /* FBSDKAppLinkResolver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		602D29825648A31B41DCA8E93CCCA1D1 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DA27B9714F0F1F0DEB7C646850FB30 /* FXBlurView.m */; };
 		6057D6C88C40CE21CA41FE9215E64073 /* BFAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DF9AF3573CCB58496DA7CA1BB2A38E /* BFAppLinkReturnToRefererController.m */; };
@@ -209,13 +209,11 @@
 		626B69D3B2CC51013DB5950748098724 /* FBSDKShareKit+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 56661AED5B21847559946E3E8854AB03 /* FBSDKShareKit+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		628B54452B544C75A3C59FFE69CE293F /* FBSDKCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DFAB738A5B8119EBBCDB6601EC03E2 /* FBSDKCoreKit-dummy.m */; };
 		63A49532C857D4508B8112C46EB1E501 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE991F9A1D5548A782BF87EE24D0451A /* FBSDKCoreKit.framework */; };
-		63D72E8FF28B9E7FAA0B00A480AE1582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		6423252A4839C1345BE5625417BDA674 /* FBSDKShareError.m in Sources */ = {isa = PBXBuildFile; fileRef = 82275BAC62DE10FAC4731F72066DEA13 /* FBSDKShareError.m */; };
 		649E78B5EA450FABDF5201E31F265FAB /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D514DA0A51E23707BB3086CECFC4A526 /* AFNetworkActivityIndicatorManager.m */; };
 		65007B76142FF254119FA359C9694504 /* FBSDKShareOpenGraphAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B68D2067EAE88BFE3C1D16AC77E6FB0 /* FBSDKShareOpenGraphAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6573AF9ABA59AC8D1F52B07088197F71 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1187090031BA6E5A3A08DFDEB0FBCAA6 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6612983F0DBBDB30428FE359E648CF1F /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2560957546319D7BAA9D1500B6357B5D /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		665FD00124B1C98A95031A60DA882EF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		66CEC4DE3A4DA691B78BB63CF65CF7B6 /* FBSDKWebDialogView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE1294DA7E469A3D9D067E02AFBC16C /* FBSDKWebDialogView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6723139B112BF314CB31B2A65B2DFBC2 /* FBSDKMessengerIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D543CA5B2537B3E21DE04C0FF857E6B /* FBSDKMessengerIcon.m */; };
 		676091A5FC166082A6F2AD17F8514AE5 /* FBSDKAppEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = AC2A51B5B700553FA021A32C66BE7ACB /* FBSDKAppEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -238,10 +236,11 @@
 		70A8BBCCE19CDDEC5D441647D2FDE858 /* FBSDKApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FF44F2CB1B330FEC6685EDE6A3C280 /* FBSDKApplicationDelegate.m */; };
 		71DB9B0E7C2B8B1A871068685146DD4F /* BFAppLinkNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EE79479133699FBA48530601A3DD8DC /* BFAppLinkNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72809996928FCF129587C5A412131CEF /* BFAppLinkReturnToRefererView_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CC5BCE9618CFE29A3BB01770D0A5E7E /* BFAppLinkReturnToRefererView_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72BE65E696A388D4CC0D75BE461FEF1B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017078A8497D8273B72FDC4B9D8C436C /* MobileCoreServices.framework */; };
 		73C283FA1E106392A960F9F44E6CCFBC /* BFAppLinkReturnToRefererView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBAEE4837D0DD521B13281F40C8434F /* BFAppLinkReturnToRefererView.m */; };
 		745D43490B6731F7EA8F5B038BB16A7D /* FBSDKDialogConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A0914AA4EACD92522ECB09FA74A550 /* FBSDKDialogConfiguration.m */; };
 		763FA01928E4A701EAE02C4746291F8A /* BFURL.m in Sources */ = {isa = PBXBuildFile; fileRef = BC159A74B642C251CAD33F4DA4E56CCD /* BFURL.m */; };
-		789D749690B308852115FF20CD982A69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99601B6C3CDF1CB6BAE6CC921A664396 /* CoreGraphics.framework */; };
+		781CC5B0E7B6AA73A1D886A66781B8F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		791F4079352A59D818722CBC526DC205 /* FBSDKAccessTokenCacheV4.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0B09E317CBB0CC29B36FE5BDA52D /* FBSDKAccessTokenCacheV4.m */; };
 		795CE9169F828B98D36164E4DA9708E0 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2788427B7B14C40354ED98E72007149C /* PresentationController.swift */; };
 		7A057A41CF99B8801C962BC5439AD56E /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37376AD268689BD36E4E8C974D648DFE /* PopupDialogDefaultView.swift */; };
@@ -252,14 +251,15 @@
 		7BF76FF0650F2A26E43CFB931874B1B6 /* FBSDKErrorConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE6E40AC5A5DC95F3B733E0F8AB8534 /* FBSDKErrorConfiguration.m */; };
 		7CE16B1BF75DF396768A0A3CFD968DB1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE6552D66937998FCF0E815DF8D1B0 /* UIWebView+AFNetworking.m */; };
 		7D8F27AE7C157E0FB901CDFB39FA2EAE /* FBSDKBridgeAPIProtocolType.h in Headers */ = {isa = PBXBuildFile; fileRef = 315F4C0DAB2266834D190F275FF77BE2 /* FBSDKBridgeAPIProtocolType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7EFD2FD59AE639D1987D7BFD97D2F5CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		7F4443C76022E7123F2508C964092FC4 /* FBSDKCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 0818C1866FF5B84D44C12251C46E24AF /* FBSDKCrypto.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		806BC95D62A6132B1E773C2377B2AD97 /* FBSDKTypeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFFFEEA6E85C107254493C174DB6799 /* FBSDKTypeUtility.m */; };
 		807E8E8174E96B9407245689A5EF1C63 /* FBSDKGraphRequestDataAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BF87B661A423181B857BD19EDC6B8D2 /* FBSDKGraphRequestDataAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80C7C9109EF900E34DDB6360A0D594A4 /* FBSDKShareDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = D6932F22B325964E41E446FF6F43E513 /* FBSDKShareDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82D554EC9FB9A62D935B6555325F5898 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7064ACD881F497A83142376D1408D84F /* Security.framework */; };
 		82DB07E1965CC9FFA0340EDA2C5A05A0 /* ActionSheetLocalePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AC4E893FDEA6938D842143BF8DF50E0 /* ActionSheetLocalePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83678861FC71A2BE986560E60D265F1C /* ActionSheetPicker-3.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFC6E9198A408CEF895A04CED75D8D0F /* ActionSheetPicker-3.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83B5E358BC8F4681DB931170CBD38D58 /* FBSDKButton+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = BE298E851BC6E2F04A6C88C0C100459F /* FBSDKButton+Subclass.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		84659EA3999F1139695AF0327B94E8E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		84C426D57492584BD66B7DE488EBBE92 /* FBSDKError.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EB40AF569A5A9C2BD8282B47FBCE029 /* FBSDKError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8525046CD925148B361587708346F6F2 /* FBSDKGameRequestDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = D87EE37369A6B0DDBB9FF36639B6194F /* FBSDKGameRequestDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86C2D41A6F2226A9C52CD121D413CCA4 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D94D6A2DB6700F76160FC626C446285 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -275,13 +275,13 @@
 		8B3D1D61CAE1DD021ACB37F0BF6A9F1E /* FBSDKErrorRecoveryAttempter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB81871CA7FD9AA18822E9424B5FB42 /* FBSDKErrorRecoveryAttempter.m */; };
 		8BEF1A3E0EC5E224A08F71DAEB5252B3 /* BFExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = FC94A2FD55396DF928AF5E33ED6C0F13 /* BFExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BF65AA0233EE11F74F3F94F68E9294B /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6A2472FD4E4D4B27D9F6494061F4B4 /* SVProgressHUD-dummy.m */; };
+		8C7A28148A2319CDE0DDBE8B473F93FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		8CA05FFDF05D413B78EDD9302CD830A5 /* FBSDKSharingContent.h in Headers */ = {isa = PBXBuildFile; fileRef = A74743ECD830ED8BC25C6920FCBC57D8 /* FBSDKSharingContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D4CB36842CCB1A72D141F47471E8D2A /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B14FD0E215F8B634E77ACD7778FC10AF /* KeychainItemWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DC276B8B72114FD1E6295386D0FA362 /* FBSDKSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = B83C20001602C0DA2931637777E77214 /* FBSDKSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DFF91EA02FFECDB2445F2EE35F2A696 /* FBSDKShareConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0EFBE3F6E08F2C5EC1745040728E1B /* FBSDKShareConstants.m */; };
 		8FD6C36EA873FDDAF546DF72D738E51A /* BFWebViewAppLinkResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 189BC23CFBA6E48828BA9C280EF63566 /* BFWebViewAppLinkResolver.m */; };
 		909C440F2876D388116C7F733A9F24BB /* FBSDKAppEventsState.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DB952D8EA79BB94CB542C23D41C23A /* FBSDKAppEventsState.m */; };
-		90D38A0F28DF49C5D0A8707304F1EB16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		90E3389D33DD00DE304548BE9C52C69F /* ActionSheetCustomPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1ACBD3CE1B6F4D21D9C0E9AE2FAB38 /* ActionSheetCustomPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		924144C365B69BF42B2BCF232D869BE8 /* FBSDKApplicationDelegate+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B7AD9FAA05D35D13A138BFF242515A /* FBSDKApplicationDelegate+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9264BD69AFA8EE74F0D7F0EBD74F762F /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C2ADC3279C0C0C0C5D133D9B9595A278 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -296,7 +296,6 @@
 		948458DC0A9308A2D8C018C37FB7BBDD /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = C2EFDFA785C0A4DD314A356791CA823D /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94D1E80A5E3125E3862A8DA73B4C5E30 /* FBSDKServerConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 309597C457B813A2359658EB42E6983B /* FBSDKServerConfigurationManager.m */; };
 		9632FC7751BA6E5FC6AAD679A12FCC63 /* FBSDKBridgeAPIProtocolWebV1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFF515140423D60E15EFE6BF214D8A3 /* FBSDKBridgeAPIProtocolWebV1.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		96C8A51ED0F076B8E31D21A48D463E36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E344A9622E07C63426096BE0F05F8DFA /* QuartzCore.framework */; };
 		96E38AB85794062A6E3BFF2CD1991FD7 /* FBSDKLoginConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF6FA27808B8F587052FBD2803076D3 /* FBSDKLoginConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97E38F8824F69885490118E90B41133A /* FBSDKLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = FB6F29AF01AA08BC19B7B312BF2C801E /* FBSDKLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		983488C730E988A2CF777F011BA66782 /* FBSDKVideoUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB70E0F254122399A4EF98F808FF797 /* FBSDKVideoUploader.m */; };
@@ -320,7 +319,6 @@
 		A0FE2B1C2F0EB5968972F25726EA34A4 /* SVPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D481442D9B3D21579EA38B6DA29C9A2 /* SVPullToRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A142BE6A574CECD07C1C2F8755851D60 /* FBSDKMessengerIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 15DE3C3F50C691338549140B0D535D56 /* FBSDKMessengerIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A2E5E8BD28005F593A9548322E61078F /* FBSDKAppEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1C35F7FEB7AE84672DDB9F4D8AFADE /* FBSDKAppEvents.m */; };
-		A2F74AC56E76F01E7A69BB8D3A7E3DB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3AD355D28C0F9DED4563AA965A81CB /* UIKit.framework */; };
 		A34EF6B27E97A4DE26E881420B4E95A2 /* FBSDKShareConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = C836F7DD5B24886CFBA989B21041412A /* FBSDKShareConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3591DEDA776B48C026E7F9144981E58 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 538B59669A008574BE3951B98FD798C9 /* AFAutoPurgingImageCache.m */; };
 		A378FFB6D0C8947D69B3BBFFDE8CC06C /* BFCancellationTokenRegistration.h in Headers */ = {isa = PBXBuildFile; fileRef = A20AE2FDD0AB90FEF65262A786C4E533 /* BFCancellationTokenRegistration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -341,9 +339,9 @@
 		A84ED188345C2D0004CC4FF19091701B /* FBSDKGameRequestFrictionlessRecipientCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ED38E2162A5A01219A9D802A65E30A74 /* FBSDKGameRequestFrictionlessRecipientCache.m */; };
 		A857CA86EC4FAA349221F7BECFE2C96B /* FBSDKLoginManagerLoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A53247C17604E1371D9A9795C484411 /* FBSDKLoginManagerLoginResult.m */; };
 		A88CFE3F9DCE30C3AA3A2F6086C6EE84 /* IQKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A4B9B60B3E3B5FA6FD10A1BA709849 /* IQKeyboardManager.swift */; };
-		A8C297643282E0CF5E7DF9CB6E23A0D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		A9C2B803BFDDADE42F647E7FDB4FCA0A /* FBSDKLoginTooltipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5B4ABB1C3C5C038020ED3C99BF8B52 /* FBSDKLoginTooltipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9F1A9CF01AF7F7A691A0A8C9E2D3A71 /* IQToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530C3D9DA853A8E590C4539936EB9F67 /* IQToolbar.swift */; };
+		AA58067A521824F35C4DFA67900A3325 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		AC19C80BBB4F9F42678CC7298B2E3F0D /* FBSDKGraphRequestPiggybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E027B603056A951F6B74AB42FE94AB /* FBSDKGraphRequestPiggybackManager.m */; };
 		ACF0730D12461C09D6FB7657AAE39C8C /* FBSDKBridgeAPIRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E1200FC46E9826804DE72D8F0E244B9C /* FBSDKBridgeAPIRequest+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AD86AE990383376EFB048699F93F7855 /* FBSDKShareOpenGraphObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B4233AB9C39D7246307010FD074212B /* FBSDKShareOpenGraphObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -362,6 +360,7 @@
 		B0E80667A39EB5EC1FC5C8A3E184244A /* BFAppLinkReturnToRefererController.h in Headers */ = {isa = PBXBuildFile; fileRef = 93238237494BC2E8BDFDFC6BCA9F01C1 /* BFAppLinkReturnToRefererController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B16A078FC7FBC172A266A336AEF7F673 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F32A89E22458C1D13BC91B643BD56E5 /* UIRefreshControl+AFNetworking.m */; };
 		B1F492D0A8FA4A1680716C9E358DE171 /* FBSDKAccessToken.h in Headers */ = {isa = PBXBuildFile; fileRef = F414DFCD22B000497505383A2EEB39A6 /* FBSDKAccessToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2485E6684A9A392382EB26F55BB6B3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		B30E2FD8AE10C816C21B7681C184EA1A /* FBSDKCoreKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A892BDED24C9BFA420A07B37A7DAAB86 /* FBSDKCoreKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B4728472C57730BDD2B2BC733CA04EEB /* FBSDKBridgeAPIProtocolWebV2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9755B49F6A05FD3C16CE17F77BBA5124 /* FBSDKBridgeAPIProtocolWebV2.m */; };
 		B49E26DF5871F564A7C9528173CE2D5F /* IQKeyboardManagerSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F89CECD8F66C7A7EA662ADD7C0CDD35A /* IQKeyboardManagerSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -373,16 +372,17 @@
 		B6686EAAD516E60852A7703E6B9A1B80 /* FBSDKAppInviteDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 98EE2BCFE706B140582EC48CC300BFD8 /* FBSDKAppInviteDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6AC0CB6BBF132B92022B99C96F37F96 /* FBSDKTestUsersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99212EAE6793CFA7B089D1826CEE5ADC /* FBSDKTestUsersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B846BFBFF7985288A60EF61D87DB8DF4 /* BFAppLinkNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCEE99B2C92DCDACB01979A6012E327 /* BFAppLinkNavigation.m */; };
-		B866F27AFF771B61C0BC625BA8B3E021 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		B8BF7F39960E71BC3E6F37E3E13C4862 /* FBSDKTypeUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = E066A4D454E7EE0A4B97AF5CFAC7170E /* FBSDKTypeUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9557585483AD395045D19F792D8BDE7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054629BC3F00F6A9376EA68A4A1C3284 /* UIKit.framework */; };
 		B9CFA012246ABDC04F9DF182F893A736 /* FBSDKTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = C93CDCE70E3D70292D1CFEC3F06ECB28 /* FBSDKTooltipView.m */; };
 		B9E1B0043139A8675B4CC0F58DD4CDF6 /* FBSDKLikeActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C3E5F9B8F0B09E93C4CFFAF781EC5F /* FBSDKLikeActionController.m */; };
-		BA2AD5E00B7E3045A8FA88436F3FCEE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
-		BA59C305045148D029CEC3141DCB2F32 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7064ACD881F497A83142376D1408D84F /* Security.framework */; };
+		BA2D29D9265012FAC7A88D9A8CCD9989 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64243D5C958B78E61A9ED450F7EB0D1 /* CoreGraphics.framework */; };
 		BAC05D6621087E5D3F421C8A62B4991E /* FBSDKShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F55F0CD43A58D8BF5424A3F8DC51D57A /* FBSDKShareButton.m */; };
 		BB5F4392FC6FE551968E4BEE98518C92 /* FBSDKBridgeAPICrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = F4303CFF78D9C8F9C8DC741520FFDFB5 /* FBSDKBridgeAPICrypto.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BB6CEDCCA5DC3CC721AFAC496718D38D /* FBSDKLoginKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8F5F1E1EAFD4044CDD0ECDCADD26621 /* FBSDKLoginKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBB716ACC0A6F3C7BB14934A8DD0AC5E /* FBSDKMutableCopying.h in Headers */ = {isa = PBXBuildFile; fileRef = F916C3DD2BF6E97931481712032215EB /* FBSDKMutableCopying.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC196E03333C66B72A01392D8272BAA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
+		BC22E83FBE012D2A1B6B72B886832AF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		BCD6B3BA5E1132F0FD49AC39F2BF4D62 /* IQKeyboardManagerConstantsInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDF45555CF636EAF3356D345FBD1FC5 /* IQKeyboardManagerConstantsInternal.swift */; };
 		BDA6C38F1107BD111A34B3EED8D26520 /* FBSDKWebDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = A29693A3464D66000703B83E83307119 /* FBSDKWebDialogView.m */; };
 		BDA816C8923AFFC9D52056D6FC5D919F /* FBSDKLikeDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C74A01E6118E266C310CC8BC16682 /* FBSDKLikeDialog.m */; };
@@ -395,7 +395,6 @@
 		C0F16B5A855B33CD1D25BD0E2382700F /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDF95F94DB5F63714C4FD5D98544704 /* UIViewController+Visibility.swift */; };
 		C1570479D5296AB69FC73C089287236F /* BFAppLink_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 43109A8A6B158DD9D2E39D785B731BE8 /* BFAppLink_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1B5669B1DD471B6B6F317FC8CCE37A3 /* FBSDKAppInviteContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C67AAD97F9C4A7269CB6CD69A40D36B /* FBSDKAppInviteContent.m */; };
-		C20B0E9DFD78E33C67A7A73A740DD35D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		C239FA16795B5E61E009FADFBBFE9EB5 /* FBSDKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C9E0AEE17DCE6E8B473144C8EF9CFC /* FBSDKBase64.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C2E7805CD62E13557A6A5D76F1AA6CFF /* BFURL_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B88CE4F5CF71243DD785D40DAC293D8C /* BFURL_Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3ABA19CFC9566AA9ABFDEC2B6DC6234 /* FBSDKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED09526361D9A5CDC0F8189C43D0F07 /* FBSDKConstants.m */; };
@@ -417,11 +416,10 @@
 		CA068FC25E80824549668A53EC9379EC /* DistancePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 25ED522DA5920DA123C51896143DB708 /* DistancePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA298F05B4F2EC4A11B3D62855FF000D /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B101FB201C3D66DD7F81F0A796EA65B7 /* UIScrollView+SVPullToRefresh.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		CA86598BD226C0311FF47E1FF0026FC9 /* FBSDKLikeControl+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = DA5EFDE749CEA26C494DEDD36E0746EE /* FBSDKLikeControl+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CA9B7A7E64B7C1D498E3AFB055EA9BF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99601B6C3CDF1CB6BAE6CC921A664396 /* CoreGraphics.framework */; };
 		CABACAB1C400EA205C14DA5B059BD0BE /* FBSDKLoginKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4774C6A69683CA7AA72051FE5D286B68 /* FBSDKLoginKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAC99914CCEB0192CAA228766E537BF0 /* FBSDKHashtag.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E7030C6E304CBD9D44FAFEFC59E914 /* FBSDKHashtag.m */; };
-		CC838339C0E4BB6BB1B5E03D21CB3893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		CD3FA6A9C1C5569A23B84EC2E2FF0E24 /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBBC30FEE396678D6BC4A1406CE3B28 /* BFTaskCompletionSource.m */; };
+		CE2EB8CE3176F8A1FAA78CC8786292CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188015A478CE225D4621A25382BC3C5E /* SystemConfiguration.framework */; };
 		CEB2F0E229EF841D92C780C3FFDF1BEA /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F41F98DB2A4418BA70C029C65B6AD44C /* AFSecurityPolicy.m */; };
 		CF287829627F26B2EB4382B897D06A0E /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4DB2142B923C06EE8C91C5096B3C96 /* AFNetworking-dummy.m */; };
 		CF3367EFD9C853279C0EA9226A2F98F4 /* FBSDKAppGroupJoinDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E2844C4D36253246DBA60902716783 /* FBSDKAppGroupJoinDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -440,7 +438,6 @@
 		D86B0E3FE7D8FFD40D2A6710DF8D71EB /* Pods-PublicEyes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2F0286B97788478C5ACF14B48428A6 /* Pods-PublicEyes-dummy.m */; };
 		D99A90FF913AE19BA5CC5DA17ABB8597 /* FBSDKAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 06443269120339DD7D153D54F27FF456 /* FBSDKAccessToken.m */; };
 		DA732A6C79E7252A25F23A1497ACD0FD /* ActionSheetMultipleStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B932C60B3538642132F6C0024D6CD77 /* ActionSheetMultipleStringPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DB1752910FD636F808F3FC6EEB7555F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */; };
 		DC4B448E3D4E95F64A154181D3D4379C /* BFCancellationToken.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2524BE6003A58EB59A695EE209362F /* BFCancellationToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD3B932166CBE8271826DEAB8A0E9C77 /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3BF377435515AD4E911FE2E5253D44 /* PopupDialogOverlayView.swift */; };
 		DD887A93A200A87A51B3D00BD1B80D20 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D14511F361D5160F49F63A9FCBE3D0 /* AFNetworkReachabilityManager.m */; };
@@ -455,6 +452,7 @@
 		E3B8672511331E6040B94F935D4B9950 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5008398EFC3294596FC13339B202E7A /* InteractiveTransition.swift */; };
 		E3BC9504A5DFD6534AF33B6517CFEF41 /* FBSDKLoginCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 87925A8A062A8F212E4F6B3D1539CAA6 /* FBSDKLoginCompletion.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E42196772B68CF9B302CA341FECEB35E /* FBSDKShareLinkContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 549229CAF8E8DEBFBF907A8CB522C4E9 /* FBSDKShareLinkContent.m */; };
+		E4852658AB0F03B2CE246DE43271863A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		E4B762ACAEFFEE3996B0C5699E1C0555 /* FBSDKShareDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D68CE157DC25AD1A804C15BB5DA080 /* FBSDKShareDialog.m */; };
 		E4BF0301B102C671773E18C16292B3A0 /* FBSDKCoreKit+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = BB46E5F98809E4EFFACE55842275F9FC /* FBSDKCoreKit+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E4D53CC600FA83588809C09A2131FD04 /* TZStackViewDistribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD137B3D4E8C6ED37D6D5EB551706AF /* TZStackViewDistribution.swift */; };
@@ -463,6 +461,7 @@
 		E5D65A06811F0A129E19C4063DAFEA16 /* FBSDKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E360E74B0F9EC53B1F347F88DDAD5B0E /* FBSDKMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5E97CEBC5ED79F059950D9184D64ED3 /* FBSDKContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E43236DB8E5F820D4C4B6A84027778B9 /* FBSDKContainerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E61ED7FAF083B75902728EB20AC4BD92 /* ActionSheetCustomPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D20837871563F05EE6747C9BBD249 /* ActionSheetCustomPicker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E6889067FD9BE44667F03F88BC386C15 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB3CC9FC888C96CD2F3336C64361737 /* QuartzCore.framework */; };
 		E6A48F589E26C5B29F800764540EBBB3 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD839523996225690012EA00BC3BD045 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8501B6E3B0D985C564E8FB0C53A46D9 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C3DC9540F6FFE3E2125F2244DEE386F /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9633664E1453DCB73DFB406C208FB59 /* FBSDKSendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5126980EEE1347AF89E2FD9D8AA6A92F /* FBSDKSendButton.m */; };
@@ -484,6 +483,7 @@
 		F1E5C5DDB9BAEFA384ECE0E8EB59A03E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E877E9B4D198F33724D8E1F213CE43 /* Bolts.framework */; };
 		F2D899C7AA0D7FC20160091BB9D31CF3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D75A97A79BF134396FAE7F2F7C0A061 /* UIImageView+AFNetworking.m */; };
 		F35D8A24E5B844EA5CA83B1AA98D0237 /* FBSDKShareButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C49EB8B91BBFD3791613DC1D83FF13 /* FBSDKShareButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F41F8BF9EEE484987B94F25BCF8124AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */; };
 		F512968EF954B268A7A0AC3A1842F60A /* TZStackViewAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7924DF3CD9085FBB0AAED77DEB6324 /* TZStackViewAlignment.swift */; };
 		F6955903E4CB48E4385FC1D820049169 /* FBSDKIcon.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C0644053C491DA7DD2BB0779D2FD04 /* FBSDKIcon.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F74E3D811CDE5FAB865DC2E2196E70AE /* FBSDKBridgeAPICrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B533FC39369D27E6D886D30D37412C2 /* FBSDKBridgeAPICrypto.m */; };
@@ -655,10 +655,12 @@
 /* Begin PBXFileReference section */
 		00CDC4C18443C532CAC37F2123861D01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00DB952D8EA79BB94CB542C23D41C23A /* FBSDKAppEventsState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsState.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsState.m; sourceTree = "<group>"; };
+		017078A8497D8273B72FDC4B9D8C436C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		01C80283330B36F0A08F2F66AEE59DDE /* FBSDKAccessTokenCacheV3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessTokenCacheV3.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3.h; sourceTree = "<group>"; };
 		02DFAB738A5B8119EBBCDB6601EC03E2 /* FBSDKCoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSDKCoreKit-dummy.m"; sourceTree = "<group>"; };
 		040DB6A12BC88E7A354C2B1939984E76 /* SWActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SWActionSheet.m; path = Pickers/SWActionSheet.m; sourceTree = "<group>"; };
 		045800B7CC64ADB2DDA837916C4DBA1B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSDKShareKit.framework; path = FBSDKShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		054629BC3F00F6A9376EA68A4A1C3284 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		06443269120339DD7D153D54F27FF456 /* FBSDKAccessToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessToken.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.m; sourceTree = "<group>"; };
 		067B6E79C1C2BACA59EEA55C768282A3 /* FBSDKCheckmarkIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCheckmarkIcon.m; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKCheckmarkIcon.m; sourceTree = "<group>"; };
 		06A4B9B60B3E3B5FA6FD10A1BA709849 /* IQKeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManager.swift; path = IQKeyboardManagerSwift/IQKeyboardManager.swift; sourceTree = "<group>"; };
@@ -702,6 +704,7 @@
 		1746BF9FF05FCB03F05089B328218B46 /* PopupDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.xcconfig; sourceTree = "<group>"; };
 		1768124933E575E0AAB96C97CF5EEAC6 /* IQKeyboardManagerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardManagerConstants.swift; path = IQKeyboardManagerSwift/Constants/IQKeyboardManagerConstants.swift; sourceTree = "<group>"; };
 		1779110D5D276ED01E16BEB9EBD80A24 /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
+		188015A478CE225D4621A25382BC3C5E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		189BC23CFBA6E48828BA9C280EF63566 /* BFWebViewAppLinkResolver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFWebViewAppLinkResolver.m; path = Bolts/iOS/BFWebViewAppLinkResolver.m; sourceTree = "<group>"; };
 		19416D26D8FB3E977608D7EB00E81E63 /* FBSDKViewImpressionTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKViewImpressionTracker.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKViewImpressionTracker.h; sourceTree = "<group>"; };
 		19F3550B8B5485EDCE3D56DDACE16CFB /* BFExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFExecutor.m; path = Bolts/Common/BFExecutor.m; sourceTree = "<group>"; };
@@ -780,6 +783,7 @@
 		3886001896ABD623416D70E19E21F91B /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
 		389483E3B4734FFB9FBF892F3CE568AD /* FBSDKAudioResourceLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAudioResourceLoader.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKAudioResourceLoader.h; sourceTree = "<group>"; };
 		38AD8B14DA9AEFEF18876080BC876E12 /* FBSDKLoginConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginConstants.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginConstants.m; sourceTree = "<group>"; };
+		38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		39442F38B0A8A10E4CF526F4F3011722 /* FBSDKGraphRequestBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphRequestBody.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestBody.m; sourceTree = "<group>"; };
 		39EE1ECC4F19C470880642107243436D /* KeychainItemWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainItemWrapper-dummy.m"; sourceTree = "<group>"; };
 		3A44D83A5087DDA9029CF232CA46A7A0 /* IQKeyboardReturnKeyHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQKeyboardReturnKeyHandler.swift; path = IQKeyboardManagerSwift/IQKeyboardReturnKeyHandler.swift; sourceTree = "<group>"; };
@@ -858,11 +862,12 @@
 		5C202DF0638B15C9779DE777A633B982 /* FBSDKShareOpenGraphContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphContent.h; sourceTree = "<group>"; };
 		5C5FD9548AA031879893A2853D60FAFA /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		5C978117843E2C6BD0C98221869EEFD0 /* UISidebarViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UISidebarViewController.modulemap; sourceTree = "<group>"; };
+		5D1104FFE6E5915DA75C08E213C93A1A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		5D4F6E1F213C7507C504E7F61DE6B19C /* FBSDKUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h; sourceTree = "<group>"; };
 		5D5CA0CEDE5A7DFD6DE78E99C159CBBC /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = Pickers/AbstractActionSheetPicker.m; sourceTree = "<group>"; };
 		5D6DBA2E32DDD7AFFFD2009097FB24E0 /* KeychainItemWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainItemWrapper-umbrella.h"; sourceTree = "<group>"; };
+		5DB3CC9FC888C96CD2F3336C64361737 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		5DC49710A5A208EDFBB3542334F97D8A /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = Pickers/ActionSheetDatePicker.m; sourceTree = "<group>"; };
-		5E3AD355D28C0F9DED4563AA965A81CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5E7778BFF7291E0AB1D176E5EAC50134 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
 		6097BD8251733070E8C6A88F0CE82890 /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
 		61ECEBBCBC83A56D6173940EC687A1A2 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQUIView+Hierarchy.swift"; path = "IQKeyboardManagerSwift/Categories/IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
@@ -891,7 +896,6 @@
 		6D568071C4D02B36AAFE1B1972D381E0 /* _FBSDKTemporaryErrorRecoveryAttempter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBSDKTemporaryErrorRecoveryAttempter.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ErrorRecovery/_FBSDKTemporaryErrorRecoveryAttempter.m; sourceTree = "<group>"; };
 		6E91CB68BD7F2CB65DA52C0775C7D074 /* FBSDKAppInviteContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppInviteContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.h; sourceTree = "<group>"; };
 		6FF6E75DF2634E394CD2980F5D4741BD /* IQKeyboardManagerSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManagerSwift.xcconfig; sourceTree = "<group>"; };
-		7064ACD881F497A83142376D1408D84F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		70A1ABBBFD18CB7C7A1E81C590C691D8 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		71DE11222179962D7AD408AD80C43E02 /* FBSDKGraphRequest+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKGraphRequest+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequest+Internal.h"; sourceTree = "<group>"; };
 		71EFC3E32DD2F39808AD9A19E29C3110 /* FBSDKLoginError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginError.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginError.h; sourceTree = "<group>"; };
@@ -994,7 +998,6 @@
 		98EE2BCFE706B140582EC48CC300BFD8 /* FBSDKAppInviteDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppInviteDialog.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteDialog.h; sourceTree = "<group>"; };
 		98FDA7CD0B2B64488384865178100B4D /* FBSDKKeychainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKKeychainStore.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStore.h; sourceTree = "<group>"; };
 		99212EAE6793CFA7B089D1826CEE5ADC /* FBSDKTestUsersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTestUsersManager.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.h; sourceTree = "<group>"; };
-		99601B6C3CDF1CB6BAE6CC921A664396 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		9A53247C17604E1371D9A9795C484411 /* FBSDKLoginManagerLoginResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginManagerLoginResult.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManagerLoginResult.m; sourceTree = "<group>"; };
 		9A5780B796542A1B85ACEC52CA5FE19D /* UIAlertController+Blocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIAlertController+Blocks.xcconfig"; sourceTree = "<group>"; };
 		9A5B4ABB1C3C5C038020ED3C99BF8B52 /* FBSDKLoginTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginTooltipView.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginTooltipView.h; sourceTree = "<group>"; };
@@ -1036,7 +1039,6 @@
 		A7BF19C317BDFA2CF08386557072EA69 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		A8556D1FAD6AB972EE36CA731EBF7334 /* FBSDKServerConfigurationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKServerConfigurationManager.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager.h; sourceTree = "<group>"; };
 		A892BDED24C9BFA420A07B37A7DAAB86 /* FBSDKCoreKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSDKCoreKit-umbrella.h"; sourceTree = "<group>"; };
-		A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AA6D9589ADB4AA7EBE39D487C2D7E6D6 /* FBSDKIcon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKIcon.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKIcon.m; sourceTree = "<group>"; };
 		AA6FE7340932BC29C16137F3775D111D /* _FBSDKTemporaryErrorRecoveryAttempter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _FBSDKTemporaryErrorRecoveryAttempter.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ErrorRecovery/_FBSDKTemporaryErrorRecoveryAttempter.h; sourceTree = "<group>"; };
 		AAD77F6FA59E0B278796020B44A42361 /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
@@ -1053,7 +1055,6 @@
 		AF3BF377435515AD4E911FE2E5253D44 /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
 		AFBCE6FFC338F7EA4747BDADD4C9D203 /* BFAppLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLink.m; path = Bolts/iOS/BFAppLink.m; sourceTree = "<group>"; };
 		AFC6E9198A408CEF895A04CED75D8D0F /* ActionSheetPicker-3.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ActionSheetPicker-3.0-umbrella.h"; sourceTree = "<group>"; };
-		B065E6A4A97098C0493C91DA680C7C90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		B0A3F6D6D47F6079F2E3CB3FCBA4C707 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
 		B0DAA71651A4717B522DAD248CC871F2 /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
 		B101FB201C3D66DD7F81F0A796EA65B7 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+SVPullToRefresh.m"; path = "SVPullToRefresh/UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
@@ -1063,7 +1064,6 @@
 		B1CEB072EAFB3CC026DF771084A55276 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A0914AA4EACD92522ECB09FA74A550 /* FBSDKDialogConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDialogConfiguration.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKDialogConfiguration.m; sourceTree = "<group>"; };
 		B3039A01DD3CC3453B63EF6C9C663817 /* FBSDKAccessTokenCacheV3_17.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenCacheV3_17.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3_17.m; sourceTree = "<group>"; };
-		B36C10235FE4A9E7B8945746F4E6A659 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		B4DBB75CB27EC6FAAC8F72C9A0BA3028 /* FBSDKSystemAccountStoreAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSystemAccountStoreAdapter.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSystemAccountStoreAdapter.h; sourceTree = "<group>"; };
 		B60D4C591F52E8E90C30FCA9F673829F /* Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bolts-prefix.pch"; sourceTree = "<group>"; };
 		B613BAFA496BE9A43EB0A6A89E00C523 /* UISidebarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UISidebarViewController.m; path = UISidebarViewController/UISidebarViewController.m; sourceTree = "<group>"; };
@@ -1169,7 +1169,6 @@
 		E1200FC46E9826804DE72D8F0E244B9C /* FBSDKBridgeAPIRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKBridgeAPIRequest+Private.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIRequest+Private.h"; sourceTree = "<group>"; };
 		E1C337B2ED83A98DBEF32A6827C77B7D /* FBSDKLikeButtonPopWAV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeButtonPopWAV.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeButtonPopWAV.h; sourceTree = "<group>"; };
 		E1E04C24D5CA90CC2EA824F34F8E2913 /* FBSDKLoginManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginManager.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManager.h; sourceTree = "<group>"; };
-		E344A9622E07C63426096BE0F05F8DFA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E360E74B0F9EC53B1F347F88DDAD5B0E /* FBSDKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMacros.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h; sourceTree = "<group>"; };
 		E3B3439DB39EBCC2FF33D173A2847B91 /* FBSDKLikeButton+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKLikeButton+Internal.h"; path = "FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeButton+Internal.h"; sourceTree = "<group>"; };
 		E3C83D94A50B4E6E1A00F1182A1E63BD /* FBSDKShareLinkContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareLinkContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.h; sourceTree = "<group>"; };
@@ -1177,6 +1176,7 @@
 		E43236DB8E5F820D4C4B6A84027778B9 /* FBSDKContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKContainerViewController.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKContainerViewController.h; sourceTree = "<group>"; };
 		E469B1C32DB83191A0C1475EC6372D6F /* FBSDKBridgeAPIProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocol.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocol.h; sourceTree = "<group>"; };
 		E492AFC04F661D965A1809CE2D41BAE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64243D5C958B78E61A9ED450F7EB0D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		E6C8455503E0283D1E72A829983C55C2 /* FBSDKWebDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKWebDialog.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialog.m; sourceTree = "<group>"; };
 		E7414C1CE0F33EAF64FA7A1E0457D0F6 /* FBSDKLikeObjectType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeObjectType.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.h; sourceTree = "<group>"; };
 		E905A3414DCA85496E4AC0D64048DBBE /* FBSDKWebDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebDialog.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialog.h; sourceTree = "<group>"; };
@@ -1232,7 +1232,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB1752910FD636F808F3FC6EEB7555F9 /* Foundation.framework in Frameworks */,
+				AA58067A521824F35C4DFA67900A3325 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1240,9 +1240,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9B7A7E64B7C1D498E3AFB055EA9BF3 /* CoreGraphics.framework in Frameworks */,
-				5918386BE1F6F9D1674149A4DA2FD229 /* Foundation.framework in Frameworks */,
-				1223A4BF77312A1BC1D7B369A27E43C1 /* UIKit.framework in Frameworks */,
+				1C8F85A1033B5AE0FE8126CE2E937E9F /* CoreGraphics.framework in Frameworks */,
+				08F70BDD45F0B73F1AD27507808FEC3B /* Foundation.framework in Frameworks */,
+				B9557585483AD395045D19F792D8BDE7 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1252,7 +1252,7 @@
 			files = (
 				F1E5C5DDB9BAEFA384ECE0E8EB59A03E /* Bolts.framework in Frameworks */,
 				63A49532C857D4508B8112C46EB1E501 /* FBSDKCoreKit.framework in Frameworks */,
-				BA2AD5E00B7E3045A8FA88436F3FCEE3 /* Foundation.framework in Frameworks */,
+				3B41754212C34819A299F3B4D5978099 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1260,7 +1260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				665FD00124B1C98A95031A60DA882EF5 /* Foundation.framework in Frameworks */,
+				F41F8BF9EEE484987B94F25BCF8124AE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1268,8 +1268,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B866F27AFF771B61C0BC625BA8B3E021 /* Foundation.framework in Frameworks */,
-				BA59C305045148D029CEC3141DCB2F32 /* Security.framework in Frameworks */,
+				84659EA3999F1139695AF0327B94E8E5 /* Foundation.framework in Frameworks */,
+				11EF2B0BF88086F9BDC6A947A0566FCD /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1277,7 +1277,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2744AF87C405F98E9C658AF0BB4517BE /* Foundation.framework in Frameworks */,
+				8C7A28148A2319CDE0DDBE8B473F93FF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1285,11 +1285,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				789D749690B308852115FF20CD982A69 /* CoreGraphics.framework in Frameworks */,
-				A8C297643282E0CF5E7DF9CB6E23A0D4 /* Foundation.framework in Frameworks */,
-				30F0BAE1DBB79BBB6CBD957EA8B89E4B /* MobileCoreServices.framework in Frameworks */,
-				82D554EC9FB9A62D935B6555325F5898 /* Security.framework in Frameworks */,
-				42AF1BB1ED090CC9E588A463441D09E3 /* SystemConfiguration.framework in Frameworks */,
+				BA2D29D9265012FAC7A88D9A8CCD9989 /* CoreGraphics.framework in Frameworks */,
+				BC22E83FBE012D2A1B6B72B886832AF4 /* Foundation.framework in Frameworks */,
+				72BE65E696A388D4CC0D75BE461FEF1B /* MobileCoreServices.framework in Frameworks */,
+				23EFB184AD12FB1014FFC765CE0D710A /* Security.framework in Frameworks */,
+				CE2EB8CE3176F8A1FAA78CC8786292CC /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1297,8 +1297,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC838339C0E4BB6BB1B5E03D21CB3893 /* Foundation.framework in Frameworks */,
-				A2F74AC56E76F01E7A69BB8D3A7E3DB8 /* UIKit.framework in Frameworks */,
+				0F911518B639EDDB31521A96456C50CD /* Foundation.framework in Frameworks */,
+				5A79F43BF3D900FD1E8186E93841D280 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1306,7 +1306,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B9E07BEFC162983331B5F8C9AE41E44 /* Foundation.framework in Frameworks */,
+				B2485E6684A9A392382EB26F55BB6B3E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1316,7 +1316,7 @@
 			files = (
 				571EF2BEEAD0CC148168F4D92992610B /* Bolts.framework in Frameworks */,
 				5E2D97F124DD952AC454855ACBE8837F /* FBSDKCoreKit.framework in Frameworks */,
-				63D72E8FF28B9E7FAA0B00A480AE1582 /* Foundation.framework in Frameworks */,
+				781CC5B0E7B6AA73A1D886A66781B8F5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1324,7 +1324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F691AB7408CBD611CB286CF5803D810 /* Foundation.framework in Frameworks */,
+				BC196E03333C66B72A01392D8272BAA3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1333,7 +1333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD2917387849AB4A62C5BEDB4DA649C7 /* Bolts.framework in Frameworks */,
-				0955943D54E5C5E7CA7358F003CC02B0 /* Foundation.framework in Frameworks */,
+				2F5CB6FE1BDD44842548D741F24D32F7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1341,7 +1341,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20B0E9DFD78E33C67A7A73A740DD35D /* Foundation.framework in Frameworks */,
+				E4852658AB0F03B2CE246DE43271863A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1349,7 +1349,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46BA6D332BAE95C29553C582A2E0ECE5 /* Foundation.framework in Frameworks */,
+				312C3BBB85975D2CF9E815FDB595A359 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1357,8 +1357,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15608627A6EC221B0D671E4DF3250CEF /* Foundation.framework in Frameworks */,
-				0DC9F81DFCEBF879842EEA432682BD62 /* QuartzCore.framework in Frameworks */,
+				3C113D8ED57CA7407537B7322E890310 /* Foundation.framework in Frameworks */,
+				4B62CAACADD1BBE725161B21E875D980 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1366,8 +1366,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90D38A0F28DF49C5D0A8707304F1EB16 /* Foundation.framework in Frameworks */,
-				96C8A51ED0F076B8E31D21A48D463E36 /* QuartzCore.framework in Frameworks */,
+				7EFD2FD59AE639D1987D7BFD97D2F5CC /* Foundation.framework in Frameworks */,
+				E6889067FD9BE44667F03F88BC386C15 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1591,7 +1591,7 @@
 			children = (
 				57E877E9B4D198F33724D8E1F213CE43 /* Bolts.framework */,
 				DE991F9A1D5548A782BF87EE24D0451A /* FBSDKCoreKit.framework */,
-				F409AA7D05A045D42B1A5B688096A5E2 /* iOS */,
+				9E5355262882712BB1E531359D1E4741 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1859,6 +1859,20 @@
 				189BC23CFBA6E48828BA9C280EF63566 /* BFWebViewAppLinkResolver.m */,
 			);
 			name = AppLinks;
+			sourceTree = "<group>";
+		};
+		9E5355262882712BB1E531359D1E4741 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E64243D5C958B78E61A9ED450F7EB0D1 /* CoreGraphics.framework */,
+				38F658A8EA9E882399BB6EDCD8141DBD /* Foundation.framework */,
+				017078A8497D8273B72FDC4B9D8C436C /* MobileCoreServices.framework */,
+				5DB3CC9FC888C96CD2F3336C64361737 /* QuartzCore.framework */,
+				5D1104FFE6E5915DA75C08E213C93A1A /* Security.framework */,
+				188015A478CE225D4621A25382BC3C5E /* SystemConfiguration.framework */,
+				054629BC3F00F6A9376EA68A4A1C3284 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		A3BF66D31C3CDA9FAF2B51DB33FF69AF /* FBSDKShareKit */ = {
@@ -2347,20 +2361,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TPKeyboardAvoiding";
-			sourceTree = "<group>";
-		};
-		F409AA7D05A045D42B1A5B688096A5E2 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				99601B6C3CDF1CB6BAE6CC921A664396 /* CoreGraphics.framework */,
-				A9A23B413A4D29959529462A201F6CD9 /* Foundation.framework */,
-				B36C10235FE4A9E7B8945746F4E6A659 /* MobileCoreServices.framework */,
-				E344A9622E07C63426096BE0F05F8DFA /* QuartzCore.framework */,
-				7064ACD881F497A83142376D1408D84F /* Security.framework */,
-				B065E6A4A97098C0493C91DA680C7C90 /* SystemConfiguration.framework */,
-				5E3AD355D28C0F9DED4563AA965A81CB /* UIKit.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		FFAFC6458A57E74D4746916B7BEB49B8 /* Support Files */ = {
@@ -3031,7 +3031,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -3555,149 +3555,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04CFBA5220B303817DC151FC57D8C266 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10A362D6AEC950749094FC1A0C0D0D59 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		097683D3F872D98AD402788E8FD48716 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3978B1BD223AA43BA102AD89CEF7062 /* FBSDKShareKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FBSDKShareKit/FBSDKShareKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSDKShareKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FBSDKShareKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		119ACB17396AAF7525326D3FCEC1DB09 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE14C1AEE017C17A3404D0D74C06D256 /* FBSDKLoginKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSDKLoginKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FBSDKLoginKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1308880F38A6C2AC6D749B1A4AB4C081 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0DAA71651A4717B522DAD248CC871F2 /* SwiftSocket.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -3705,13 +3567,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -3736,16 +3595,46 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		1E63CB5D6FD93A19A03275E17D092EBC /* Release */ = {
+		053AEC76EE46B4BAB54D969F2015DD61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0DAA71651A4717B522DAD248CC871F2 /* SwiftSocket.xcconfig */;
+			baseConfigurationReference = 10A362D6AEC950749094FC1A0C0D0D59 /* SVProgressHUD.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05E04CFBA4D993878803362CB34062EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A067AB014F4DEA695E353AB85947B092 /* AFNetworking.xcconfig */;
+			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3757,18 +3646,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftSocket;
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3776,12 +3663,206 @@
 			};
 			name = Release;
 		};
-		34FE9531DA9AF2820790339988D5FF41 /* Release */ = {
+		095CBCA46C7FD47A34D18A0AB311B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE678C4B10CE945507677F9A4FF3F346 /* UISidebarViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UISidebarViewController/UISidebarViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UISidebarViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UISidebarViewController/UISidebarViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UISidebarViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0F53AD5CB837E2811E8D3D80C1AC0E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87775C2D48A36897A9E118A431614F68 /* Pods-PublicEyes.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PublicEyes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PublicEyes/Pods-PublicEyes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PublicEyes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2BF7DBFA07FECE5BDCBBC266BC5B9AC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9720C74E21C01152698FCEB135EA4A /* Bolts.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bolts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Bolts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D4DA353C000351960A56393B1BE02B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411ED56A0EB5A6DBA5970A7C96F792E2 /* KeychainItemWrapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainItemWrapper/KeychainItemWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainItemWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainItemWrapper/KeychainItemWrapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KeychainItemWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		358106E64367C2124898D4DA9E62D1E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C51E3B529E910CA3FFE33D646EA4DC2 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3840DF7D2CDBA7C67CB907CA52536AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED23FCFE6AFE0E519C3477C1E782DD5 /* FBSDKCoreKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKCoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSDKCoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -3789,13 +3870,10 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -3820,45 +3898,10 @@
 			};
 			name = Release;
 		};
-		357985AA77A9A2D5C834BDB57E5937AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 411ED56A0EB5A6DBA5970A7C96F792E2 /* KeychainItemWrapper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KeychainItemWrapper/KeychainItemWrapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KeychainItemWrapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KeychainItemWrapper/KeychainItemWrapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = KeychainItemWrapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4455AB9015CEDB3BD918B8404D48A4B3 /* Debug */ = {
+		452E373A3A663C0A80475BB6EE8EDE86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1746BF9FF05FCB03F05089B328218B46 /* PopupDialog.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3880,7 +3923,6 @@
 				PRODUCT_NAME = PopupDialog;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3889,11 +3931,10 @@
 			};
 			name = Debug;
 		};
-		4F0D00106FB2C3181614BB77288782C4 /* Debug */ = {
+		470DB5ADFAC80A1C2A432A2DAAE26467 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB9720C74E21C01152698FCEB135EA4A /* Bolts.xcconfig */;
+			baseConfigurationReference = 9A5780B796542A1B85ACEC52CA5FE19D /* UIAlertController+Blocks.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3905,17 +3946,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Bolts/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIAlertController+Blocks/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Bolts;
+				PRODUCT_NAME = UIAlertController_Blocks;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3923,11 +3963,267 @@
 			};
 			name = Debug;
 		};
-		52250843EBFC1BBE97FC522EB6D053D5 /* Release */ = {
+		48FB0A6413F915FB397D697697316863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE14C1AEE017C17A3404D0D74C06D256 /* FBSDKLoginKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKLoginKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSDKLoginKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E1C939C4FB97BB304DB6127EFADB805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A362D6AEC950749094FC1A0C0D0D59 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69848907AA95B2CA7EB5BF69DBBF6717 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411ED56A0EB5A6DBA5970A7C96F792E2 /* KeychainItemWrapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KeychainItemWrapper/KeychainItemWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KeychainItemWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KeychainItemWrapper/KeychainItemWrapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KeychainItemWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6CAF058D3D8194265BCBEDA5CF4F45E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0DAA71651A4717B522DAD248CC871F2 /* SwiftSocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FAC15AEE366E785E7B778B7CFB01115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5780B796542A1B85ACEC52CA5FE19D /* UIAlertController+Blocks.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIAlertController+Blocks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIAlertController_Blocks;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		737AD4E9C1707C945778647733AD7D18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE678C4B10CE945507677F9A4FF3F346 /* UISidebarViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UISidebarViewController/UISidebarViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UISidebarViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UISidebarViewController/UISidebarViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UISidebarViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A2D6F394EA6996A21C74813B0AEB32A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1746BF9FF05FCB03F05089B328218B46 /* PopupDialog.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PopupDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82C4DCE713E4A5C357954DA6240CBD3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAFD1E7501929F9A563A5A72152FFF8E /* ActionSheetPicker-3.0.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ActionSheetPicker_3_0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B057773120D53DBB692700549D84EAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FF6E75DF2634E394CD2980F5D4741BD /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -3949,8 +4245,6 @@
 				PRODUCT_NAME = IQKeyboardManagerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3958,113 +4252,10 @@
 			};
 			name = Release;
 		};
-		5ADF7A966F28E9C973634DFD2AD6D11E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A067AB014F4DEA695E353AB85947B092 /* AFNetworking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AFNetworking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5AE20FF3A8FDC48580CF5B2B9846BE71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A9DD7A8C49EAC63D971F2727BD541BD /* SVPullToRefresh.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVPullToRefresh/SVPullToRefresh-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVPullToRefresh/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVPullToRefresh/SVPullToRefresh.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SVPullToRefresh;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5C66AB3490B7C53A304A7642E4AADC44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A067AB014F4DEA695E353AB85947B092 /* AFNetworking.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AFNetworking;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		78489F513A4CC9A908CCEDF935D91E36 /* Debug */ = {
+		97077E0B0E671D4B9439D22889424077 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3978B1BD223AA43BA102AD89CEF7062 /* FBSDKShareKit.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4086,7 +4277,6 @@
 				PRODUCT_NAME = FBSDKShareKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -4094,458 +4284,10 @@
 			};
 			name = Debug;
 		};
-		7B565A80935AE38D1B322E2B0137807A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BAFD1E7501929F9A563A5A72152FFF8E /* ActionSheetPicker-3.0.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ActionSheetPicker-3.0/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ActionSheetPicker-3.0/ActionSheetPicker-3.0.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ActionSheetPicker_3_0;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7B57004680873883725B0456013A27E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C51E3B529E910CA3FFE33D646EA4DC2 /* TPKeyboardAvoiding.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TPKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8574AB0DA0A4D773E4027F6345FE7B02 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C51E3B529E910CA3FFE33D646EA4DC2 /* TPKeyboardAvoiding.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TPKeyboardAvoiding;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8F3203680C8C3C02727E9AF2664A35DE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB9720C74E21C01152698FCEB135EA4A /* Bolts.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Bolts/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Bolts;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9C2738CC4C1D8A8E3236249F516B89E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10A362D6AEC950749094FC1A0C0D0D59 /* SVProgressHUD.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SVProgressHUD;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A1A2393289C27BE87AFA479C82967872 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ED23FCFE6AFE0E519C3477C1E782DD5 /* FBSDKCoreKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSDKCoreKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = FBSDKCoreKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A8B9EBFBBBC61EB8DE89027B7685C717 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE678C4B10CE945507677F9A4FF3F346 /* UISidebarViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UISidebarViewController/UISidebarViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UISidebarViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UISidebarViewController/UISidebarViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UISidebarViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AEE4CDD90E34BB591F3774E8F26D5C60 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE678C4B10CE945507677F9A4FF3F346 /* UISidebarViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UISidebarViewController/UISidebarViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UISidebarViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UISidebarViewController/UISidebarViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UISidebarViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B88CFCB49F5330B1AD7D9EACF8945566 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1746BF9FF05FCB03F05089B328218B46 /* PopupDialog.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PopupDialog;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C5369FD1A547681BB5466FB66DD9E078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A9DD7A8C49EAC63D971F2727BD541BD /* SVPullToRefresh.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SVPullToRefresh/SVPullToRefresh-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVPullToRefresh/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SVPullToRefresh/SVPullToRefresh.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SVPullToRefresh;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C6C9D3005ECF3481818A8973AB378902 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7ED23FCFE6AFE0E519C3477C1E782DD5 /* FBSDKCoreKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSDKCoreKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = FBSDKCoreKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C6D46A4BEE6F08AADA0E68D03CFEACF1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87775C2D48A36897A9E118A431614F68 /* Pods-PublicEyes.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PublicEyes/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PublicEyes/Pods-PublicEyes.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PublicEyes;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CDA57B362AA02F19D3784BD790CB2E6F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 411ED56A0EB5A6DBA5970A7C96F792E2 /* KeychainItemWrapper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/KeychainItemWrapper/KeychainItemWrapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KeychainItemWrapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KeychainItemWrapper/KeychainItemWrapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = KeychainItemWrapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D0AA28DFCA20AF21EDF134DB754B6835 /* Debug */ = {
+		A2ED5D07909FC9971ABEC4BB630EC6C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6FF6E75DF2634E394CD2980F5D4741BD /* IQKeyboardManagerSwift.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4567,7 +4309,6 @@
 				PRODUCT_NAME = IQKeyboardManagerSwift;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -4576,11 +4317,42 @@
 			};
 			name = Debug;
 		};
-		D17B3D3125C909E8092DEC9A6077ABB9 /* Debug */ = {
+		A9CD17B890F647A92F4F0B9C5184ED14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0DAA71651A4717B522DAD248CC871F2 /* SwiftSocket.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA847388E201ADED2A7D64A8679A811D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE14C1AEE017C17A3404D0D74C06D256 /* FBSDKLoginKit.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4602,7 +4374,6 @@
 				PRODUCT_NAME = FBSDKLoginKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -4610,45 +4381,10 @@
 			};
 			name = Debug;
 		};
-		D948BBBB1AD9ECF54CEFEFF791988E9D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A5780B796542A1B85ACEC52CA5FE19D /* UIAlertController+Blocks.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIAlertController+Blocks/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = UIAlertController_Blocks;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EC46B9CFAC567A924787270306AF9541 /* Release */ = {
+		B99ACAF27FC88DB1AD9E22B33681CA37 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAFD1E7501929F9A563A5A72152FFF8E /* ActionSheetPicker-3.0.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4670,7 +4406,6 @@
 				PRODUCT_NAME = ActionSheetPicker_3_0;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -4678,11 +4413,106 @@
 			};
 			name = Release;
 		};
-		EF599D104437FFFE799597EB04FD87CD /* Debug */ = {
+		BB5FA0AB5717ADFC3E9C1F1489094E23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3978B1BD223AA43BA102AD89CEF7062 /* FBSDKShareKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKShareKit/FBSDKShareKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKShareKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSDKShareKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C77717791466E9621BBC63B832F1FC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED23FCFE6AFE0E519C3477C1E782DD5 /* FBSDKCoreKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSDKCoreKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSDKCoreKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C9E57363F74E7E4996130D56880071B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9720C74E21C01152698FCEB135EA4A /* Bolts.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bolts/Bolts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bolts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bolts/Bolts.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Bolts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DBFA36343A23AFEB9D526488E50C8483 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D915B90D2AF9FF0B80DB886F90D3484 /* Pods-PublicEyes.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4708,20 +4538,17 @@
 				PRODUCT_NAME = Pods_PublicEyes;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		F8D45F8DF63BD21A08113A7C0D17D845 /* Debug */ = {
+		E0695E55897F09C6C94B443561B22DA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A5780B796542A1B85ACEC52CA5FE19D /* UIAlertController+Blocks.xcconfig */;
+			baseConfigurationReference = A067AB014F4DEA695E353AB85947B092 /* AFNetworking.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -4733,17 +4560,112 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/UIAlertController+Blocks/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/UIAlertController+Blocks/UIAlertController+Blocks.modulemap";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = UIAlertController_Blocks;
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E115EB075F4E8A29C09EDDE7B51B2731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9DD7A8C49EAC63D971F2727BD541BD /* SVPullToRefresh.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVPullToRefresh/SVPullToRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVPullToRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVPullToRefresh/SVPullToRefresh.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SVPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E979211954EA1F349061AD5D7B024759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9DD7A8C49EAC63D971F2727BD541BD /* SVPullToRefresh.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SVPullToRefresh/SVPullToRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVPullToRefresh/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SVPullToRefresh/SVPullToRefresh.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SVPullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E9B5FA1F44EF13C1B92446B4B6B3B806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C51E3B529E910CA3FFE33D646EA4DC2 /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -4757,8 +4679,8 @@
 		1C42AA807C38F56086C192DD584BA7AF /* Build configuration list for PBXNativeTarget "FBSDKShareKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				78489F513A4CC9A908CCEDF935D91E36 /* Debug */,
-				097683D3F872D98AD402788E8FD48716 /* Release */,
+				97077E0B0E671D4B9439D22889424077 /* Debug */,
+				BB5FA0AB5717ADFC3E9C1F1489094E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4766,8 +4688,8 @@
 		275D196FF30D2E5A94A6B2A22899950D /* Build configuration list for PBXNativeTarget "SVPullToRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5369FD1A547681BB5466FB66DD9E078 /* Debug */,
-				5AE20FF3A8FDC48580CF5B2B9846BE71 /* Release */,
+				E979211954EA1F349061AD5D7B024759 /* Debug */,
+				E115EB075F4E8A29C09EDDE7B51B2731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4775,8 +4697,8 @@
 		27AD4136B7F60C7ACAB2716D66F768FA /* Build configuration list for PBXNativeTarget "FBSDKCoreKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C6C9D3005ECF3481818A8973AB378902 /* Debug */,
-				A1A2393289C27BE87AFA479C82967872 /* Release */,
+				3840DF7D2CDBA7C67CB907CA52536AEE /* Debug */,
+				C77717791466E9621BBC63B832F1FC62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4784,8 +4706,8 @@
 		2B165D83CDA0CFAA9CD60A76EBDB08F7 /* Build configuration list for PBXNativeTarget "KeychainItemWrapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDA57B362AA02F19D3784BD790CB2E6F /* Debug */,
-				357985AA77A9A2D5C834BDB57E5937AA /* Release */,
+				2D4DA353C000351960A56393B1BE02B1 /* Debug */,
+				69848907AA95B2CA7EB5BF69DBBF6717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4793,8 +4715,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C7D17A37D091C98D2F0DD886C3A9320 /* Debug */,
-				34FE9531DA9AF2820790339988D5FF41 /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4802,8 +4724,8 @@
 		31E01BC98C827BD8A78F94173CDCC418 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5ADF7A966F28E9C973634DFD2AD6D11E /* Debug */,
-				5C66AB3490B7C53A304A7642E4AADC44 /* Release */,
+				E0695E55897F09C6C94B443561B22DA9 /* Debug */,
+				05E04CFBA4D993878803362CB34062EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4811,8 +4733,8 @@
 		36528DF3FB0E6FC29046BC8DA61EB9D5 /* Build configuration list for PBXNativeTarget "Bolts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F0D00106FB2C3181614BB77288782C4 /* Debug */,
-				8F3203680C8C3C02727E9AF2664A35DE /* Release */,
+				C9E57363F74E7E4996130D56880071B9 /* Debug */,
+				2BF7DBFA07FECE5BDCBBC266BC5B9AC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4820,8 +4742,8 @@
 		5D3F5636EB52807C0583C8D9DAB3C85B /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B57004680873883725B0456013A27E1 /* Debug */,
-				8574AB0DA0A4D773E4027F6345FE7B02 /* Release */,
+				E9B5FA1F44EF13C1B92446B4B6B3B806 /* Debug */,
+				358106E64367C2124898D4DA9E62D1E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4829,8 +4751,8 @@
 		61207B4255720D6A303D04F91129AE3C /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C2738CC4C1D8A8E3236249F516B89E9 /* Debug */,
-				04CFBA5220B303817DC151FC57D8C266 /* Release */,
+				053AEC76EE46B4BAB54D969F2015DD61 /* Debug */,
+				5E1C939C4FB97BB304DB6127EFADB805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4838,8 +4760,8 @@
 		75B8C8837854098D8D911F8A3335DDAC /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0AA28DFCA20AF21EDF134DB754B6835 /* Debug */,
-				52250843EBFC1BBE97FC522EB6D053D5 /* Release */,
+				A2ED5D07909FC9971ABEC4BB630EC6C8 /* Debug */,
+				8B057773120D53DBB692700549D84EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4847,8 +4769,8 @@
 		7631627DECA65D212DE85C404AB09DFB /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1308880F38A6C2AC6D749B1A4AB4C081 /* Debug */,
-				1E63CB5D6FD93A19A03275E17D092EBC /* Release */,
+				6CAF058D3D8194265BCBEDA5CF4F45E8 /* Debug */,
+				A9CD17B890F647A92F4F0B9C5184ED14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4856,8 +4778,8 @@
 		7D2FA5E0483FE3E3A52046EEFCEDDB53 /* Build configuration list for PBXNativeTarget "FBSDKLoginKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D17B3D3125C909E8092DEC9A6077ABB9 /* Debug */,
-				119ACB17396AAF7525326D3FCEC1DB09 /* Release */,
+				AA847388E201ADED2A7D64A8679A811D /* Debug */,
+				48FB0A6413F915FB397D697697316863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4865,8 +4787,8 @@
 		7E127E32D0465A08437982F8B2A3077E /* Build configuration list for PBXNativeTarget "ActionSheetPicker-3.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B565A80935AE38D1B322E2B0137807A /* Debug */,
-				EC46B9CFAC567A924787270306AF9541 /* Release */,
+				82C4DCE713E4A5C357954DA6240CBD3A /* Debug */,
+				B99ACAF27FC88DB1AD9E22B33681CA37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4874,8 +4796,8 @@
 		B50024F1FFE4FEA32535DC87D6C15565 /* Build configuration list for PBXNativeTarget "UIAlertController+Blocks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8D45F8DF63BD21A08113A7C0D17D845 /* Debug */,
-				D948BBBB1AD9ECF54CEFEFF791988E9D /* Release */,
+				470DB5ADFAC80A1C2A432A2DAAE26467 /* Debug */,
+				6FAC15AEE366E785E7B778B7CFB01115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4883,8 +4805,8 @@
 		BD079924C314407D45624AF602DEF6F9 /* Build configuration list for PBXNativeTarget "Pods-PublicEyes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EF599D104437FFFE799597EB04FD87CD /* Debug */,
-				C6D46A4BEE6F08AADA0E68D03CFEACF1 /* Release */,
+				DBFA36343A23AFEB9D526488E50C8483 /* Debug */,
+				0F53AD5CB837E2811E8D3D80C1AC0E18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4892,8 +4814,8 @@
 		EE2561B833A2106179460C49997CBC55 /* Build configuration list for PBXNativeTarget "UISidebarViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A8B9EBFBBBC61EB8DE89027B7685C717 /* Debug */,
-				AEE4CDD90E34BB591F3774E8F26D5C60 /* Release */,
+				737AD4E9C1707C945778647733AD7D18 /* Debug */,
+				095CBCA46C7FD47A34D18A0AB311B8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -4901,8 +4823,8 @@
 		FFBF92C38C7DAC90D3E82DE4DA7388BD /* Build configuration list for PBXNativeTarget "PopupDialog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4455AB9015CEDB3BD918B8404D48A4B3 /* Debug */,
-				B88CFCB49F5330B1AD7D9EACF8945566 /* Release */,
+				452E373A3A663C0A80475BB6EE8EDE86 /* Debug */,
+				7A2D6F394EA6996A21C74813B0AEB32A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PopupDialog
 
 class HPZSlidingMenuViewController: UIViewController, PopupDelegate {
 
@@ -105,14 +104,15 @@ class HPZSlidingMenuViewController: UIViewController, PopupDelegate {
             
         ] as [String : Any]
         HPZWebservice.shareInstance.updatePoint(path:API_UPDATE_POINT,params: param as NSDictionary,handler:{success , response in
-            if(success) {
+            let msg = response as! HPZMessageModel
+            if(success && msg.code == PAY_SUCCESS) {
                 userDefault.set("",forKey: UserDefault_TRANS_ID)
                 userDefault.set(0,forKey: UserDefault_TRANS_POINT)
                 self.tvPoint.text = "0"
                 userDefault.set(0, forKey: UserDefault_point)
                 return
             }
-            let msg = response as! HPZMessageModel
+            
             let alert = UIAlertController(title: "Alert", message: msg.message, preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)

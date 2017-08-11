@@ -49,6 +49,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PopupDialog.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,7 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>47DDA6A5BBFB21348560F54A5045D2BF</key>
+		<key>2D80136A83C08082DA076C5376A23E25</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DDCBFDB80F40C15AA762D8B6284D9F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,27 +117,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>52F064951A572BE691D6DCEE3B829FE0</key>
+		<key>77CC1B541FE4AD5BD1BA6E3ADD32B473</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A563C8336A7A3FA8BF7977F04435FDE</key>
+		<key>88F195428DB89781CDDFF196DAC1BABE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>813D725ED5FA5D7487E75E4376350B5F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>93FC0DB26C542D534211D4C6E36A265D</key>
+		<key>953A167B2909C9E4CA88825ED53B067C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>965699190112DDBD9B7864D091660DBC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3CD25D19FC3CB9F1EB1AD343E5B0E97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4C502DD779A32060FC8B8AE3A635440</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,17 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D18F7F806EF543B79D59BCAC470FB814</key>
+		<key>D0B4FDBAB90D5FDF9E11729FD890AD1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>E396A93E4C79B22B7816E9F02F62ECED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F141057ADE2BEC7569BF475B666A55A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
