@@ -49,6 +49,9 @@ class HPZSlidingMenuViewController: UIViewController, PopupDelegate {
     @IBAction func changeToMoney(_ sender: Any) {
         let point = userDefault.value(forKey: UserDefault_point) as! Int
         if(point < NUMBER_COIN_CHANGE) {
+            let alert = UIAlertController(title: "Alert", message: String.init(format: "Bạn phải có ít nhất %d point mới thực hiện chức năng này", NUMBER_COIN_CHANGE), preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
             return
         }
         let popup = PopupChangePoint.init(nibName: "PopupChangePoint", bundle: nil);
