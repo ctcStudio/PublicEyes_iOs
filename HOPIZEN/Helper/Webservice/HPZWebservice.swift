@@ -214,6 +214,10 @@ extension HPZWebservice {
         self.sendOrderCoinRequest(path: path, params: params, responseObjectClass: entity, responseHandler: handler);
     }
     
+    func convertPoint(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
+    }
+    
     func updatePoint(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
         self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
     }

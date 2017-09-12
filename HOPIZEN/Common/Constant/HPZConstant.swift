@@ -34,6 +34,7 @@ let COIN_REG_LINK = "https://wallet.vngcoin.com"
 let COIN_URL = "https://tmapi.vngcoin.com"
 let COIN_API_URL = COIN_URL + "/gateway"
 let API_COIN_SEND = COIN_API_URL + "/send_order"
+let API_CONVERT_COIN = API_RESGISTER + "/convert_point"
 
 let NUMBER_COIN_CHANGE = 50
 let PAY_SUCCESS = 7
