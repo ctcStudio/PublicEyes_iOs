@@ -68,7 +68,7 @@ class HPZSlidingMenuViewController: UIViewController, PopupDelegate {
         let userNoPhone = "0"+phone;
         let param = [
             "phone":userNoPhone,
-            "amount":userDefault.string(forKey: UserDefault_point) ?? "0"
+            "point":userDefault.string(forKey: UserDefault_point) ?? "0"
         ] as [String : Any]
         HPZWebservice.shareInstance.convertPoint(path:API_CONVERT_COIN,params: param as NSDictionary,handler:{success , response in
             SVProgressHUD.dismiss()
