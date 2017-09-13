@@ -136,10 +136,14 @@ class HPZWebservice: NSObject {
         
     }
     
-    func sendMultiPartFile(path: String,params:NSDictionary?, fileData: Data!, responseObjectClass:HPZBaseEntity!,
+    func sendMultiPartFile(path: String,params:NSDictionary?, fileData: Data!, fileName: String, responseObjectClass:HPZBaseEntity!,
                            responseHandler:@escaping ServerResponseHandler) -> Void {
+        let email = userDefault.string(forKey: UserDefault_email) ?? ""
+        let password = userDefault.string(forKey: UserDefault_password) ?? ""
+        self.requestManager!.requestSerializer.setAuthorizationHeaderFieldWithUsername(email, password: password)
+        
         self.requestManager!.post(path, parameters: params, constructingBodyWith: { (data: AFMultipartFormData!) in
-            data.appendPart(withForm: fileData, name: "")
+            data.appendPart(withFileData: fileData, name: "", fileName: fileName, mimeType: "image/*")
         }, progress: nil,success: {(task, responseObject) -> Void in
              print("responseObject ->> \(String(describing: responseObject))")
               responseObjectClass.parserResponse(dic:(responseObject as? NSDictionary)!)
@@ -225,8 +229,8 @@ extension HPZWebservice {
     func updateComplaint(path:String,params:NSDictionary,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
         self.sendPOSTRequest(path: path, params: params, responseObjectClass: entity, isAuthen: true, responseHandler: handler)
     }
-    func uploadFile(path:String,fileData: Data!,handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
-        self.sendMultiPartFile(path: path,params: NSDictionary(), fileData: fileData, responseObjectClass: entity, responseHandler: handler)
+    func uploadFile(path:String,fileData: Data!,fileName:String, handler:@escaping ServerResponseHandler, entity:HPZBaseEntity) -> Void {
+        self.sendMultiPartFile(path: path,params: NSDictionary(), fileData: fileData,fileName: fileName, responseObjectClass: entity, responseHandler: handler)
     }
     
 }

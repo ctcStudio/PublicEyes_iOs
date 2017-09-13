@@ -18,8 +18,8 @@ let screenWidth                                 = screenSize.width
 let screenHeight                                = screenSize.height
 let statusBarHeight                             = UIApplication.shared.statusBarFrame.height
 
-let IMAGE_URL                                   = "http://acquyxenangdien.net"
-let API_URL                                     = "http://acquyxenangdien.net/api"
+let IMAGE_URL                                   = "http://27.118.16.206"
+let API_URL                                     = "http://27.118.16.206/api"
 let API_LOGIN                                   = API_URL + "/login"
 let API_RESGISTER                               = API_URL + "/user"
 let API_GET_USER                                = API_URL + "/user/getbyuser"

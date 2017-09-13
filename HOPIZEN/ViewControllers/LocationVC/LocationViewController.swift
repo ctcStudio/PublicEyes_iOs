@@ -15,6 +15,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     var des: String!
     var category:CategoryModel!
     var type:Int!
+    var isVideo:Bool!
     
     var locationStr:String?
     var district:String?
@@ -68,7 +69,7 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func continues(_ sender: Any) {
         let params = NSMutableDictionary.init();
         params.setObject(category.name ?? "", forKey: "category_name" as NSCopying)
-        params.setObject(category.id ?? 0,forKey: "category_id" as NSCopying)
+        //params.setObject(category.id ?? 0,forKey: "category_id" as NSCopying)
         params.setObject(path ?? "", forKey: "path" as NSCopying)
         params.setObject(locationStr ?? "",forKey: "location" as NSCopying)
         params.setObject(district ?? "", forKey: "district" as NSCopying)
@@ -76,6 +77,11 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
         params.setObject(tvLocation.text ?? "",forKey: "address" as NSCopying)
         params.setObject(userDefault.string(forKey: UserDefault_email) ?? "",forKey: "email" as NSCopying)
         params.setObject(des ?? "",forKey: "desciption" as NSCopying)
+        if(isVideo) {
+            params.setObject(false, forKey: "isVideo" as NSCopying)
+        } else {
+            params.setObject(true, forKey: "isImage" as NSCopying)
+        }
         //params.setObject(time) ?? "",forKey: "create_date" as NSCopying)
         SVProgressHUD.show()
         HPZWebservice.shareInstance.updateComplaint(path: API_UPDATE_COMPLAINT, params: params, handler:{success , response in

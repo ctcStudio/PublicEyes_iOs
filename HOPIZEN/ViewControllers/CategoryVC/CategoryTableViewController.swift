@@ -20,7 +20,7 @@ class CategoryTableViewController: UITableViewController {
     
     let reuseIdentifier = "categoryTextCell"
     
-    var categoryList:NSMutableArray = []
+    //var categoryList:NSMutableArray = []
     var categoryTextList:NSMutableArray = []
     
     override func viewDidLoad() {
@@ -70,33 +70,33 @@ class CategoryTableViewController: UITableViewController {
         SVProgressHUD.dismiss()
     }
     
-    func getListCampaign() {
-        SVProgressHUD.show()
-        HPZWebservice.shareInstance.getUserInfo(path:API_GET_CATEGORY,params:NSDictionary(),handler:{success , response in
-            SVProgressHUD.dismiss()
-            if(success) {
-                if(response?.isKind(of: ListCategoryModel.self))!{
-                    let list:ListCategoryModel = response as! ListCategoryModel
-                    if(list.code == 0) {
-                        if(list.categoryList.count != 0) {
-                            self.categoryList = list.categoryList
-                            self.tableView.reloadData()
-                        }
-                        return
-                    } else {
-                        let alert = UIAlertController(title: "Alert", message: list.message, preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                        self.present(alert, animated: true, completion: nil)
-                    }
-                }
-            }
-            let alert = UIAlertController(title: "Alert", message: "Kết nối server thất bại", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-            
-        }, entity:ListCategoryModel())
-        
-    }
+//    func getListCampaign() {
+//        SVProgressHUD.show()
+//        HPZWebservice.shareInstance.getUserInfo(path:API_GET_CATEGORY,params:NSDictionary(),handler:{success , response in
+//            SVProgressHUD.dismiss()
+//            if(success) {
+//                if(response?.isKind(of: ListCategoryModel.self))!{
+//                    let list:ListCategoryModel = response as! ListCategoryModel
+//                    if(list.code == 0) {
+//                        if(list.categoryList.count != 0) {
+//                            self.categoryList = list.categoryList
+//                            self.tableView.reloadData()
+//                        }
+//                        return
+//                    } else {
+//                        let alert = UIAlertController(title: "Alert", message: list.message, preferredStyle: UIAlertControllerStyle.alert)
+//                        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//                        self.present(alert, animated: true, completion: nil)
+//                    }
+//                }
+//            }
+//            let alert = UIAlertController(title: "Alert", message: "Kết nối server thất bại", preferredStyle: UIAlertControllerStyle.alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+//            self.present(alert, animated: true, completion: nil)
+//            
+//        }, entity:ListCategoryModel())
+//        
+//    }
     
     
     // MARK: - Table view data source
@@ -123,12 +123,14 @@ class CategoryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var pos:Int = indexPath.row
-        if(pos > categoryList.count) {
-            pos = categoryList.count - 1
-        }
-        let category = categoryList.object(at: pos) as!CategoryModel
-        HPZMainFrame.showLocation(type:type, category: category, path: path, des: des)
+//        var pos:Int = indexPath.row
+//        if(pos > categoryList.count) {
+//            pos = categoryList.count - 1
+//        }
+//        let category = categoryList.object(at: pos) as!CategoryModel
+        let category = categoryTextList.object(at: indexPath.row)  as!CategoryModel
+        let isVideo = (image != nil)
+        HPZMainFrame.showLocation(type:type, category: category, path: path, des: des, isVideo:isVideo)
     }
     
     let categoryMotorName:[String] = [

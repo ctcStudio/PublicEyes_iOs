@@ -221,12 +221,13 @@ class HPZMainFrame: NSObject {
         mainFrame = nil;
     }
     
-    static func showLocation(type:Int!, category:CategoryModel!, path:String!, des:String) -> Void {
+    static func showLocation(type:Int!, category:CategoryModel!, path:String!, des:String, isVideo:Bool) -> Void {
         let vc = LocationViewController(nibName: "LocationViewController", bundle: nil)
         vc.type = type
         vc.category = category
         vc.path = path
         vc.des = des
+        vc.isVideo = isVideo
         if(navigationView == nil){
             navigationView = HPZCutomNavigationController(rootViewController: vc)
             UIApplication.shared.keyWindow!.rootViewController = navigationView
