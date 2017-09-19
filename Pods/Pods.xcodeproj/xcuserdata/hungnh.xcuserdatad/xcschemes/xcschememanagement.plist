@@ -59,17 +59,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SVPullToRefresh.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SwiftSocket.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>TPKeyboardAvoiding.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -87,6 +77,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0D506CF65DD154FDD420CE9FE565A984</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>102A71A7E162E9E46CCD8250B1BC9130</key>
 		<dict>
 			<key>primary</key>
@@ -97,12 +92,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2D80136A83C08082DA076C5376A23E25</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3DDCBFDB80F40C15AA762D8B6284D9F9</key>
+		<key>2A3D4D3F0FC5A1A8B96C13FA17DF731C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,17 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>77CC1B541FE4AD5BD1BA6E3ADD32B473</key>
+		<key>807CF460612CA4CACA88B51473EC734C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88F195428DB89781CDDFF196DAC1BABE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>953A167B2909C9E4CA88825ED53B067C</key>
+		<key>890B73E779BF4C0C921D945EA62EB9B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -137,12 +122,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3CD25D19FC3CB9F1EB1AD343E5B0E97</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A4C502DD779A32060FC8B8AE3A635440</key>
+		<key>9AF81A62DDFB2245DC13CDA9D531DCA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -157,7 +137,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0B4FDBAB90D5FDF9E11729FD890AD1C</key>
+		<key>D9BBBC9B4844323EDAFF037CBB4525C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
